@@ -1,0 +1,5 @@
+User-agent: adidxbot
+User-agent: HelperBot
+Disallow: /sa-stacked
+User-agent: *
+Disallow: /sa-star

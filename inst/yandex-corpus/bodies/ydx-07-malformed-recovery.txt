@@ -1,0 +1,7 @@
+Disallow: /mal/orphan
+User-agent: Yandex
+Disallow: no-leading-slash
+this is not a directive
+Disallow: /mal/good
+Allow: /mal/good/public
+

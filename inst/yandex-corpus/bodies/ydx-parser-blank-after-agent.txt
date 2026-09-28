@@ -1,0 +1,9 @@
+User-agent: Yandex
+Disallow: /parser/blank-after-agent/control-before$
+User-agent: Yandex
+
+Disallow: /parser/blank-after-agent/candidate$
+Disallow: /parser/blank-after-agent/control-after$
+User-agent: Yandex
+Disallow: /parser/blank-after-agent/control-restart$
+

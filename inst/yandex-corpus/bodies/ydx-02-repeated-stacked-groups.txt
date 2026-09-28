@@ -1,0 +1,10 @@
+User-agent: Yandex
+User-agent: Foo
+Disallow: /repeat/shared
+
+User-agent: Yandex
+Disallow: /repeat/one
+
+User-agent: Yandex
+Disallow: /repeat/two
+

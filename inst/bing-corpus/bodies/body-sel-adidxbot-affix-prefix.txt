@@ -1,0 +1,4 @@
+User-agent: adidxbotProbe
+Disallow: /ap-token
+User-agent: *
+Disallow: /ap-star

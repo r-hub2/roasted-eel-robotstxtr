@@ -1,0 +1,8 @@
+User-agent: Yandex
+Disallow:
+Disallow: /empty/y-block
+
+User-agent: YandexAdditionalBot
+Allow:
+Disallow: /
+

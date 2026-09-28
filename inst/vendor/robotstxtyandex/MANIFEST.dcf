@@ -1,0 +1,161 @@
+Manifest: robotstxtr vendored robotstxtyandex payload
+ManifestFormat: 1
+SchemaRevision: 2026-07-18.2
+ContractId: robotstxtr.yandex-backend/v1
+ContractRevision: 2026-07-18.2
+ContractFile: design/robotstxtyandex-integration-v1-spec.md
+Frozen: true
+LibraryVersion: 0.2.0
+PayloadCommit: fdd60a7c3bc6825f3b3752562dc0d6ad9387a27e
+PayloadCommitShort: fdd60a7
+PayloadNote: The later administrative commit c886b7f is NOT the payload identity.
+ArchiveSha256: 366dd57e2319f572624bdddffc6ccc1e51f6358d1a011453aebb4541de24bd90
+ProfileId: yandex-0.1.0
+AcceptedCorpusRevision: 337b9f3b886a92d6dc08c2fce84228d0cd6b801a
+EvidenceSnapshot: 9d69d361db81e7d236562dc056b41865da33d467d06f316e2c9a20988e007c96
+ProfileSourceRevision: 337b9f3b886a92d6dc08c2fce84228d0cd6b801a
+MatcherRevision: robotstxtyandex/0.2.0+payload.fdd60a7c3bc6825f3b3752562dc0d6ad9387a27e;profile=yandex-0.1.0;corpus=337b9f3b886a92d6dc08c2fce84228d0cd6b801a;evidence=9d69d361db81e7d236562dc056b41865da33d467d06f316e2c9a20988e007c96;profile-source=337b9f3b886a92d6dc08c2fce84228d0cd6b801a
+LanguageBaseline: C++17
+License: MIT
+LicenseDisposition: MIT retained, with vendored LICENSE and NOTICE installed alongside the payload under the vendor root; distinct from the package MIT and from the Google Apache-2.0 material.
+SourceProject: robotstxtyandex (independent, unofficial standalone compatibility project; not affiliated with or endorsed by Yandex)
+VendorRoot: src/vendor/robotstxtyandex
+ImportDate: 2026-07-19
+ImportedBy: ROBO-zfhakxcn (YI2)
+BehaviorImported: none
+BehaviorImportedNote: Manifest-only unit. No production C++ payload is vendored into src/ here; the byte-for-byte import into the VendorRoot is performed by a later unit (YI3a). Yandex remains capability_unavailable until every activation gate passes.
+Vendored: true, SHA-pinned; not fetched or downloaded at configure, build, test, or install time.
+StandaloneVerification: Payload tree fdd60a7 reproduced read-only from the standalone repository. All five compatibility-profile identity fields returned by src/version.cc (library_version, profile_id, accepted_corpus_revision, evidence_snapshot, profile_source_revision) match the approved contract. Per-file SHA-256 for the 21-file production set recorded below.
+FileCountPublicHeaders: 5
+FileCountProductionCc: 8
+FileCountPrivateHeaders: 6
+FileCountLegal: 2
+FileCountTotal: 21
+FidelityCommandPerFile: git -C <robotstxtyandex-checkout> show fdd60a7c3bc6825f3b3752562dc0d6ad9387a27e:<Source> | shasum -a 256
+FidelityCommandOffline: Rscript -e 'stopifnot(robotstxtr:::verify_yandex_vendor_tree("src/vendor/robotstxtyandex")$ok)'
+
+File: src/vendor/robotstxtyandex/include/robotstxtyandex/diagnostic.h
+Source: include/robotstxtyandex/diagnostic.h
+Sha256: 434cee8a312b0680f8f16d178e28bb3d2556de49f8d5181cefb6f6fc712c874c
+Bytes: 705
+Category: public-header
+
+File: src/vendor/robotstxtyandex/include/robotstxtyandex/metadata.h
+Source: include/robotstxtyandex/metadata.h
+Sha256: 27d97ed11bfa285b1dc850d4ebd54ffcb63f3e59309e9a554a98e19f726ffe6a
+Bytes: 504
+Category: public-header
+
+File: src/vendor/robotstxtyandex/include/robotstxtyandex/policy.h
+Source: include/robotstxtyandex/policy.h
+Sha256: 6275b30c51ef7c3dc1e9a105b691edca22571be364f4d50d7957338d7dacad54
+Bytes: 1172
+Category: public-header
+
+File: src/vendor/robotstxtyandex/include/robotstxtyandex/result.h
+Source: include/robotstxtyandex/result.h
+Sha256: c80a2019649f6a8ed18e52c1f2e507f2a2b79a757b3d7e6b237543bdf28db58e
+Bytes: 918
+Category: public-header
+
+File: src/vendor/robotstxtyandex/include/robotstxtyandex/version.h
+Source: include/robotstxtyandex/version.h
+Sha256: 63d32699034c78ea5efc7e74a6c07a2650e85a7b05ebd43341dff5e684dfbe78
+Bytes: 619
+Category: public-header
+
+File: src/vendor/robotstxtyandex/src/access_matcher.cc
+Source: src/access_matcher.cc
+Sha256: 2f26f9aeca374da91fece52081f5bc291807c07b4ce35f80c94290e08310f3a0
+Bytes: 6038
+Category: production-source
+
+File: src/vendor/robotstxtyandex/src/crawler_selector.cc
+Source: src/crawler_selector.cc
+Sha256: 59eb0cf79e385e11acbe63a2b600b8e2acf622f566bc8f49b2994a1b8c704353
+Bytes: 2070
+Category: production-source
+
+File: src/vendor/robotstxtyandex/src/directive_lexer.cc
+Source: src/directive_lexer.cc
+Sha256: 552eef93d4dcd205e849ba91ef29d7f4bce5175b1beea954d749638fbdf7814e
+Bytes: 4335
+Category: production-source
+
+File: src/vendor/robotstxtyandex/src/parser_ir.cc
+Source: src/parser_ir.cc
+Sha256: ae8cc442e2709358256fbd5bdb6f9afeb4954ba75c89a0cdc315b120fc50367e
+Bytes: 6622
+Category: production-source
+
+File: src/vendor/robotstxtyandex/src/physical_line_scanner.cc
+Source: src/physical_line_scanner.cc
+Sha256: a3a0d081f6f9f4a4aa8722761045cd261ecf18f7c89b832cec8af01547d03f15
+Bytes: 860
+Category: production-source
+
+File: src/vendor/robotstxtyandex/src/policy_engine.cc
+Source: src/policy_engine.cc
+Sha256: c953e73aaf61b6cf1715549cf2fea4b69a046cd0a5623f919272e150d059d582
+Bytes: 1256
+Category: production-source
+
+File: src/vendor/robotstxtyandex/src/policy.cc
+Source: src/policy.cc
+Sha256: 0411820d27ab556cd0c135e2a021e8b345827640142a82f1f5b91315495ed14f
+Bytes: 1763
+Category: production-source
+
+File: src/vendor/robotstxtyandex/src/version.cc
+Source: src/version.cc
+Sha256: 9d4810332d36c03310e7176cfed13462fc1a9d7489adfcb133bfb23cfc01013b
+Bytes: 496
+Category: production-source
+
+File: src/vendor/robotstxtyandex/src/access_matcher.h
+Source: src/access_matcher.h
+Sha256: 99f4c611f336ec8f40b6e14324e8072f629e8840980695a887981d3ada0f860d
+Bytes: 1464
+Category: private-header
+
+File: src/vendor/robotstxtyandex/src/crawler_selector.h
+Source: src/crawler_selector.h
+Sha256: 257d5088385dceae06ef77844984ea30b439a72c82c1e8ce0f0eb1c2445dbaef
+Bytes: 957
+Category: private-header
+
+File: src/vendor/robotstxtyandex/src/directive_lexer.h
+Source: src/directive_lexer.h
+Sha256: aa66a9973a85b192cea879ba7683a191fd6783210e16ffb53f2dda94951f9229
+Bytes: 1260
+Category: private-header
+
+File: src/vendor/robotstxtyandex/src/parser_ir.h
+Source: src/parser_ir.h
+Sha256: 7cf9ea5d587673d24e48ee2c3945b128b00ca70508b32b5fe12fed676a1ce0b7
+Bytes: 1555
+Category: private-header
+
+File: src/vendor/robotstxtyandex/src/physical_line_scanner.h
+Source: src/physical_line_scanner.h
+Sha256: c596cffd429d9e7950fb2537c09e30c391e692ccbd4a1d7d1f2d16554714477c
+Bytes: 1027
+Category: private-header
+
+File: src/vendor/robotstxtyandex/src/policy_engine.h
+Source: src/policy_engine.h
+Sha256: 3d81e18f2995d7dfbdcbc22c90acd334fbb632f3d7e3606071d189e6ba070466
+Bytes: 977
+Category: private-header
+
+File: src/vendor/robotstxtyandex/LICENSE
+Source: LICENSE
+Sha256: d23cc5470f6caf482f3b8a41d9fa34e110bd7a70d6f4a881a7467993856668c0
+Bytes: 1073
+Category: legal
+
+File: src/vendor/robotstxtyandex/NOTICE
+Source: NOTICE
+Sha256: 360038c562efe2468316907229d55c1866a1ac0989a2ce59447b37336aad8bbf
+Bytes: 458
+Category: legal

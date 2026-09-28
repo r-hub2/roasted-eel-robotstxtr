@@ -1,0 +1,34 @@
+Vendored C++ robots.txt matcher — provenance
+=============================================
+
+The files in `src/` named below are a copied, SHA-pinned snapshot of the
+faithful Google robots.txt matcher. They are NOT downloaded or fetched at
+configure, build, test, or install time; they are vendored source.
+
+Vendored files (copied verbatim, Apache-2.0 + Google copyright headers preserved):
+  src/robots.cc
+  src/robots.h
+  src/reporting_robots.cc
+  src/reporting_robots.h
+
+Immediate source (the de-Abseiled, standard-library-only C++ replica):
+  Repository:     https://gitlab.com/bart-turczynski/robotstxt-cpp
+                  (private; the pinned commit is the durable identifier)
+  Pinned commit:  1cb8b047d81dfa0e9c1a1549b269fb5f196756c9
+
+Underlying upstream baseline (the pristine Google matcher the replica mirrors):
+  Repository:     https://github.com/google/robotstxt
+  Pinned commit:  22b355ff855419e6a3ff8ff09c0ad7fdb17116f9
+
+The replica removes Abseil and all production dependencies outside the C++
+standard library while preserving byte-level matcher behavior, namespace
+(`googlebot`), class/function names, and file organization. See the replica
+repository's own PROVENANCE.md and NOTICE for the full change manifest, license
+set, and the offline-verifiable sync procedure.
+
+Licensing: the vendored files remain under the Apache License 2.0 with Google's
+original copyright headers intact. The overall R package license arrangement is
+finalized in a later slice (R9); this file records source provenance only.
+
+Not vendored: `matcher_binding.cpp` in `src/` is this package's own cpp11 glue
+and is not part of the upstream snapshot.

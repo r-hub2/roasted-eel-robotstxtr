@@ -1,0 +1,10 @@
+User-agent: Yandex
+User-agent: HelperBot
+Disallow: /crawler/stacked/yandex
+
+User-agent: YandexAdditionalBot
+User-agent: HelperBot
+Disallow: /crawler/stacked/additional
+
+User-agent: *
+Disallow: /crawler/stacked/wildcard

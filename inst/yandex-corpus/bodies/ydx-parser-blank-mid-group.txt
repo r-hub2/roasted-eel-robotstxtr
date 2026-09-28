@@ -1,0 +1,8 @@
+User-agent: Yandex
+Disallow: /parser/blank-mid-group/control-before$
+
+Disallow: /parser/blank-mid-group/candidate$
+Disallow: /parser/blank-mid-group/control-after$
+User-agent: Yandex
+Disallow: /parser/blank-mid-group/control-restart$
+

@@ -1,0 +1,10 @@
+User-agent: Yandex
+Disallow: /tie/a
+Allow: /tie/a
+Allow: /tie/b
+Disallow: /tie/b
+Disallow: /wild/*/x
+Allow: /wild/a/*
+Disallow: /wild/root*
+Allow: /wild/root$
+

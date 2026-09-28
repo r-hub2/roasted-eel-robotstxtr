@@ -1,0 +1,7 @@
+User-agent: Yandex
+Disallow: /parser/missing-colon/control-before$
+Disallow /parser/missing-colon/candidate$
+Disallow: /parser/missing-colon/control-after$
+User-agent: Yandex
+Disallow: /parser/missing-colon/control-restart$
+

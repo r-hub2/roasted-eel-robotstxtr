@@ -1,0 +1,6 @@
+User-agent: adidxbot
+Disallow: /rt-first
+User-agent: adidxbot
+Disallow: /rt-second
+User-agent: *
+Disallow: /rt-star

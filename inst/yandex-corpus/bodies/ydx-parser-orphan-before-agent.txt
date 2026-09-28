@@ -1,0 +1,7 @@
+Disallow: /parser/orphan-before-agent/candidate$
+User-agent: Yandex
+Disallow: /parser/orphan-before-agent/control-after-one$
+Disallow: /parser/orphan-before-agent/control-after-two$
+User-agent: Yandex
+Disallow: /parser/orphan-before-agent/control-restart$
+

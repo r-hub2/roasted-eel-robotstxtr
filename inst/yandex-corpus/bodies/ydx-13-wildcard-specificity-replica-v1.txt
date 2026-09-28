@@ -1,0 +1,5 @@
+User-agent: Yandex
+Disallow: /probe/wild/a**b
+Allow: /probe/wild/a*b
+Disallow: /probe/anchor/exact$
+Allow: /probe/anchor/exact

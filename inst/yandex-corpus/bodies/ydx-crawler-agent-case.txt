@@ -1,0 +1,8 @@
+User-agent: yAnDeX
+Disallow: /crawler/case/yandex
+
+User-agent: yAnDeXaDdItIoNaLbOt
+Disallow: /crawler/case/additional
+
+User-agent: *
+Disallow: /crawler/case/wildcard

@@ -1,0 +1,7 @@
+User-agent: Yandex
+Disallow: /parser/missing-leading-slash/control-before$
+Disallow: parser/missing-leading-slash/candidate$
+Disallow: /parser/missing-leading-slash/control-after$
+User-agent: Yandex
+Disallow: /parser/missing-leading-slash/control-restart$
+

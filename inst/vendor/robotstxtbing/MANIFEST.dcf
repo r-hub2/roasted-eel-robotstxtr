@@ -1,0 +1,255 @@
+Manifest: robotstxtr vendored robotstxtbing payload
+ManifestFormat: 1
+ContractId: robotstxtr.bing-backend/v2
+ContractFile: design/robotstxtbing-integration-v2-spec.md
+Frozen: true
+LibraryVersion: 0.1.0
+SiblingContractId: robotstxtbing-v2
+SiblingContractRevision: 0.1.0
+SiblingParserRevision: 0.1.0
+SiblingSpecRevision: 2026-07-23.1
+SiblingEvidenceCutoff: 2026-07-23
+PayloadTagObject: c82855d0756c748cc4770246a19282323cdfa331
+PayloadCommit: 1f2431b9d47ba25dec313eec5a396e795f00b5b8
+PayloadCommitShort: 1f2431b
+AuditedCommit: 8fc55919bacc297f40411f83c9fe819dece69c84
+PayloadNote: The owner-approved pin c82855d0 is the ANNOTATED TAG OBJECT for tag 0.1.0 ("robotstxtbing 0.1.0 -- first frozen release", BING-osxlywax R8); its recorded target commit is 1f2431b. The V3-audit RC-freeze commit is 8fc55919 (R7); the R7->R8 delta is docs-only (CHANGELOG.md, README.md, docs/RELEASE_AUDIT_0.1.0.md) with zero production/source/profile bytes changed, so contract_info() identity and every vendored file SHA-256 are byte-identical between the audited commit and the pinned release. A moving branch, a tag without a recorded target commit, or a sibling worktree is not a valid pin.
+BingbotProfileRevision: bingbot-2026-07-23.1
+AdidxbotProfileRevision: adidxbot-2026-07-23.1
+AcceptedExpectationGrade: tester_observed
+AcceptedExpectationCount: 57
+AcceptedExpectationBingbotCount: 29
+AcceptedExpectationAdidxbotCount: 28
+ReleaseManifestFile: releases/robotstxtbing-0.1.0.manifest
+ReleaseManifestSha256: 5e79ee5dcb1a22b73b5fa0f86766be529cf111fd5530d07b53fe1d6b7050a858
+StaticArchiveSha256: d1552e1f146e5155b75f8ef30e8e8cbab3e96fa46de1455b3511cbea738aeed6
+SharedArchiveSha256: 91aa203f8d35f41df5783709501c379f169e7b90bb7045d4a88e887e9c56aa7f
+MatcherRevision: robotstxtbing/0.1.0+payload.c82855d0756c748cc4770246a19282323cdfa331;contract=robotstxtbing-v2;contract-rev=0.1.0;parser=0.1.0;bingbot=bingbot-2026-07-23.1;adidxbot=adidxbot-2026-07-23.1;manifest=5e79ee5dcb1a22b73b5fa0f86766be529cf111fd5530d07b53fe1d6b7050a858
+LanguageBaseline: C++17
+License: Apache-2.0
+LicenseDisposition: Apache-2.0 retained, with the payload's own LICENSE (Apache-2.0 text) and NOTICE installed alongside the payload under the vendor root; distinct from the package MIT license (top-level LICENSE) and from the Google matcher's Apache-2.0 material at inst/APACHE-2.0-LICENSE (separate copyright and NOTICE). Source and binary package audits verify each engine's license and notice material independently.
+SourceProject: robotstxtbing (independent, unofficial standalone Bing-compatibility project; not affiliated with, endorsed by, or maintained by Microsoft, Bing, Bingbot, or AdIdxBot, and containing no Microsoft/Bing source code, documentation text, or private data)
+VendorRoot: src/vendor/robotstxtbing
+ImportDate: 2026-07-24
+ImportedBy: ROBO-lpedsigv (BI2)
+BehaviorImported: none
+BehaviorImportedNote: Manifest-only unit. No production C++ payload is vendored into src/ here; the byte-for-byte import into the VendorRoot is performed by a later slice (BI3). Bing remains capability_unavailable until every activation gate passes (BI5).
+Vendored: true, SHA-pinned; not fetched or downloaded at configure, build, test, or install time.
+StandaloneVerification: Payload tree at tag 0.1.0 (tag object c82855d0, target commit 1f2431b) reproduced read-only from the standalone repository. Per-file SHA-256 for the exact 35-file production set (7 public headers, 14 production translation units, 12 private headers, 2 legal files) recorded below and byte-transcribed from that tree.
+FileCountPublicHeaders: 7
+FileCountProductionCpp: 14
+FileCountPrivateHeaders: 12
+FileCountLegal: 2
+FileCountTotal: 35
+FidelityCommandPerFile: git -C <robotstxtbing-checkout> show 1f2431b9d47ba25dec313eec5a396e795f00b5b8:<Source> | shasum -a 256
+FidelityCommandOffline: Rscript -e 'stopifnot(robotstxtr:::verify_bing_vendor_tree("src/vendor/robotstxtbing")$ok)'
+
+File: src/vendor/robotstxtbing/include/robotstxtbing/diagnostic.h
+Source: include/robotstxtbing/diagnostic.h
+Sha256: bc62908ebb15a38f505d5ffedb04c978c07ef438cd0a13afa9076b1b4e50f37d
+Bytes: 907
+Category: public-header
+
+File: src/vendor/robotstxtbing/include/robotstxtbing/export.h
+Source: include/robotstxtbing/export.h
+Sha256: 6d5150f1e22c4c387234576ec90e4ca9f814e589f78b82abda12554c041c81b2
+Bytes: 608
+Category: public-header
+
+File: src/vendor/robotstxtbing/include/robotstxtbing/limits.h
+Source: include/robotstxtbing/limits.h
+Sha256: 23e2134b92b9d6e1eebaccff4bab09230dee8be94e0acf37ac490bfe12e4aac2
+Bytes: 538
+Category: public-header
+
+File: src/vendor/robotstxtbing/include/robotstxtbing/metadata.h
+Source: include/robotstxtbing/metadata.h
+Sha256: 3545df15d026955ece311e5a2c8347a6ea9584b8057d805982daf6d6ca43adc8
+Bytes: 663
+Category: public-header
+
+File: src/vendor/robotstxtbing/include/robotstxtbing/policy.h
+Source: include/robotstxtbing/policy.h
+Sha256: 67abb9b78b3ac643f2cc5ad3fc173d4701664a9f078492c5c595ed9864a610ff
+Bytes: 984
+Category: public-header
+
+File: src/vendor/robotstxtbing/include/robotstxtbing/result.h
+Source: include/robotstxtbing/result.h
+Sha256: 91fd16b88ef2f12495722fc417b613fc6865113398ca000c95ce97a403a44b08
+Bytes: 1144
+Category: public-header
+
+File: src/vendor/robotstxtbing/include/robotstxtbing/version.h
+Source: include/robotstxtbing/version.h
+Sha256: 87cf386bd61f311f5db2668dc538cac23aa234cb14a868aac0f772e0fbcd146c
+Bytes: 591
+Category: public-header
+
+File: src/vendor/robotstxtbing/src/access_grouping.cpp
+Source: src/access_grouping.cpp
+Sha256: d209e008026ccd9987c8cd39cdf412c1ec149d9fcd35cc94b1af55e031a70279
+Bytes: 3975
+Category: production-source
+
+File: src/vendor/robotstxtbing/src/candidate_rules.cpp
+Source: src/candidate_rules.cpp
+Sha256: 731af1fff3ab0bf6876746e9fe0fa7ed4e6f78092f321da0c81a7930deb7d837
+Bytes: 1571
+Category: production-source
+
+File: src/vendor/robotstxtbing/src/crawl_delay_value.cpp
+Source: src/crawl_delay_value.cpp
+Sha256: 6f531c7a9d927db7ce84fe53c8a58007d7733d2207569d876cdd1538f8d1b856
+Bytes: 911
+Category: production-source
+
+File: src/vendor/robotstxtbing/src/diagnostic_mapping.cpp
+Source: src/diagnostic_mapping.cpp
+Sha256: 69393dc410822cc0aed5b16f9a89e6d6037bf4e932f8d1bd1bda186bf69f7afb
+Bytes: 6311
+Category: production-source
+
+File: src/vendor/robotstxtbing/src/directive_lexer.cpp
+Source: src/directive_lexer.cpp
+Sha256: 3b0e2f16f8a3dadd6b0197b31ea22c1d4102ba3e2c9976b8894f081f4b3cf677
+Bytes: 4825
+Category: production-source
+
+File: src/vendor/robotstxtbing/src/library.cpp
+Source: src/library.cpp
+Sha256: 71a956a8c28af3690c1cfd8c1843e3b5e313052b0a266c4404fb08ca9c15a44b
+Bytes: 181
+Category: production-source
+
+File: src/vendor/robotstxtbing/src/matcher.cpp
+Source: src/matcher.cpp
+Sha256: 6ae1be64bc7e23c4e05daa959e47f9fa247efdfe41341c0f97bd2d26654631b2
+Bytes: 9564
+Category: production-source
+
+File: src/vendor/robotstxtbing/src/metadata_extraction.cpp
+Source: src/metadata_extraction.cpp
+Sha256: 478f4f0d176496adb662f40c477729931ddae54e6a554de630eede8809816d9e
+Bytes: 2005
+Category: production-source
+
+File: src/vendor/robotstxtbing/src/parser.cpp
+Source: src/parser.cpp
+Sha256: be9fd6b524b9ecb25189df585ea1f6a83fe9237281e4c238c4b6df1831e5ff4e
+Bytes: 6993
+Category: production-source
+
+File: src/vendor/robotstxtbing/src/physical_scanner.cpp
+Source: src/physical_scanner.cpp
+Sha256: 7ca50ab19e5c41842229bd8c312e187beb42f07d78870077420dddcebb38310d
+Bytes: 1365
+Category: production-source
+
+File: src/vendor/robotstxtbing/src/policy.cpp
+Source: src/policy.cpp
+Sha256: 2ff017dd965aee0042991eea1f5a69d1ac483e46b02b6d30e391cc25f59fc5d8
+Bytes: 9359
+Category: production-source
+
+File: src/vendor/robotstxtbing/src/selection.cpp
+Source: src/selection.cpp
+Sha256: 5fc4b3bcaf86f32d8402ff575ec7684be0c7b0600541240c570c344862ed8612
+Bytes: 3743
+Category: production-source
+
+File: src/vendor/robotstxtbing/src/version.cpp
+Source: src/version.cpp
+Sha256: e33e25be559efea36d3b882e961adcabc950ce863a600e10065113ff5c5b4a84
+Bytes: 1854
+Category: production-source
+
+File: src/vendor/robotstxtbing/src/winner.cpp
+Source: src/winner.cpp
+Sha256: 51df4ac825116f578c42b9e7beca84bea0abb5a7aa67597fb0b36e585c3ff3df
+Bytes: 2247
+Category: production-source
+
+File: src/vendor/robotstxtbing/src/access_grouping.h
+Source: src/access_grouping.h
+Sha256: 7e44357b90a02243ac7eb92b851f2d02aa05ccedb92733f52251a7bb8fd7b7cb
+Bytes: 1588
+Category: private-header
+
+File: src/vendor/robotstxtbing/src/candidate_rules.h
+Source: src/candidate_rules.h
+Sha256: 8a6395cf5a88b177778d7414293afcaa68188431fca1b634888dcbd9e5e4892f
+Bytes: 3094
+Category: private-header
+
+File: src/vendor/robotstxtbing/src/checked_size.h
+Source: src/checked_size.h
+Sha256: a317596220657fa3e8dce868c1feb06224046d6761592a9e3c4baca29b28d9e8
+Bytes: 766
+Category: private-header
+
+File: src/vendor/robotstxtbing/src/crawl_delay_value.h
+Source: src/crawl_delay_value.h
+Sha256: e9371c40a89014fa5ec01d458469aeec85489eacf785dcc8a204a5d1f035a863
+Bytes: 728
+Category: private-header
+
+File: src/vendor/robotstxtbing/src/diagnostic_mapping.h
+Source: src/diagnostic_mapping.h
+Sha256: 78b64c08d17e690a0af4e957b12d25d02c364095effe689b45278b27c1a54fb0
+Bytes: 918
+Category: private-header
+
+File: src/vendor/robotstxtbing/src/directive_lexer.h
+Source: src/directive_lexer.h
+Sha256: 9db568990d5f574979fb915d8b2d4b2d747f8e7a71fa8e46f259136e9b8dac22
+Bytes: 1315
+Category: private-header
+
+File: src/vendor/robotstxtbing/src/matcher.h
+Source: src/matcher.h
+Sha256: 04c5403a19b04be2ebda113906c00f06728a7657b25958def10bc11034362256
+Bytes: 6943
+Category: private-header
+
+File: src/vendor/robotstxtbing/src/metadata_extraction.h
+Source: src/metadata_extraction.h
+Sha256: f7fd773500469c1886c1f0e66a764c6d581abf4f88db7ad146fdb54adf8a148f
+Bytes: 1146
+Category: private-header
+
+File: src/vendor/robotstxtbing/src/parser.h
+Source: src/parser.h
+Sha256: a2b0e4a4a26d1a053afcb3c7dd6bf80b16e8d4ae3775b6be2800784e25b8b3c4
+Bytes: 1314
+Category: private-header
+
+File: src/vendor/robotstxtbing/src/physical_scanner.h
+Source: src/physical_scanner.h
+Sha256: f7ce1ddb895297cd834219c0355b3d1a353575d64848cf5a23af82cf2085f70a
+Bytes: 883
+Category: private-header
+
+File: src/vendor/robotstxtbing/src/selection.h
+Source: src/selection.h
+Sha256: 2ddbb69cdefa64641bf28650059b9e8170516305911b8babb0bf7f9e45d919f1
+Bytes: 3122
+Category: private-header
+
+File: src/vendor/robotstxtbing/src/winner.h
+Source: src/winner.h
+Sha256: 6d71e1f169265893f8ea55080bd54d62a39f49cbeab94a52ddf12d73a7b36b27
+Bytes: 3137
+Category: private-header
+
+File: src/vendor/robotstxtbing/LICENSE
+Source: LICENSE
+Sha256: c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+Bytes: 11357
+Category: legal
+
+File: src/vendor/robotstxtbing/NOTICE
+Source: NOTICE
+Sha256: dd6a78de02b1088f80007a1752d2eb05f4400f548703171c985e8f218aa75610
+Bytes: 319
+Category: legal

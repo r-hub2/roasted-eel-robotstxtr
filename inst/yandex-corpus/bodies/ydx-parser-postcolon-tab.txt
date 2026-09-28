@@ -1,0 +1,7 @@
+User-agent: Yandex
+Disallow: /parser/postcolon-tab/control-before$
+Disallow:	/parser/postcolon-tab/candidate$
+Disallow: /parser/postcolon-tab/control-after$
+User-agent: Yandex
+Disallow: /parser/postcolon-tab/control-restart$
+

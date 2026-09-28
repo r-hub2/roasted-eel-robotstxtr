@@ -1,0 +1,162 @@
+Vendored C++ robotstxtbing payload — provenance
+===============================================
+
+The files listed below are a copied, SHA-pinned snapshot of the independent
+`robotstxtbing` Bing-compatibility library. They are NOT downloaded or fetched
+at configure, build, test, or install time; they are vendored source. The
+package builds, installs, tests, and runs without a sibling checkout or network
+access.
+
+This record is the Bing counterpart of the Google matcher provenance in
+`inst/PROVENANCE` and the Yandex matcher provenance in
+`inst/vendor/robotstxtyandex/PROVENANCE`. It is a separate file; the Google and
+Yandex provenance and their vendored hashes are unchanged.
+
+Manifest-only status (import boundary)
+--------------------------------------
+This provenance and the machine-readable manifest
+(`inst/vendor/robotstxtbing/MANIFEST.dcf`) freeze the approved payload identity
+and per-file hashes BEFORE any behavior is imported. No production C++ payload
+is vendored into `src/` by this step; the byte-for-byte import into the vendor
+root (`src/vendor/robotstxtbing/`) is performed by a later slice (BI3). The Bing
+matcher therefore remains `capability_unavailable` until every activation gate
+passes (BI5).
+
+Immutable pin identity
+----------------------
+  Library version:            0.1.0
+  Owner-approved payload pin:  c82855d0756c748cc4770246a19282323cdfa331
+  Sibling contract_id:        robotstxtbing-v2   (literal; see D1 below)
+  Contract revision:          0.1.0
+  Parser revision:            0.1.0
+  Bingbot profile revision:   bingbot-2026-07-23.1
+  AdIdxBot profile revision:  adidxbot-2026-07-23.1
+  Sibling spec revision:      2026-07-23.1
+  Sibling evidence cutoff:    2026-07-23
+  Language baseline:          C++17
+  Import date:                2026-07-24
+
+  Release manifest file:      releases/robotstxtbing-0.1.0.manifest
+  Release manifest SHA-256:
+    5e79ee5dcb1a22b73b5fa0f86766be529cf111fd5530d07b53fe1d6b7050a858
+  Static release archive SHA-256 (robotstxtbing-0.1.0-static.tar.gz):
+    d1552e1f146e5155b75f8ef30e8e8cbab3e96fa46de1455b3511cbea738aeed6
+  Shared release archive SHA-256 (robotstxtbing-0.1.0-shared.tar.gz):
+    91aa203f8d35f41df5783709501c379f169e7b90bb7045d4a88e887e9c56aa7f
+
+The three SHA-256 digests above are transcribed verbatim from the shipped
+release audit (`docs/RELEASE_AUDIT_0.1.0.md`). The release-manifest digest was
+independently reproduced by hashing the shipped manifest file at the pin
+(`git show 0.1.0:releases/robotstxtbing-0.1.0.manifest | shasum -a 256`); it
+matches. A moving branch, a tag without a recorded target commit, or a sibling
+worktree is not a valid pin.
+
+Payload pin reconciliation (c82855d0 / 1f2431b / 8fc55919)
+----------------------------------------------------------
+The owner-approved payload pin `c82855d0756c748cc4770246a19282323cdfa331` is the
+ANNOTATED TAG OBJECT for tag `0.1.0` (`robotstxtbing 0.1.0 -- first frozen
+release`, BING-osxlywax R8). It is a tag object, not a commit; its recorded
+target commit is `1f2431b9d47ba25dec313eec5a396e795f00b5b8` (R8). Recording the
+tag object as the pin is stronger than a bare tag: the target commit is embedded
+in the object, so the pin resolves deterministically.
+
+The V3 evidence audit recorded the RC-freeze commit
+`8fc55919bacc297f40411f83c9fe819dece69c84` (R7) as the audited library commit.
+The R7 -> R8 delta is documentation only — `CHANGELOG.md`, `README.md`, and
+`docs/RELEASE_AUDIT_0.1.0.md` — with zero production, source, or profile bytes
+changed. The shipped release audit states this directly: the 0.1.0 audit is
+"docs-only over the frozen library ... the shipped contract_info() identity and
+library artifacts are exactly those proven by R1-R7." Consequently
+`contract_info()` identity and every vendored file SHA-256 recorded in the
+manifest are byte-identical between the audited commit (`8fc55919`) and the
+pinned release tree (`1f2431b`, tag object `c82855d0`). The audit remains valid
+for the pinned payload; no conflict exists.
+
+D1 (identity fidelity — pin the literal)
+----------------------------------------
+The `robotstxtbing` v2 spec prose declares a contract-id token
+`robotstxtbing.compatibility/v2`, but the shipped library's
+`contract_info().contract_id` AND its release manifest both use the literal
+`robotstxtbing-v2`, and are internally self-consistent. The adapter's
+sibling-identity assertion pins the actual shipped literal `robotstxtbing-v2`,
+not the spec's prose token. The owner approved pinning the literal.
+
+Serialized matcher revision:
+  robotstxtbing/0.1.0+payload.c82855d0756c748cc4770246a19282323cdfa331;contract=robotstxtbing-v2;contract-rev=0.1.0;parser=0.1.0;bingbot=bingbot-2026-07-23.1;adidxbot=adidxbot-2026-07-23.1;manifest=5e79ee5dcb1a22b73b5fa0f86766be529cf111fd5530d07b53fe1d6b7050a858
+
+This string is single-sourced in R at activation (BI5) and byte-equals the
+manifest `MatcherRevision` field. Every component remains separately
+inspectable through contract metadata; field names and ordering MUST NOT drift
+silently.
+
+Approved vendored file set
+--------------------------
+The approved set contains only the production files required to compile the
+pinned payload — no examples, no fuzz targets, no comparisons, no corpus, no
+evidence, and no test files. Every `.cpp` under `src/` is a member of the
+library target defined by the pinned `CMakeLists.txt`; the `README.md` files
+under `include/robotstxtbing/` and `src/` are documentation and are excluded.
+
+  7 public headers (source `include/robotstxtbing/` -> vendor
+    `src/vendor/robotstxtbing/include/robotstxtbing/`):
+      diagnostic.h  export.h  limits.h  metadata.h  policy.h
+      result.h  version.h
+
+  14 production translation units (source `src/` -> vendor
+    `src/vendor/robotstxtbing/src/`):
+      access_grouping.cpp  candidate_rules.cpp  crawl_delay_value.cpp
+      diagnostic_mapping.cpp  directive_lexer.cpp  library.cpp
+      matcher.cpp  metadata_extraction.cpp  parser.cpp
+      physical_scanner.cpp  policy.cpp  selection.cpp
+      version.cpp  winner.cpp
+
+  12 private headers (source `src/` -> vendor
+    `src/vendor/robotstxtbing/src/`):
+      access_grouping.h  candidate_rules.h  checked_size.h
+      crawl_delay_value.h  diagnostic_mapping.h  directive_lexer.h
+      matcher.h  metadata_extraction.h  parser.h  physical_scanner.h
+      selection.h  winner.h
+
+  2 legal files (source repository root -> vendor
+    `src/vendor/robotstxtbing/`):
+      LICENSE  NOTICE
+
+Nested source paths are preserved; includes are not edited merely to flatten
+the layout. Package-owned bindings and build files live OUTSIDE this vendor root
+and are excluded from the vendored hash set. Per-file SHA-256 for the exact
+35-file production set is recorded in the machine-readable manifest.
+
+Licensing
+---------
+The vendored `robotstxtbing` payload is licensed under the Apache License 2.0,
+with its own `LICENSE` (Apache-2.0 text) and `NOTICE` retained alongside the
+payload under the vendor root. `NOTICE` records that `robotstxtbing` is an
+independent, unofficial compatibility project; that Microsoft, Bing, Bingbot,
+and AdIdxBot are trademarks or service marks of their respective owners; and
+that their names identify compatibility research targets and do not imply
+affiliation, endorsement, or production-crawler equivalence.
+
+This Apache-2.0 payload license is separate from the package source license
+(MIT, see the top-level `LICENSE`) and from the Google matcher's Apache-2.0
+material at `inst/APACHE-2.0-LICENSE`, which carries its own copyright and
+NOTICE. Source and binary package audits verify each engine's license and
+notice material independently.
+
+Deterministic offline fidelity commands
+----------------------------------------
+Per-file, against a read-only standalone checkout (the pin's recorded target
+commit; the tag object `c82855d0` peels to the same tree):
+
+  git -C <robotstxtbing-checkout> \
+    show 1f2431b9d47ba25dec313eec5a396e795f00b5b8:<source-path> \
+    | shasum -a 256
+
+Whole vendored tree, offline, from the installed package (no sibling checkout,
+no network); the verifier is added with the byte import (BI3/BI6):
+
+  Rscript -e 'stopifnot(
+    robotstxtr:::verify_bing_vendor_tree("src/vendor/robotstxtbing")$ok)'
+
+The verifier reads the shipped manifest
+(`inst/vendor/robotstxtbing/MANIFEST.dcf`) and fails closed on any missing,
+extra (including package-owned), or changed file.

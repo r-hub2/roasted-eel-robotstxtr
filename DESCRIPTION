@@ -1,0 +1,43 @@
+Package: robotstxtr
+Type: Package
+Title: Engine-Aware 'robots.txt' Policy with Google's Matcher Algorithm
+Version: 0.3.0
+Language: en-US
+Authors@R: 
+    person("Bart", "Turczynski", email = "bartek@turczynski.pl", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8788-7980"))
+Description: Evaluates whether URLs may be crawled according to 'robots.txt'
+    rules. A versioned engine-aware facade keeps neutral fetch evidence,
+    per-engine status policy, robots product tokens, and matcher capabilities
+    separate, returning explicit non-decisions when policy is undocumented or
+    a matcher is unavailable. The available matcher is a bundled,
+    upstream-test-validated snapshot of Google's open-source C++ 'robots.txt'
+    matcher, preserving 'Googlebot' behavior. Fetches use a deterministic,
+    conservative policy built on 'httr2', with fetch origins constructed by
+    'rurl'. All network access in tests, examples, and vignettes is mocked or
+    served locally, so no internet connection is required to install, test, or
+    check the package. This matcher derives from Google's 'robotstxt'
+    project
+    <https://github.com/google/robotstxt>, distributed under the Apache License
+    2.0; see the package NOTICE.
+License: MIT + file LICENSE
+URL: https://gitlab.com/bart-turczynski/robotstxtr,
+        https://bart-turczynski.gitlab.io/robotstxtr/,
+        https://bart-turczynski.r-universe.dev/robotstxtr
+BugReports: https://gitlab.com/bart-turczynski/robotstxtr/-/issues
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends: R (>= 4.1.0)
+Imports: httr2, rurl (>= 3.0.1)
+LinkingTo: cpp11
+SystemRequirements: C++17
+Suggests: callr, httpuv, jsonlite, knitr, oysteR, rmarkdown, rosv,
+        testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-09-28 11:35:44 UTC; bartturczynski
+Author: Bart Turczynski [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8788-7980>)
+Maintainer: Bart Turczynski <bartek@turczynski.pl>

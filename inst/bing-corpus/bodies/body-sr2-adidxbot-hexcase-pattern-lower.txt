@@ -1,0 +1,2 @@
+User-agent: adidxbot
+Disallow: /hl-a%2fb$

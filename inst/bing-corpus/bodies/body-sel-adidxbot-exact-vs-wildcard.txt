@@ -1,0 +1,4 @@
+User-agent: adidxbot
+Disallow: /ew-adidxbot
+User-agent: *
+Disallow: /ew-star

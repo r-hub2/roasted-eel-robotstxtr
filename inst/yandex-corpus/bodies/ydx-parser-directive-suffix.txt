@@ -1,0 +1,7 @@
+User-agent: Yandex
+Disallow: /parser/directive-suffix/control-before$
+Disallow-extra: /parser/directive-suffix/candidate$
+Disallow: /parser/directive-suffix/control-after$
+User-agent: Yandex
+Disallow: /parser/directive-suffix/control-restart$
+

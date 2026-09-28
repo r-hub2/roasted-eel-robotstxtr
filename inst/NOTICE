@@ -1,0 +1,30 @@
+robotstxtr bundled code NOTICE
+==============================
+
+The robotstxtr package SOURCE CODE is licensed under the MIT License (see the
+top-level LICENSE file and the DESCRIPTION License field).
+
+This package additionally BUNDLES, as vendored C++ source compiled into the
+package, the faithful Google robots.txt matcher:
+
+  src/robots.cc
+  src/robots.h
+  src/reporting_robots.cc
+  src/reporting_robots.h
+
+  Immediate source: https://gitlab.com/bart-turczynski/robotstxt-cpp
+                    (private repository; the pinned commit is the durable
+                    identifier)
+  Pinned commit:    1cb8b047d81dfa0e9c1a1549b269fb5f196756c9
+
+  Upstream baseline: https://github.com/google/robotstxt
+  Pinned commit:     22b355ff855419e6a3ff8ff09c0ad7fdb17116f9
+
+These vendored files remain under the Apache License 2.0 with Google's
+original copyright headers intact, NOT the MIT license. The full Apache
+License 2.0 text is included at inst/APACHE-2.0-LICENSE.
+
+The package-code license (MIT) and the bundled-code license (Apache-2.0) are
+separate; use of the vendored matcher source is governed by Apache-2.0.
+
+See inst/PROVENANCE for the full vendored-file manifest and checksums.

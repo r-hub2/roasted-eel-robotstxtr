@@ -1,0 +1,156 @@
+Manifest: robotstxtr projection of the accepted Yandex conformance corpus
+ManifestFormat: 1
+Unit: ROBO-novczgii (YI6a)
+ContractFile: design/robotstxtyandex-integration-v1-spec.md
+Offline: true; byte-pinned; consumed with no sibling checkout or network at build, test, or install time.
+Frozen: true
+PayloadCommit: fdd60a7c3bc6825f3b3752562dc0d6ad9387a27e
+ProfileId: yandex-0.1.0
+AcceptedCorpusRevision: 337b9f3b886a92d6dc08c2fce84228d0cd6b801a
+ProfileSourceRevision: 337b9f3b886a92d6dc08c2fce84228d0cd6b801a
+EvidenceSnapshot: 9d69d361db81e7d236562dc056b41865da33d467d06f316e2c9a20988e007c96
+MatcherRevision: robotstxtyandex/0.2.0+payload.fdd60a7c3bc6825f3b3752562dc0d6ad9387a27e;profile=yandex-0.1.0;corpus=337b9f3b886a92d6dc08c2fce84228d0cd6b801a;evidence=9d69d361db81e7d236562dc056b41865da33d467d06f316e2c9a20988e007c96;profile-source=337b9f3b886a92d6dc08c2fce84228d0cd6b801a
+SourceProject: robotstxtyandex (independent, unofficial standalone compatibility project; not affiliated with or endorsed by Yandex)
+MatcherAvailability: capability_unavailable (this unit adds test data and an offline validator only; it registers no matcher and changes no availability or schema revision).
+CaseCount: 140
+DistinctBodyCount: 26
+CrawlerBreakdown: Yandex=119, YandexAdditionalBot=21
+DecisionBreakdown: allow=74, disallow=66
+SourceBreakdown: default_allow=48, effective_empty_disallow=7, rule_allow=19, rule_disallow=66
+Generator: dev/gen-yandex-corpus.R
+VerifyCommandOffline: Rscript -e 'stopifnot(robotstxtr:::verify_yandex_corpus()$ok)'
+
+File: cases.json
+Sha256: 39c06deca1a107e204ac32c58e0fe4d0e8559643056e30033f06ab6f50858898
+Bytes: 97202
+Category: cases
+
+File: bodies/ydx-01-ua-specificity.txt
+Sha256: 100a14bbb88b0ccfd60d14de6a420ec7dcd77b4ceb331921e3e44893ad18c2b1
+Bytes: 134
+Category: body
+
+File: bodies/ydx-02-repeated-stacked-groups.txt
+Sha256: d643cfbd625f3e4c5305d00d33cb61c6151ae1f893e4bab3ab9dc54bdf921bda
+Bytes: 145
+Category: body
+
+File: bodies/ydx-03-blank-after-agent.txt
+Sha256: b68a5c8b7695df3ee3a8532df84ea3cf30f29ede4e4d7378f1752eba630b2d11
+Bytes: 79
+Category: body
+
+File: bodies/ydx-04-blank-mid-group.txt
+Sha256: 4223f713a14349f9ef334ca881882c0d0467d36cb27c51bf85129523cf8a26bb
+Bytes: 109
+Category: body
+
+File: bodies/ydx-05-ties-wildcards.txt
+Sha256: c5906d142802e427757bcb5ff047c18f62afd7841b7189dd9f87d799f20da10c
+Bytes: 160
+Category: body
+
+File: bodies/ydx-06-empty-directives.txt
+Sha256: f85b30ad0b5cf8156331daeb17c779d8a3a2bc55bc132c2b296eb5859ba111a8
+Bytes: 107
+Category: body
+
+File: bodies/ydx-07-malformed-recovery.txt
+Sha256: 3adab4e44ceb770129467c232d7729c575afc7e221e77878665ce055308cd8f2
+Bytes: 137
+Category: body
+
+File: bodies/ydx-11-empty-disallow-first.txt
+Sha256: 4268c6644dfb4b50a822602aebe340c484453a4228b7f5cc1e46811293ee2a38
+Bytes: 41
+Category: body
+
+File: bodies/ydx-12-empty-disallow-last.txt
+Sha256: 00618ffefa4b421d972fd1090fe27b6c9bcacde1365f52736859eee214e790ea
+Bytes: 41
+Category: body
+
+File: bodies/ydx-13-wildcard-specificity-replica-v1.txt
+Sha256: 1371936cce199b57df61a88e6b64304d830e8e8989a108dd25c5ce416ecd2a67
+Bytes: 127
+Category: body
+
+File: bodies/ydx-crawler-agent-case.txt
+Sha256: 900b2575b4cab4af924dc859330419cf82c7a62149a871668823c1252add3a8f
+Bytes: 166
+Category: body
+
+File: bodies/ydx-crawler-repeated-tier.txt
+Sha256: a3800b8e07be68069555aa3dc5ed432ef248265d1c124c70fa8298cc560998e1
+Bytes: 321
+Category: body
+
+File: bodies/ydx-crawler-stacked-agent.txt
+Sha256: 194db3ab22900ab5d9b4dfff749cb24d4c3c07ef9893b5f718547329a1c189c7
+Bytes: 219
+Category: body
+
+File: bodies/ydx-parser-blank-after-agent.txt
+Sha256: d857f1faa72b180ba6e913e265b7fb4f9cbcad47a0a82271dd46163906ba483a
+Bytes: 262
+Category: body
+
+File: bodies/ydx-parser-blank-mid-group.txt
+Sha256: bb87cef0f5699b7d27f0140dc7ee32d6e714e28fbbd6839d9efcdec8aba1857d
+Bytes: 235
+Category: body
+
+File: bodies/ydx-parser-directive-suffix.txt
+Sha256: 9d8d36ae55c7da363bbb7f9106309442529dfa5c2e86f2f9f9c076364700f4c3
+Bytes: 244
+Category: body
+
+File: bodies/ydx-parser-leading-space-name.txt
+Sha256: fbf1426e6336098cc93bb210dca7096a7002554b791d87f1d82eded8bff6705f
+Bytes: 248
+Category: body
+
+File: bodies/ydx-parser-missing-colon.txt
+Sha256: 9b46caf1c9a9f789e578135594d3698d0451260649b5c6efaf4248423e54412e
+Bytes: 225
+Category: body
+
+File: bodies/ydx-parser-missing-leading-slash.txt
+Sha256: 5da6dc237b88a637840ecf118e8961fdcf9910532177dda9ff6b83fd32fae19d
+Bytes: 257
+Category: body
+
+File: bodies/ydx-parser-orphan-before-agent.txt
+Sha256: 01dfe45262b2ea8862fb9bf9bf4db536462e97fc5c59eb63317dcc7fdc49eb65
+Bytes: 257
+Category: body
+
+File: bodies/ydx-parser-postcolon-tab.txt
+Sha256: bbb48bc426e258afac3d69a94178b44850aca0dd1941698db636447cab6ad4d9
+Bytes: 226
+Category: body
+
+File: bodies/ydx-parser-typo-disalow.txt
+Sha256: 35812ac701d3a9ecc49781f9c064c4a375af46121490b6bcd0027497e788e9ba
+Bytes: 221
+Category: body
+
+File: bodies/ydx-parser-ua-trailing-token.txt
+Sha256: 4c688e99404d3eb028e5b6bd1c17396c579c805e02ddbe4b42fbfa97b44bb233
+Bytes: 267
+Category: body
+
+File: bodies/ydx-parser-user-agent-space.txt
+Sha256: 46bd256be49bff617129dce24e236f93ee5779c2f0799712c1d3a17aa3228632
+Bytes: 256
+Category: body
+
+File: bodies/ydx-parser-value-trailing-spaces.txt
+Sha256: 534369f6847376f7ff4ba0b6d415c78f94fa0dc8dcb5a20209e0d2ae15768a08
+Bytes: 261
+Category: body
+
+File: bodies/ydx-wildcard-specificity-matrix-v1.txt
+Sha256: 9a6b2eb5056fd0fc8636cccec6e4292a5dc8a60a4bbfd930a97fc32c3b48545a
+Bytes: 316
+Category: body

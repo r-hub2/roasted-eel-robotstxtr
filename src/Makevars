@@ -1,0 +1,115 @@
+# Build wiring for robotstxtr (ROBO-mzwcditw YI3b; ROBO-xbwlsjzu BI3).
+#
+# Compiles the package-owned translation units AND the nested vendored
+# robotstxtyandex and robotstxtbing payloads into a single package shared
+# object. The vendored objects link in but are called by nothing yet (the
+# public matcher bindings are later units — YI4b for Yandex, BI4 for Bing);
+# both Yandex and Bing stay capability_unavailable.
+#
+# Portability / CRAN notes:
+#  * OBJECTS is an explicit, enumerated list (no GNU make $(wildcard)/patsubst),
+#    so no `SystemRequirements: GNU make` declaration is needed. Defining
+#    OBJECTS overrides R's auto-glob of src/*, so every package-owned object
+#    MUST be listed here too.
+#  * The vendored objects are named at the TOP LEVEL of src/ (access_matcher.o,
+#    ...) and their sources are located via VPATH below. This is deliberate:
+#    `R CMD build` installs the package to render vignettes, which compiles
+#    these objects, and its `cleaning src` step only removes top-level src/*.o.
+#    Objects left in a nested src/ subdirectory would survive into the built
+#    source tarball and trip the "checking if this is a source package" NOTE.
+#    Compiling to top level keeps them under that cleanup.
+#  * VPATH is a plain variable assignment (not a rule/target), so it does not
+#    become make's default goal. It lets R's built-in `.cc.o`/`.cpp.o` inference
+#    rules find each vendored source in vendor/robotstxty*/src/ and compile it to
+#    the matching top-level object with the standard C++17 flags — byte-for-byte
+#    the same compile the implicit rule performs. No GNU make features.
+#  * Object-name collision (Bing vs Yandex): three Bing translation units share a
+#    basename with a Yandex one — directive_lexer, policy, version — so a plain
+#    `<stem>.o` on VPATH would be ambiguous (only one engine's TU would build and
+#    link). Those three Bing objects are therefore named `bing_<stem>.o` and built
+#    by the explicit rules at the bottom. Each rule's recipe is a verbatim copy of
+#    R's built-in `.cpp.o` rule ($(CXX) $(ALL_CPPFLAGS) $(ALL_CXXFLAGS) -c ...),
+#    and $(CXX) is remapped to the C++17 compiler by R CMD SHLIB for CXX_STD=CXX17,
+#    so the compile is byte-identical to the implicit rule. The other 11 Bing TUs
+#    have unique basenames and use the implicit VPATH rule like the Yandex set.
+#  * Vendored sources reference public headers as
+#    `#include "robotstxty*/xxx.h"`, resolved via the include paths below; their
+#    private sibling headers resolve same-directory (no -I needed).
+#  * Compile-time contract inputs for the Bing payload (spec v2 SS5): the sibling
+#    CMake sets these as PRIVATE compile definitions on the library target; the
+#    Bing sources fall back to development placeholders when they are absent, so
+#    the frozen RELEASE values are single-sourced here as -D flags to match the
+#    vendored manifest identity. ROBOTSTXTBING_SHARED is intentionally NOT defined:
+#    the payload links statically into the package .so, so export.h must use
+#    default visibility (empty ROBOTSTXTBING_EXPORT).
+#
+# Keep in sync with src/Makevars.win (identical logic).
+
+CXX_STD = CXX17
+
+# Reclaim the default goal. The explicit Bing rules below add make targets to
+# this Makevars, which R includes BEFORE its own `all: $(SHLIB)` (share/make/
+# shlib.mk). Without this line the first such target (bing_directive_lexer.o)
+# would become make's default goal, so plain `make` would build that one object
+# and never link robotstxtr.so. Declaring `all` first — depending on $(SHLIB),
+# which R passes as a command-line macro — keeps the shared object the default.
+.PHONY: all
+all: $(SHLIB)
+
+BING_DEFS = \
+	-DROBOTSTXTBING_BUILDING_LIBRARY \
+	-DROBOTSTXTBING_LIBRARY_VERSION='"0.1.0"' \
+	-DROBOTSTXTBING_CONTRACT_ID='"robotstxtbing-v2"' \
+	-DROBOTSTXTBING_CONTRACT_REVISION='"0.1.0"' \
+	-DROBOTSTXTBING_PARSER_REVISION='"0.1.0"' \
+	-DROBOTSTXTBING_BINGBOT_PROFILE_REVISION='"bingbot-2026-07-23.1"' \
+	-DROBOTSTXTBING_ADIDXBOT_PROFILE_REVISION='"adidxbot-2026-07-23.1"' \
+	-DROBOTSTXTBING_RELEASE_MANIFEST_SHA256='"5e79ee5dcb1a22b73b5fa0f86766be529cf111fd5530d07b53fe1d6b7050a858"'
+
+PKG_CPPFLAGS = -Ivendor/robotstxtyandex/include -Ivendor/robotstxtbing/include $(BING_DEFS)
+
+VPATH = vendor/robotstxtyandex/src vendor/robotstxtbing/src
+
+OBJECTS = \
+	cpp11.o \
+	collector_binding.o \
+	matcher_binding.o \
+	yandex_target_binding.o \
+	yandex_matcher_binding.o \
+	bing_binding.o \
+	reporting_robots.o \
+	robots.o \
+	access_matcher.o \
+	crawler_selector.o \
+	directive_lexer.o \
+	parser_ir.o \
+	physical_line_scanner.o \
+	policy_engine.o \
+	policy.o \
+	version.o \
+	access_grouping.o \
+	candidate_rules.o \
+	crawl_delay_value.o \
+	diagnostic_mapping.o \
+	library.o \
+	matcher.o \
+	metadata_extraction.o \
+	parser.o \
+	physical_scanner.o \
+	selection.o \
+	winner.o \
+	bing_directive_lexer.o \
+	bing_policy.o \
+	bing_version.o
+
+# Explicit rules for the three Bing objects whose basename collides with a
+# Yandex object. Recipe = verbatim copy of R's built-in .cpp.o rule (Makeconf),
+# so the compile matches the implicit VPATH rule byte-for-byte.
+bing_directive_lexer.o: vendor/robotstxtbing/src/directive_lexer.cpp
+	$(CXX) $(ALL_CPPFLAGS) $(ALL_CXXFLAGS) -c $< -o $@
+
+bing_policy.o: vendor/robotstxtbing/src/policy.cpp
+	$(CXX) $(ALL_CPPFLAGS) $(ALL_CXXFLAGS) -c $< -o $@
+
+bing_version.o: vendor/robotstxtbing/src/version.cpp
+	$(CXX) $(ALL_CPPFLAGS) $(ALL_CXXFLAGS) -c $< -o $@

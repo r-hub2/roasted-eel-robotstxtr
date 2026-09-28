@@ -1,0 +1,11 @@
+User-agent: Yandex
+Disallow: /spec/literal/ab*
+Allow: /spec/literal/a**
+Allow: /spec/consume/a*b
+Disallow: /spec/consume/a*c
+Disallow: /spec/order/disallow-first
+Allow: /spec/order/disallow-first
+Allow: /spec/order/allow-first
+Disallow: /spec/order/allow-first
+Disallow: /spec/control/
+Allow: /spec/control/allowed$

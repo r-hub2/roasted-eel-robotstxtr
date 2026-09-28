@@ -1,0 +1,7 @@
+User-agent: Yandex
+Disallow: /parser/typo-disalow/control-before$
+Disalow: /parser/typo-disalow/candidate$
+Disallow: /parser/typo-disalow/control-after$
+User-agent: Yandex
+Disallow: /parser/typo-disalow/control-restart$
+

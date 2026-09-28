@@ -1,0 +1,88 @@
+# Build wiring for robotstxtr (ROBO-mzwcditw YI3b; ROBO-xbwlsjzu BI3) — Windows.
+#
+# Identical logic to src/Makevars (keep the two in sync). Forward-slash paths
+# work under the Rtools/mingw32-make used on Windows. Compiles the package-owned
+# translation units AND the nested vendored robotstxtyandex and robotstxtbing
+# payloads into the package shared object; the vendored objects link in but are
+# called by nothing yet (both engines stay capability_unavailable).
+#
+# The vendored objects are named at the TOP LEVEL of src/ and their sources are
+# located via VPATH, so `R CMD build`'s `cleaning src` step (which globs only
+# top-level src/*.o) removes them; nested objects would otherwise leak into the
+# source tarball and trip the "checking if this is a source package" NOTE. VPATH
+# is a plain variable assignment (POSIX; not a rule), so it neither becomes the
+# default goal nor needs `SystemRequirements: GNU make`. With CXX_STD=CXX17 the
+# built-in .cc.o/.cpp.o rules compile each vendored source as C++17.
+#
+# Three Bing translation units share a basename with a Yandex one
+# (directive_lexer, policy, version); those Bing objects are named `bing_<stem>.o`
+# and built by the explicit rules at the bottom, whose recipe is a verbatim copy
+# of R's built-in .cpp.o rule so the compile matches the implicit rule. The Bing
+# compile-time contract inputs (spec v2 SS5) are single-sourced as -D flags with
+# the frozen RELEASE values; ROBOTSTXTBING_SHARED is intentionally NOT defined so
+# the statically linked payload uses default visibility.
+
+CXX_STD = CXX17
+
+# Reclaim the default goal (see src/Makevars for the full rationale): the
+# explicit Bing rules below add make targets that R reads before its own
+# `all: $(SHLIB)` (share/make/winshlib.mk), so `all` must be declared first or
+# the first Bing object would become the default goal and robotstxtr.dll would
+# never link.
+.PHONY: all
+all: $(SHLIB)
+
+BING_DEFS = \
+	-DROBOTSTXTBING_BUILDING_LIBRARY \
+	-DROBOTSTXTBING_LIBRARY_VERSION='"0.1.0"' \
+	-DROBOTSTXTBING_CONTRACT_ID='"robotstxtbing-v2"' \
+	-DROBOTSTXTBING_CONTRACT_REVISION='"0.1.0"' \
+	-DROBOTSTXTBING_PARSER_REVISION='"0.1.0"' \
+	-DROBOTSTXTBING_BINGBOT_PROFILE_REVISION='"bingbot-2026-07-23.1"' \
+	-DROBOTSTXTBING_ADIDXBOT_PROFILE_REVISION='"adidxbot-2026-07-23.1"' \
+	-DROBOTSTXTBING_RELEASE_MANIFEST_SHA256='"5e79ee5dcb1a22b73b5fa0f86766be529cf111fd5530d07b53fe1d6b7050a858"'
+
+PKG_CPPFLAGS = -Ivendor/robotstxtyandex/include -Ivendor/robotstxtbing/include $(BING_DEFS)
+
+VPATH = vendor/robotstxtyandex/src vendor/robotstxtbing/src
+
+OBJECTS = \
+	cpp11.o \
+	collector_binding.o \
+	matcher_binding.o \
+	yandex_target_binding.o \
+	yandex_matcher_binding.o \
+	bing_binding.o \
+	reporting_robots.o \
+	robots.o \
+	access_matcher.o \
+	crawler_selector.o \
+	directive_lexer.o \
+	parser_ir.o \
+	physical_line_scanner.o \
+	policy_engine.o \
+	policy.o \
+	version.o \
+	access_grouping.o \
+	candidate_rules.o \
+	crawl_delay_value.o \
+	diagnostic_mapping.o \
+	library.o \
+	matcher.o \
+	metadata_extraction.o \
+	parser.o \
+	physical_scanner.o \
+	selection.o \
+	winner.o \
+	bing_directive_lexer.o \
+	bing_policy.o \
+	bing_version.o
+
+bing_directive_lexer.o: vendor/robotstxtbing/src/directive_lexer.cpp
+	$(CXX) $(ALL_CPPFLAGS) $(ALL_CXXFLAGS) -c $< -o $@
+
+bing_policy.o: vendor/robotstxtbing/src/policy.cpp
+	$(CXX) $(ALL_CPPFLAGS) $(ALL_CXXFLAGS) -c $< -o $@
+
+bing_version.o: vendor/robotstxtbing/src/version.cpp
+	$(CXX) $(ALL_CPPFLAGS) $(ALL_CXXFLAGS) -c $< -o $@

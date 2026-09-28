@@ -1,0 +1,4 @@
+User-agent: bInGbOt
+Disallow: /ac-bingbot
+User-agent: *
+Disallow: /ac-star

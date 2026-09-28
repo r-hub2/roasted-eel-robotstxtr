@@ -1,0 +1,6 @@
+User-agent: bingbot
+Disallow: /rt-first
+User-agent: bingbot
+Disallow: /rt-second
+User-agent: *
+Disallow: /rt-star

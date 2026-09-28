@@ -1,0 +1,4 @@
+User-agent: FooAdidxbotBar
+Disallow: /an-token
+User-agent: *
+Disallow: /an-star

@@ -1,0 +1,4 @@
+User-agent: OtherBot
+Disallow: /wf-otherbot
+User-agent: *
+Disallow: /wf-star

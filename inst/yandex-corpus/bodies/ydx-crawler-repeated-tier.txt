@@ -1,0 +1,14 @@
+User-agent: Yandex
+Disallow: /crawler/repeated/yandex-one
+
+User-agent: Yandex
+Disallow: /crawler/repeated/yandex-two
+
+User-agent: YandexAdditionalBot
+Disallow: /crawler/repeated/additional-one
+
+User-agent: YandexAdditionalBot
+Disallow: /crawler/repeated/additional-two
+
+User-agent: *
+Disallow: /crawler/repeated/wildcard

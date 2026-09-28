@@ -1,0 +1,109 @@
+Vendored C++ robotstxtyandex payload — provenance
+=================================================
+
+The files listed below are a copied, SHA-pinned snapshot of the independent
+`robotstxtyandex` compatibility library. They are NOT downloaded or fetched at
+configure, build, test, or install time; they are vendored source. The
+package builds, installs, tests, and runs without a sibling checkout or
+network access.
+
+This record is the Yandex counterpart of the Google matcher provenance in
+`inst/PROVENANCE`. It is a separate file; the Google provenance and its
+vendored hashes are unchanged.
+
+Manifest-only status (import boundary)
+--------------------------------------
+This provenance and the machine-readable manifest freeze the approved payload
+identity and per-file hashes BEFORE any behavior is imported. No production
+C++ payload is vendored into `src/` by this step; the byte-for-byte import
+into the vendor root is performed by a later slice (YI3a). The Yandex matcher
+therefore remains `capability_unavailable` until every activation gate passes.
+
+Immutable pin identity
+----------------------
+  Library version:            0.2.0
+  Payload Git revision:       fdd60a7c3bc6825f3b3752562dc0d6ad9387a27e
+  Unix source-archive SHA-256:
+                              366dd57e2319f572624bdddffc6ccc1e51f6358d1a011453aebb4541de24bd90
+  Compatibility profile ID:   yandex-0.1.0
+  Accepted corpus revision:   337b9f3b886a92d6dc08c2fce84228d0cd6b801a
+  Evidence snapshot:          9d69d361db81e7d236562dc056b41865da33d467d06f316e2c9a20988e007c96
+  Profile source revision:    337b9f3b886a92d6dc08c2fce84228d0cd6b801a
+  Language baseline:          C++17
+  Import date:                2026-07-19
+
+The later administrative commit `c886b7f` is NOT the payload identity. The
+payload tree is reconstructed and hashed at `fdd60a7...`. A moving branch, a
+tag without a recorded target, or a sibling worktree is not a valid pin.
+
+Serialized matcher revision:
+  robotstxtyandex/0.2.0+payload.fdd60a7c3bc6825f3b3752562dc0d6ad9387a27e;profile=yandex-0.1.0;corpus=337b9f3b886a92d6dc08c2fce84228d0cd6b801a;evidence=9d69d361db81e7d236562dc056b41865da33d467d06f316e2c9a20988e007c96;profile-source=337b9f3b886a92d6dc08c2fce84228d0cd6b801a
+
+Standalone verification result
+------------------------------
+The payload tree at `fdd60a7` was reproduced read-only from the standalone
+repository. All five compatibility-profile identity fields returned by
+`src/version.cc` (`library_version`, `profile_id`, `accepted_corpus_revision`,
+`evidence_snapshot`, `profile_source_revision`) match the approved contract.
+Per-file SHA-256 for the exact 21-file production set is recorded in the
+machine-readable manifest.
+
+Approved vendored file set
+--------------------------
+The approved set contains only the production files required to compile the
+pinned payload — no examples, no fuzz targets, and no test files:
+
+  5 public headers (source `include/robotstxtyandex/` -> vendor
+    `src/vendor/robotstxtyandex/include/robotstxtyandex/`):
+      diagnostic.h  metadata.h  policy.h  result.h  version.h
+
+  8 production translation units (source `src/` -> vendor
+    `src/vendor/robotstxtyandex/src/`):
+      access_matcher.cc  crawler_selector.cc  directive_lexer.cc
+      parser_ir.cc  physical_line_scanner.cc  policy_engine.cc
+      policy.cc  version.cc
+
+  6 private headers (source `src/` -> vendor
+    `src/vendor/robotstxtyandex/src/`):
+      access_matcher.h  crawler_selector.h  directive_lexer.h
+      parser_ir.h  physical_line_scanner.h  policy_engine.h
+
+  2 legal files (source repository root -> vendor
+    `src/vendor/robotstxtyandex/`):
+      LICENSE  NOTICE
+
+Nested source paths are preserved; includes are not edited merely to flatten
+the layout. Package-owned bindings and build files live OUTSIDE this vendor
+root and are excluded from the vendored hash set.
+
+Licensing
+---------
+The vendored `robotstxtyandex` payload is licensed under the MIT License, with
+its own `LICENSE` and `NOTICE` retained alongside the payload under the vendor
+root. `NOTICE` records that `robotstxtyandex` is an independent, unofficial
+compatibility project, not affiliated with, endorsed by, or maintained by
+Yandex, and that it contains no Yandex source code, documentation text, or
+private data.
+
+This MIT payload license is separate from the package source license (also
+MIT, see the top-level `LICENSE`) and from the Google matcher's Apache-2.0
+material at `inst/APACHE-2.0-LICENSE`. Source and binary package audits verify
+both engines' license and notice material independently.
+
+Deterministic offline fidelity commands
+----------------------------------------
+Per-file, against a read-only standalone checkout:
+
+  git -C <robotstxtyandex-checkout> \
+    show fdd60a7c3bc6825f3b3752562dc0d6ad9387a27e:<source-path> \
+    | shasum -a 256
+
+Whole vendored tree, offline, from the installed package (no sibling checkout,
+no network):
+
+  Rscript -e 'stopifnot(
+    robotstxtr:::verify_yandex_vendor_tree("src/vendor/robotstxtyandex")$ok)'
+
+The verifier reads the shipped manifest
+(`inst/vendor/robotstxtyandex/MANIFEST.dcf`) and fails closed on any missing,
+extra (including package-owned), or changed file.

@@ -1,0 +1,3 @@
+User-agent: adidxbot
+Allow: /w
+Disallow: /w

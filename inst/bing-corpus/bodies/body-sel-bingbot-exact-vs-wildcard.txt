@@ -1,0 +1,4 @@
+User-agent: bingbot
+Disallow: /ew-bingbot
+User-agent: *
+Disallow: /ew-star

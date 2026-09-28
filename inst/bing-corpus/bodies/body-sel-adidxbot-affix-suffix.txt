@@ -1,0 +1,4 @@
+User-agent: ProbeAdidxbot
+Disallow: /as-token
+User-agent: *
+Disallow: /as-star

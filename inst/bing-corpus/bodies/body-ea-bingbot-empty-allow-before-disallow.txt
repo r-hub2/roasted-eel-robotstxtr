@@ -1,0 +1,3 @@
+User-agent: bingbot
+Allow:
+Disallow: /e

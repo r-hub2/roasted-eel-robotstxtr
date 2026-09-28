@@ -1,0 +1,2 @@
+User-agent: bingbot
+Disallow: /ez-%2A$

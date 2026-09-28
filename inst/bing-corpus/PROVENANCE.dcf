@@ -1,0 +1,514 @@
+Manifest: robotstxtr projection of the accepted Bing conformance corpus
+ManifestFormat: 1
+Unit: ROBO-onwulhga (BI6)
+ContractFile: design/robotstxtbing-integration-v2-spec.md
+Offline: true; byte-pinned; consumed with no sibling checkout or network at build, test, or install time.
+Frozen: true
+PayloadCommit: 1f2431b9d47ba25dec313eec5a396e795f00b5b8
+PayloadTagObject: c82855d0756c748cc4770246a19282323cdfa331
+LibraryVersion: 0.1.0
+SiblingContractId: robotstxtbing-v2
+ContractRevision: 0.1.0
+ParserRevision: 0.1.0
+BingbotProfileRevision: bingbot-2026-07-23.1
+AdidxbotProfileRevision: adidxbot-2026-07-23.1
+SpecRevision: 2026-07-23.1
+EvidenceCutoff: 2026-07-23
+ReleaseManifestFile: releases/robotstxtbing-0.1.0.manifest
+ReleaseManifestSha256: 5e79ee5dcb1a22b73b5fa0f86766be529cf111fd5530d07b53fe1d6b7050a858
+MatcherRevision: robotstxtbing/0.1.0+payload.c82855d0756c748cc4770246a19282323cdfa331;contract=robotstxtbing-v2;contract-rev=0.1.0;parser=0.1.0;bingbot=bingbot-2026-07-23.1;adidxbot=adidxbot-2026-07-23.1;manifest=5e79ee5dcb1a22b73b5fa0f86766be529cf111fd5530d07b53fe1d6b7050a858
+SourceProject: robotstxtbing (independent, unofficial standalone Bing-compatibility project; not affiliated with, endorsed by, or maintained by Microsoft, Bing, Bingbot, or AdIdxBot).
+MatcherAvailability: available (this projection consumes the activated Bing backend to record a golden snapshot; it registers nothing and changes no availability or schema revision).
+Provenance: two-tier. tester_observed.decision is the standalone tester's independently observed outcome, imported byte-faithfully and never rewritten (spec SS16.3). matcher_expected is a golden snapshot of the vendored engine's public v2 facade output; the generator asserts engine decision == tester decision for every case.
+AcceptedExpectationGrade: tester_observed
+AcceptedExpectationCount: 57
+AcceptedExpectationBingbotCount: 29
+AcceptedExpectationAdidxbotCount: 28
+CaseCount: 191
+DistinctBodyCount: 95
+ProfileBreakdown: adidxbot=96, bingbot=95
+DecisionBreakdown: allow=110, disallow=81
+ReasonBreakdown: default_allow=102, rule_allow=8, rule_disallow=81
+UnitBreakdown: adidxbot-empty-access-v1=12, adidxbot-ordinary-v1=10, adidxbot-parser-recovery-v1=16, adidxbot-selection-v1=12, adidxbot-special-r2-v1=12, adidxbot-special-v1=20, adidxbot-winner-v1=14, bingbot-empty-access-v1=12, bingbot-ordinary-v1=10, bingbot-parser-recovery-v1=16, bingbot-selection-v1=11, bingbot-special-r2-v1=12, bingbot-special-v1=20, bingbot-winner-v1=14
+Generator: dev/gen-bing-corpus.R
+VerifyCommandOffline: Rscript -e 'stopifnot(robotstxtr:::verify_bing_corpus()$ok)'
+
+File: cases.json
+Sha256: db6489428a3a4dc02629a3bcc60b9c464d7fcb04e0fd17778edba13540161c8f
+Bytes: 183300
+Category: cases
+
+File: bodies/body-ea-adidxbot-empty-allow-before-disallow.txt
+Sha256: 5d6adfa791d7b06fa3684327fdbe755e6a8ed84dec9dc59fe436c9ffb2ea8e90
+Bytes: 41
+Category: body
+
+File: bodies/body-ea-adidxbot-empty-allow-only.txt
+Sha256: 430a1eb78cfa9e0318b0f6e3e35d578f985f2a4de7941b4394d14a765803a98f
+Bytes: 28
+Category: body
+
+File: bodies/body-ea-adidxbot-empty-allow-with-disallow.txt
+Sha256: fe035e0ed60f138539f87c5505c163125cdc249aadecba06f8f7bb65d6821208
+Bytes: 41
+Category: body
+
+File: bodies/body-ea-adidxbot-empty-disallow-after-rule.txt
+Sha256: a05aa9eeb86bfed7e8c5a29df6678a44cb3f8645079e490e5409224905a6a930
+Bytes: 44
+Category: body
+
+File: bodies/body-ea-adidxbot-empty-disallow-before-rule.txt
+Sha256: f348c37d4286457048e628aa52046ba2a7406f521ed153fbe585d6186fe44890
+Bytes: 44
+Category: body
+
+File: bodies/body-ea-adidxbot-empty-disallow-only.txt
+Sha256: eb59c460032d2780218970a19cbeb322c4c2049cb90a64bcdd617c4d8203a7c6
+Bytes: 31
+Category: body
+
+File: bodies/body-ea-bingbot-empty-allow-before-disallow.txt
+Sha256: e2a3e5d72612044790156276ef2617cebdf691fed3e5619fa1bc465adf369295
+Bytes: 40
+Category: body
+
+File: bodies/body-ea-bingbot-empty-allow-only.txt
+Sha256: 84792f0e741d6c72219156feb54ac8759d8dcc950eed1cd3ca7bf8e5353feade
+Bytes: 27
+Category: body
+
+File: bodies/body-ea-bingbot-empty-allow-with-disallow.txt
+Sha256: 4b69d35c82e9b686c69ccf16e2f1953193c21acdd4435c454a3ce1c680cb0a0b
+Bytes: 40
+Category: body
+
+File: bodies/body-ea-bingbot-empty-disallow-after-rule.txt
+Sha256: 19e447e726f2358b6b07ccfd0f7bb5b6ac02f626bff3bc2c799c2b42786e6f88
+Bytes: 43
+Category: body
+
+File: bodies/body-ea-bingbot-empty-disallow-before-rule.txt
+Sha256: e6d4b8749a3f43c7bc796feb711e2dc4fb0f14776dc92105029cd9a6722610ce
+Bytes: 43
+Category: body
+
+File: bodies/body-ea-bingbot-empty-disallow-only.txt
+Sha256: 0d0d132d75e54087cefad21d638f7f509774cee6deb052af7c3ac8f469408f52
+Bytes: 30
+Category: body
+
+File: bodies/body-ord-adidxbot-implicit-suffix.txt
+Sha256: 249a7d0297c82b4580ce243ec3439061acd04d0cd023ef8721f4501f50662039
+Bytes: 40
+Category: body
+
+File: bodies/body-ord-adidxbot-no-match-default.txt
+Sha256: 3aef9509ebf8d5648e43cb226a50680ceb730e40e77fcf57550d4edb7a975413
+Bytes: 43
+Category: body
+
+File: bodies/body-ord-adidxbot-ordinary-prefix.txt
+Sha256: 510c7291bb684d2bf1f437fd430e3977b409bfd72a78772ddcf5394fcdd35f51
+Bytes: 39
+Category: body
+
+File: bodies/body-ord-adidxbot-query-controls.txt
+Sha256: 6d596ce5b58e1c68a33b3f74b4de332b9a58a07912a44b68c83e0ccd31faa891
+Bytes: 40
+Category: body
+
+File: bodies/body-ord-adidxbot-root.txt
+Sha256: 9428e06f601f34795bfc0928173e8741c2d53df7e07f08f0cdf8cd0257653dad
+Bytes: 33
+Category: body
+
+File: bodies/body-ord-bingbot-implicit-suffix.txt
+Sha256: 7658959380cbab8fa8e6d3649a105064582df0216c2cc5aa7f31a3bc7cd15046
+Bytes: 39
+Category: body
+
+File: bodies/body-ord-bingbot-no-match-default.txt
+Sha256: 128fc614ef3a8a7221729660a2196c5da7a3764e18709ddebc0a705a83faf378
+Bytes: 42
+Category: body
+
+File: bodies/body-ord-bingbot-ordinary-prefix.txt
+Sha256: e195e09820e84ba1ee880b6165eea41aa94bf3ed215764fc81023727e388fa7d
+Bytes: 38
+Category: body
+
+File: bodies/body-ord-bingbot-query-controls.txt
+Sha256: c9a5037c75ffcb072f6023f9986be4510ad82f1f1516bad49137c1e90c61c9e9
+Bytes: 39
+Category: body
+
+File: bodies/body-ord-bingbot-root.txt
+Sha256: aa39356828cbaf1c05dbe6cf712787d78d0e0dc57ead511a6f93513c34ee98d6
+Bytes: 32
+Category: body
+
+File: bodies/body-prec-adidxbot-comment-inline.txt
+Sha256: 5a28b2174fe481d4cea673a5888d35bbef52b5471cce9236b24a39bf099dd988
+Bytes: 40
+Category: body
+
+File: bodies/body-prec-adidxbot-missing-slash.txt
+Sha256: 76826da74fce0e97d9b8f84c699245ac8c76a689a9399f50330679612bcd8a4d
+Bytes: 34
+Category: body
+
+File: bodies/body-prec-adidxbot-name-mixed.txt
+Sha256: c4bef006504b3740a22f3b4a3fd9f243429c628620b4fd2b83ca21c77a1bf89f
+Bytes: 34
+Category: body
+
+File: bodies/body-prec-adidxbot-name-upper.txt
+Sha256: 669d708b3cd600ed4914f680732954cdcc2023f32773f2d8e4f89c0fdca21a0c
+Bytes: 34
+Category: body
+
+File: bodies/body-prec-adidxbot-orphan-rule.txt
+Sha256: eddae020b1f2ad79448a39261dfd6585320e4a3529efa0dda3710f378fa095b0
+Bytes: 47
+Category: body
+
+File: bodies/body-prec-adidxbot-ows-around-colon.txt
+Sha256: cdd4e1311c0b2d51de72fd8226da95da5e2fc8e924f3bc346aab00b5dc49c1fa
+Bytes: 35
+Category: body
+
+File: bodies/body-prec-adidxbot-ows-no-space.txt
+Sha256: 203d3ecde415fc1243ee4379001c605a26302d718b5d1906880e5558eb46e754
+Bytes: 33
+Category: body
+
+File: bodies/body-prec-adidxbot-ows-tab-value.txt
+Sha256: 11ee583d4d87bb7068488152134e49f4ea07fce024ce469a3ade8123142bf311
+Bytes: 34
+Category: body
+
+File: bodies/body-prec-bingbot-comment-inline.txt
+Sha256: 11dfb93ff7a0bb38d54ff091cbf2ab873ba99b852347794541162610eed0c64f
+Bytes: 39
+Category: body
+
+File: bodies/body-prec-bingbot-missing-slash.txt
+Sha256: ed72c38a13c08dbb4b1f4cb53f79124be037f1d32ca567acfebc74859091dd0e
+Bytes: 33
+Category: body
+
+File: bodies/body-prec-bingbot-name-mixed.txt
+Sha256: bf91984a6c6294c4ed115dd4b85515db2db4643c974f51b21d111c8c939b7979
+Bytes: 33
+Category: body
+
+File: bodies/body-prec-bingbot-name-upper.txt
+Sha256: 5f74fc182a0b5a5b5b650b2b01bf57a7a8f38ecec0b9ac21e9ca0e1cc2778e4c
+Bytes: 33
+Category: body
+
+File: bodies/body-prec-bingbot-orphan-rule.txt
+Sha256: 74c82513568ec4144e980007ad7f6b63ff36321db31a0f522d859c08c6616174
+Bytes: 46
+Category: body
+
+File: bodies/body-prec-bingbot-ows-around-colon.txt
+Sha256: 0772e306fc7da2b98ccc3c7fc2764dc6092ac3a196025ad8dcaa582e6b7546ac
+Bytes: 34
+Category: body
+
+File: bodies/body-prec-bingbot-ows-no-space.txt
+Sha256: 28c097b7faf80711152cdf0798d18f01e6195d2021d84da3c770480852ce23db
+Bytes: 32
+Category: body
+
+File: bodies/body-prec-bingbot-ows-tab-value.txt
+Sha256: 9d1123a51995401471f883c07f327cb52d6c7bf19f6cf1f68eb834782d84669e
+Bytes: 33
+Category: body
+
+File: bodies/body-sel-adidxbot-affix-containing.txt
+Sha256: 0ce4069f7ba2d7d2143d0b2f15ec70799b394240f8be532f205be0ea15f9529e
+Bytes: 80
+Category: body
+
+File: bodies/body-sel-adidxbot-affix-prefix.txt
+Sha256: 7f212d3ab5db71bf790b0411dec7a97a3c3baac47182003be3fc569eb54b36f8
+Bytes: 79
+Category: body
+
+File: bodies/body-sel-adidxbot-affix-suffix.txt
+Sha256: fba560dc84b3c30a204d08ad3a7f2ae1a52798fb93aee3f3fa21a6f78c56b5f8
+Bytes: 79
+Category: body
+
+File: bodies/body-sel-adidxbot-agent-case.txt
+Sha256: 837dfb8bcf51626e91389a6d9a0cd8ecc53b0451f261a90d4af292b39680d6e0
+Bytes: 77
+Category: body
+
+File: bodies/body-sel-adidxbot-exact-vs-wildcard.txt
+Sha256: 179a1fe6ff78bb8c26600849d0f1d680bd4c406c762e1a2dffda88063096ec7e
+Bytes: 77
+Category: body
+
+File: bodies/body-sel-adidxbot-no-selected-tier.txt
+Sha256: b2c37868eea68985ca5ab3f9948ee1e13ca8d76a3c96344553817bbdb6b2d26c
+Bytes: 44
+Category: body
+
+File: bodies/body-sel-adidxbot-repeated-tier.txt
+Sha256: 1c7f56815e602754eab36db62c4503998510403bafe71c4d9c771b1ff6b7fe72
+Bytes: 116
+Category: body
+
+File: bodies/body-sel-adidxbot-stacked-agent.txt
+Sha256: 9a930303ec5a2fc0040963c60888818e3589d44b45d80b9143bc94ad6a143196
+Bytes: 98
+Category: body
+
+File: bodies/body-sel-adidxbot-wildcard-fallback.txt
+Sha256: 01ce55fa19aa8ee3bb02e22f2084033abf4feb077f6955250469e89ffc29fe9b
+Bytes: 77
+Category: body
+
+File: bodies/body-sel-bingbot-agent-case.txt
+Sha256: cfd81eaa9b0ec1d53b9b613f49f0b23caf24d6c08d80176ebe2cc70128ec508d
+Bytes: 75
+Category: body
+
+File: bodies/body-sel-bingbot-exact-vs-wildcard.txt
+Sha256: fade09eeaa125ac389189063bdfffd5fbce9e25d5491e2561351f3269bb67ed4
+Bytes: 75
+Category: body
+
+File: bodies/body-sel-bingbot-no-selected-tier.txt
+Sha256: b2c37868eea68985ca5ab3f9948ee1e13ca8d76a3c96344553817bbdb6b2d26c
+Bytes: 44
+Category: body
+
+File: bodies/body-sel-bingbot-repeated-tier.txt
+Sha256: 671347cd898f36991a507b7bd3ff775a77e80253edfeb82a3eac4c6611fb15d4
+Bytes: 114
+Category: body
+
+File: bodies/body-sel-bingbot-stacked-agent.txt
+Sha256: 2672851956cc2119fa434d25fd2c0af2db315195eaf2af2738e01f39fce7f08e
+Bytes: 97
+Category: body
+
+File: bodies/body-sel-bingbot-wildcard-fallback.txt
+Sha256: 01ce55fa19aa8ee3bb02e22f2084033abf4feb077f6955250469e89ffc29fe9b
+Bytes: 77
+Category: body
+
+File: bodies/body-spc-adidxbot-anchor-terminal.txt
+Sha256: c79e9a726d58c29ef45b0d2dfe1ea09d21369d7c074faccf915cc6786a860286
+Bytes: 42
+Category: body
+
+File: bodies/body-spc-adidxbot-encoded-slash.txt
+Sha256: 632b0d2555f63488542a07eebb4244045ab0ca91950bba9f507871c53461b114
+Bytes: 42
+Category: body
+
+File: bodies/body-spc-adidxbot-encoded-star.txt
+Sha256: 15c81b86d76e1fe8415753222f6af9e8793557fc41270bb7c1e4740df1bfdc32
+Bytes: 40
+Category: body
+
+File: bodies/body-spc-adidxbot-encoded-unreserved.txt
+Sha256: 7582eca81199399a31b91b1ff3a40b88a7da449802eccb4863c7531dbbae9e1d
+Bytes: 40
+Category: body
+
+File: bodies/body-spc-adidxbot-malformed-percent.txt
+Sha256: 88dfb5e3d3f7710dad3aee7011225f4e0ab85dc432c0265bb18e077440dc4b44
+Bytes: 38
+Category: body
+
+File: bodies/body-spc-adidxbot-metachar-nonterminal-dollar.txt
+Sha256: e5f059338c91ee681ba5c4b45dc7dfe6bcf16a5f9e38dceeffc64b8af025dbcf
+Bytes: 44
+Category: body
+
+File: bodies/body-spc-adidxbot-metachar-question-literal.txt
+Sha256: 8c59dd7c2f1f3730832a64d3deb0ef426e1b0f3491ee0ba36929adaf3bbf649d
+Bytes: 51
+Category: body
+
+File: bodies/body-spc-adidxbot-star-wildcard.txt
+Sha256: 80acd019ba03885e85a5322bb2c1d3ec43b0433e02bbab9668fe75c2185a61d3
+Bytes: 39
+Category: body
+
+File: bodies/body-spc-bingbot-anchor-terminal.txt
+Sha256: b16b3aaa415c0335c164625d844b158d73d726636c114dc49be5c4e3b9aa3b72
+Bytes: 41
+Category: body
+
+File: bodies/body-spc-bingbot-encoded-slash.txt
+Sha256: d1716758f935b22045cb039667b05078581b150246095ff8c6d3458e78321028
+Bytes: 41
+Category: body
+
+File: bodies/body-spc-bingbot-encoded-star.txt
+Sha256: 5eec29ebcfd09d08d46606e72ea300e865accd9c84dccd982658e83a7e33f11a
+Bytes: 39
+Category: body
+
+File: bodies/body-spc-bingbot-encoded-unreserved.txt
+Sha256: 7dd13f79a85a625bdc9c9a3f29dafbb7cb2e5e605ed814f3bb2980c4e1f6d4ac
+Bytes: 39
+Category: body
+
+File: bodies/body-spc-bingbot-malformed-percent.txt
+Sha256: d2b6cc8b6a141936da1bb7d29539814a2ac27f0909b012dc665218e3e7f2325f
+Bytes: 37
+Category: body
+
+File: bodies/body-spc-bingbot-metachar-nonterminal-dollar.txt
+Sha256: 73a8199f212be9f18c2d30cdd5d9841709d66e40c294f7bd4bce7d9eced30327
+Bytes: 43
+Category: body
+
+File: bodies/body-spc-bingbot-metachar-question-literal.txt
+Sha256: 04cdd665ba0c72d0103b760c3e2f7e004fa9b767efeaa402300c80a6b0ff631f
+Bytes: 50
+Category: body
+
+File: bodies/body-spc-bingbot-star-wildcard.txt
+Sha256: a5d5333692dbf8bcfaae2e45bdf7be3ef19bd3ca28dbaf222ad9502d631d2a96
+Bytes: 38
+Category: body
+
+File: bodies/body-sr2-adidxbot-fragment-bare-hash.txt
+Sha256: 78a6b3d05c8c9721af930219c562df312209b356a5aeca146e792370b1fcd94a
+Bytes: 41
+Category: body
+
+File: bodies/body-sr2-adidxbot-fragment-in-target-only.txt
+Sha256: c8313219f089318e44a1eb8cb25e53e70e2e11a31f71305d45c4bfaa4cd674d1
+Bytes: 40
+Category: body
+
+File: bodies/body-sr2-adidxbot-fragment-prefix-discriminator.txt
+Sha256: 70c6f1f34f910d62a6d2fda44297db0d844c3f1ff0ad4ab11d026b2401bbd2b2
+Bytes: 45
+Category: body
+
+File: bodies/body-sr2-adidxbot-hexcase-nonslash.txt
+Sha256: d19d833af0c6a18c11e3e37881a3f35c85324220b6258632439af4d685dc2cd8
+Bytes: 42
+Category: body
+
+File: bodies/body-sr2-adidxbot-hexcase-pattern-lower.txt
+Sha256: a37f42328784a893b39346a3472019ff4bfa74b772e6303383eae0b8b1531ee7
+Bytes: 42
+Category: body
+
+File: bodies/body-sr2-adidxbot-hexcase-unanchored.txt
+Sha256: 7bf0e9cbfadb1f4fa391258deef668127819781fea27a43cce258782c7c8ed83
+Bytes: 41
+Category: body
+
+File: bodies/body-sr2-bingbot-fragment-bare-hash.txt
+Sha256: 4d2022d02c836eac1bd94aff319473fc116a64fdaaa8928c97f8f86cca593070
+Bytes: 40
+Category: body
+
+File: bodies/body-sr2-bingbot-fragment-in-target-only.txt
+Sha256: a9d0f7df84261302a3f2e08dcec334d7800050877713295d974be49405a03e98
+Bytes: 39
+Category: body
+
+File: bodies/body-sr2-bingbot-fragment-prefix-discriminator.txt
+Sha256: db98826e933710d774d40420bdb0e059b0014c69d2cf8be25e2c56404100205c
+Bytes: 44
+Category: body
+
+File: bodies/body-sr2-bingbot-hexcase-nonslash.txt
+Sha256: 7427485ed98a868655171170bc07accece22194246f7dec6797e1712cf12f870
+Bytes: 41
+Category: body
+
+File: bodies/body-sr2-bingbot-hexcase-pattern-lower.txt
+Sha256: adbc8165f5859b2a3ce673eead7a1a48a1db6413d39934db160bc6ce30b1ef6c
+Bytes: 41
+Category: body
+
+File: bodies/body-sr2-bingbot-hexcase-unanchored.txt
+Sha256: 17d217413ebc90f7a672f69aefa88256070d8e95070ac9d2532378ad3d41e84e
+Bytes: 40
+Category: body
+
+File: bodies/body-win-adidxbot-chain-longest.txt
+Sha256: 342932abca26332b03193e742491e27498696aceed79b4881c49865abf838867
+Bytes: 63
+Category: body
+
+File: bodies/body-win-adidxbot-dup-disallow.txt
+Sha256: 5cd9a5b88661b8eb7d85fcd7416dc21f21ffeaab2332e8cefa1a126fa2d80a87
+Bytes: 47
+Category: body
+
+File: bodies/body-win-adidxbot-dup-longer-allow.txt
+Sha256: bd3d6536971a64a8b6ba87a0e05f9d229ecfe63afa4b6810f613860f1bb7f82a
+Bytes: 64
+Category: body
+
+File: bodies/body-win-adidxbot-longer-allow.txt
+Sha256: fa98b6d4b6b5a13e29721e10ba112bf851c036ad4a7a8ecdf7f658810ec5d1d5
+Bytes: 49
+Category: body
+
+File: bodies/body-win-adidxbot-longer-disallow.txt
+Sha256: 534895b34f95998390fc1c75befbcd1076ef6db25f1154e5d12400c01483b36b
+Bytes: 49
+Category: body
+
+File: bodies/body-win-adidxbot-tie-allow-first.txt
+Sha256: 7df9d78113690cc1f940f13900ea873e4a81a08e4f83dbac3705328a179cb4cd
+Bytes: 44
+Category: body
+
+File: bodies/body-win-adidxbot-tie-disallow-first.txt
+Sha256: 9807ec571a099bea96f819b5d1b5514fd4a58025eb6e89cfb48b8d910a71312c
+Bytes: 44
+Category: body
+
+File: bodies/body-win-bingbot-chain-longest.txt
+Sha256: 5d998a41ca64c807132225528da4ea2abb362572a33847a3ec854e5df03e79c2
+Bytes: 62
+Category: body
+
+File: bodies/body-win-bingbot-dup-disallow.txt
+Sha256: 152f0eafe9607c47ff8efe6f71c3333cfca4e9584c12fc0948f587555278e3e3
+Bytes: 46
+Category: body
+
+File: bodies/body-win-bingbot-dup-longer-allow.txt
+Sha256: 599572173503685723b3a24a173b4274265377d972edf4d5b18669acfea7f74e
+Bytes: 63
+Category: body
+
+File: bodies/body-win-bingbot-longer-allow.txt
+Sha256: f86af393551495f3f895ba7dabc55924f25b1b6f1cf6d3e1a2cc85449edb7504
+Bytes: 48
+Category: body
+
+File: bodies/body-win-bingbot-longer-disallow.txt
+Sha256: 0d98854c38777c2732da854b1c09ca921a6a8c5812960dc47b9df321d447525d
+Bytes: 48
+Category: body
+
+File: bodies/body-win-bingbot-tie-allow-first.txt
+Sha256: 1f4e213927c97a8b7ed72fd999fdcbba88510615c4b9beba81139b6d3a301045
+Bytes: 43
+Category: body
+
+File: bodies/body-win-bingbot-tie-disallow-first.txt
+Sha256: 3c159922bb990d4a7a3673bb5b9c62dd3f34b4534af6c14ca28c6fd96fc55835
+Bytes: 43
+Category: body

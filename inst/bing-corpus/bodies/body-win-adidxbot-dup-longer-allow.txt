@@ -1,0 +1,4 @@
+User-agent: adidxbot
+Disallow: /w
+Allow: /w/deep
+Allow: /w/deep

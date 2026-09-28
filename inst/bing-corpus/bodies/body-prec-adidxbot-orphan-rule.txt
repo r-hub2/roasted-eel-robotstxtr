@@ -1,0 +1,3 @@
+Disallow: /r
+User-agent: adidxbot
+Disallow: /q

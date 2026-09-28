@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+<title>Introduction to robotstxtr</title>
+
+<script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
+// be compatible with the behavior of Pandoc < 2.8).
+document.addEventListener('DOMContentLoaded', function(e) {
+  var hs = document.querySelectorAll("div.section[class*='level'] > :first-child");
+  var i, h, a;
+  for (i = 0; i < hs.length; i++) {
+    h = hs[i];
+    if (!/^h[1-6]$/i.test(h.tagName)) continue;  // it should be a header h1-h6
+    a = h.attributes;
+    while (a.length > 0) h.removeAttribute(a[0].name);
+  }
+});
+</script>
+
+<style type="text/css">
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+
+<style type="text/css">
+code {
+white-space: pre;
+}
+.sourceCode {
+overflow: visible;
+}
+</style>
+<style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    var j = 0;
+    while (j < rules.length) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") {
+        j++;
+        continue;
+      }
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') {
+        j++;
+        continue;
+      }
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+
+<style type="text/css">body {
+background-color: #fff;
+margin: 1em auto;
+max-width: 700px;
+overflow: visible;
+padding-left: 2em;
+padding-right: 2em;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.35;
+}
+#TOC {
+clear: both;
+margin: 0 0 10px 10px;
+padding: 4px;
+width: 400px;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+background-color: #f6f6f6;
+font-size: 13px;
+line-height: 1.3;
+}
+#TOC .toctitle {
+font-weight: bold;
+font-size: 15px;
+margin-left: 5px;
+}
+#TOC ul {
+padding-left: 40px;
+margin-left: -1.5em;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#TOC ul ul {
+margin-left: -2em;
+}
+#TOC li {
+line-height: 16px;
+}
+table {
+margin: 1em auto;
+border-width: 1px;
+border-color: #DDDDDD;
+border-style: outset;
+border-collapse: collapse;
+}
+table th {
+border-width: 2px;
+padding: 5px;
+border-style: inset;
+}
+table td {
+border-width: 1px;
+border-style: inset;
+line-height: 18px;
+padding: 5px 5px;
+}
+table, table th, table td {
+border-left-style: none;
+border-right-style: none;
+}
+table thead, table tr.even {
+background-color: #f7f7f7;
+}
+p {
+margin: 0.5em 0;
+}
+blockquote {
+background-color: #f6f6f6;
+padding: 0.25em 0.75em;
+}
+hr {
+border-style: solid;
+border: none;
+border-top: 1px solid #777;
+margin: 28px 0;
+}
+dl {
+margin-left: 0;
+}
+dl dd {
+margin-bottom: 13px;
+margin-left: 13px;
+}
+dl dt {
+font-weight: bold;
+}
+ul {
+margin-top: 0;
+}
+ul li {
+list-style: circle outside;
+}
+ul ul {
+margin-bottom: 0;
+}
+pre, code {
+background-color: #f7f7f7;
+border-radius: 3px;
+color: #333;
+white-space: pre-wrap; 
+}
+pre {
+border-radius: 3px;
+margin: 5px 0px 10px 0px;
+padding: 10px;
+}
+pre:not([class]) {
+background-color: #f7f7f7;
+}
+code {
+font-family: Consolas, Monaco, 'Courier New', monospace;
+font-size: 85%;
+}
+p > code, li > code {
+padding: 2px 0px;
+}
+div.figure {
+text-align: center;
+}
+img {
+background-color: #FFFFFF;
+padding: 2px;
+border: 1px solid #DDDDDD;
+border-radius: 3px;
+border: 1px solid #CCCCCC;
+margin: 0 5px;
+}
+h1 {
+margin-top: 0;
+font-size: 35px;
+line-height: 40px;
+}
+h2 {
+border-bottom: 4px solid #f7f7f7;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 145%;
+}
+h3 {
+border-bottom: 2px solid #f7f7f7;
+padding-top: 10px;
+font-size: 120%;
+}
+h4 {
+border-bottom: 1px solid #f7f7f7;
+margin-left: 8px;
+font-size: 105%;
+}
+h5, h6 {
+border-bottom: 1px solid #ccc;
+font-size: 105%;
+}
+a {
+color: #0033dd;
+text-decoration: none;
+}
+a:hover {
+color: #6666ff; }
+a:visited {
+color: #800080; }
+a:visited:hover {
+color: #BB00BB; }
+a[href^="http:"] {
+text-decoration: underline; }
+a[href^="https:"] {
+text-decoration: underline; }
+
+code > span.kw { color: #555; font-weight: bold; } 
+code > span.dt { color: #902000; } 
+code > span.dv { color: #40a070; } 
+code > span.bn { color: #d14; } 
+code > span.fl { color: #d14; } 
+code > span.ch { color: #d14; } 
+code > span.st { color: #d14; } 
+code > span.co { color: #888888; font-style: italic; } 
+code > span.ot { color: #007020; } 
+code > span.al { color: #ff0000; font-weight: bold; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Introduction to robotstxtr</h1>
+
+
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(robotstxtr)</span></code></pre></div>
+<div id="what-robotstxtr-does" class="section level2">
+<h2>What robotstxtr does</h2>
+<p><code>robotstxtr</code> decides whether a URL may be crawled
+according to a site’s <code>robots.txt</code> rules. It answers one
+question — <em>“is this URL allowed for this crawler?”</em> — and
+answers it exactly the way Google’s own crawler would, because the
+matching engine is a vendored, upstream-test-validated snapshot of
+Google’s open-source C++ <code>robots.txt</code> parser and matcher.</p>
+<p>The core value is <strong>fidelity</strong>. <code>robots.txt</code>
+matching has many quirks — longest rule wins, <code>Allow</code> beats
+<code>Disallow</code> on an equal-length tie, <code>*</code> and
+<code>$</code> wildcards, case-sensitive paths but case-insensitive
+user-agent groups, percent-escape canonicalization. Re-implementing
+those rules by hand is a common source of subtle bugs.
+<code>robotstxtr</code> sidesteps that by running the real Google
+algorithm and returning a stable, machine-readable decision for every
+URL.</p>
+<p>This is a faithful, upstream-test-validated replica of the pinned
+open-source matcher. It is not a claim of universal behavioral identity
+with Googlebot, which has crawl policy beyond this matcher.</p>
+</div>
+<div id="crawl-decision-entry-points" class="section level2">
+<h2>Crawl-decision entry points</h2>
+<p>There are two ways to get a decision, depending on whether you
+already have the <code>robots.txt</code> text:</p>
+<ul>
+<li><code>allowed_by_robots_text()</code> — you supply the
+<code>robots.txt</code> body yourself. No network access is performed.
+This is the pure matching path.</li>
+<li><code>allowed_by_robots_url()</code> — you supply only the target
+URL(s). The package works out the governing <code>robots.txt</code>
+origin, fetches it under a deterministic and conservative HTTP policy,
+and matches.</li>
+</ul>
+<p>Both return an S3 <code>robots_decisions</code> object with one row
+per input URL.</p>
+<p>Document validation is a separate operation.
+<code>robots_validate_text()</code> checks a supplied document, while
+<code>robots_validate_url()</code> runs the same deterministic fetch
+stage as <code>robots_fetch()</code> and validates each distinct stored
+raw body.</p>
+</div>
+<div id="matching-against-a-supplied-body" class="section level2">
+<h2>Matching against a supplied body</h2>
+<p><code>allowed_by_robots_text()</code> needs a <code>robots.txt</code>
+body, one or more URLs, and a crawler user-agent token. Everything below
+runs offline, so it is safe to evaluate in this vignette.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>robots <span class="ot">&lt;-</span> <span class="st">&quot;user-agent: *</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="st">disallow: /private</span></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="st">allow: /private/public</span></span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="st">&quot;</span></span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a><span class="fu">allowed_by_robots_text</span>(robots, <span class="st">&quot;https://example.com/private/report&quot;</span>, <span class="st">&quot;mybot&quot;</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a><span class="co">#&gt; &lt;robots_decisions&gt;: 1 result, 1 source</span></span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a><span class="co">#&gt;   allowed: 0  disallowed: 1  unknown: 0</span></span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a><span class="co">#&gt;  input_id                                url user_agent allowed decision_source</span></span>
+<span id="cb2-10"><a href="#cb2-10" tabindex="-1"></a><span class="co">#&gt;         1 https://example.com/private/report      mybot   FALSE   rule_disallow</span></span></code></pre></div>
+<p>The result is a data-frame-backed object. Pull out the pieces you
+need from its <code>results</code> table:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>decision <span class="ot">&lt;-</span> <span class="fu">allowed_by_robots_text</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>  robots,</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>  <span class="fu">c</span>(</span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a>    <span class="st">&quot;https://example.com/index.html&quot;</span>,     <span class="co"># not disallowed, allowed</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a>    <span class="st">&quot;https://example.com/private/report&quot;</span>, <span class="co"># under /private, disallowed</span></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a>    <span class="st">&quot;https://example.com/private/public&quot;</span>  <span class="co"># re-allowed by the Allow rule</span></span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a>  ),</span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a>  <span class="st">&quot;mybot&quot;</span></span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a>)</span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a>decision<span class="sc">$</span>results[<span class="fu">c</span>(<span class="st">&quot;url&quot;</span>, <span class="st">&quot;allowed&quot;</span>, <span class="st">&quot;decision_source&quot;</span>)]</span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a><span class="co">#&gt;                                  url allowed decision_source</span></span>
+<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a><span class="co">#&gt; 1     https://example.com/index.html    TRUE   default_allow</span></span>
+<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a><span class="co">#&gt; 2 https://example.com/private/report   FALSE   rule_disallow</span></span>
+<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a><span class="co">#&gt; 3 https://example.com/private/public    TRUE      rule_allow</span></span></code></pre></div>
+<p><code>allowed</code> is the headline
+<code>TRUE</code>/<code>FALSE</code>/<code>NA</code> answer.
+<code>decision_source</code> explains <em>why</em>:
+<code>rule_disallow</code>, <code>rule_allow</code>,
+<code>default_allow</code> (matching ran and nothing matched),
+<code>missing_allow</code> (the file was absent), or one of the
+<code>*_unknown</code> values when no safe decision was possible.</p>
+<div id="vectorized-with-per-url-user-agents" class="section level3">
+<h3>Vectorized, with per-URL user agents</h3>
+<p>A scalar user agent expands across every URL, or you can pass one
+user agent per URL. Invalid rows (a missing URL, an empty user agent)
+never abort the call; they come back as a per-row
+<code>input_unknown</code> decision in their original position.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">allowed_by_robots_text</span>(</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>  <span class="st">&quot;user-agent: newsbot</span><span class="sc">\n</span><span class="st">disallow: /</span><span class="sc">\n</span><span class="st">user-agent: *</span><span class="sc">\n</span><span class="st">allow: /&quot;</span>,</span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">&quot;https://example.com/a&quot;</span>, <span class="st">&quot;https://example.com/a&quot;</span>),</span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">&quot;newsbot&quot;</span>, <span class="st">&quot;otherbot&quot;</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a>)<span class="sc">$</span>results[<span class="fu">c</span>(<span class="st">&quot;url&quot;</span>, <span class="st">&quot;user_agent&quot;</span>, <span class="st">&quot;allowed&quot;</span>)]</span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="co">#&gt;                     url user_agent allowed</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="co">#&gt; 1 https://example.com/a    newsbot   FALSE</span></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a><span class="co">#&gt; 2 https://example.com/a   otherbot    TRUE</span></span></code></pre></div>
+</div>
+<div id="rich-match-metadata" class="section level3">
+<h3>Rich match metadata</h3>
+<p>For a matched row the object also records which rule won: the
+one-based <code>matched_line</code>, the <code>matched_rule_type</code>
+(<code>allow</code>/<code>disallow</code>), and the canonical
+<code>matched_rule_value</code> — the exact directive value the matcher
+used, after upstream escaping canonicalization.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">allowed_by_robots_text</span>(</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a>  <span class="st">&quot;user-agent: *</span><span class="sc">\n</span><span class="st">disallow: /*.pdf$&quot;</span>,</span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a>  <span class="st">&quot;https://example.com/manual.pdf&quot;</span>,</span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a>  <span class="st">&quot;mybot&quot;</span></span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>)</span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a>cols <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;allowed&quot;</span>, <span class="st">&quot;matched_line&quot;</span>, <span class="st">&quot;matched_rule_type&quot;</span>, <span class="st">&quot;matched_rule_value&quot;</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a>m<span class="sc">$</span>results[cols]</span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a><span class="co">#&gt;   allowed matched_line matched_rule_type matched_rule_value</span></span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a><span class="co">#&gt; 1   FALSE            2          disallow            /*.pdf$</span></span></code></pre></div>
+</div>
+<div id="inspecting-the-stored-body" class="section level3">
+<h3>Inspecting the stored body</h3>
+<p>The supplied (or fetched) <code>robots.txt</code> body is stored once
+per source. Preview or extract it with <code>robots_body()</code>:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">robots_body</span>(decision, <span class="at">n =</span> <span class="dv">40</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="co">#&gt; [1] &quot;user-agent: *\ndisallow: /private\nallow: &quot;</span></span></code></pre></div>
+</div>
+</div>
+<div id="fetching-robots.txt-for-a-url" class="section level2">
+<h2>Fetching robots.txt for a URL</h2>
+<p>When you do not already have the <code>robots.txt</code> text,
+<code>allowed_by_robots_url()</code> does the whole job: it derives the
+<code>scheme://host[:port]/robots.txt</code> origin for each URL
+(handling IDN hosts, ports, IPv6 literals, and userinfo stripping via
+<code>rurl</code>), fetches each distinct origin exactly once under a
+conservative <code>httr2</code> policy (10-second timeout, at most five
+redirects, no HTTPS-to-HTTP downgrades, no cookies or credentials
+forwarded), and matches every URL against the body it retrieved.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="co"># Not evaluated here: this call performs a network request, which vignettes</span></span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a><span class="co"># must never require. Run it in an interactive session against a real site.</span></span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a><span class="fu">allowed_by_robots_url</span>(<span class="st">&quot;https://example.com/some/page&quot;</span>, <span class="st">&quot;mybot&quot;</span>)</span></code></pre></div>
+<p>The returned object has exactly the same
+<code>robots_decisions</code> shape as
+<code>allowed_by_robots_text()</code>, with additional fetch metadata
+populated per row: <code>fetch_outcome</code> (for example
+<code>fetched</code>, <code>missing</code>, <code>redirect_error</code>,
+<code>timeout</code>), <code>http_status</code>, and
+<code>robots_url</code>. A <code>404</code>/<code>410</code> origin
+yields <code>missing_allow</code> (<code>TRUE</code>, because an absent
+file allows everything); any fetch failure yields
+<code>fetch_unknown</code> (<code>NA</code>), so a transport problem
+never silently looks like an allow. A URL that structurally resolves to
+a private, loopback, link-local, or cloud-metadata address is refused
+before any request as <code>ssrf_blocked</code>, which also yields
+<code>fetch_unknown</code> (<code>NA</code>).</p>
+<p>If you only want the fetch stage without matching,
+<code>robots_fetch()</code> returns the grouped fetch results on their
+own.</p>
+</div>
+<div id="validating-the-document-itself" class="section level2">
+<h2>Validating the document itself</h2>
+<p>Use document validation when the question is <em>“is this robots.txt
+file well-formed for the pinned parser profile?”</em>, rather than
+<em>“may this crawler fetch this URL?”</em>.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>validation <span class="ot">&lt;-</span> <span class="fu">robots_validate_text</span>(</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>  <span class="st">&quot;user-agent: *</span><span class="sc">\n</span><span class="st">disallow: /private</span><span class="sc">\n</span><span class="st">unknown-field: value</span><span class="sc">\n</span><span class="st">&quot;</span></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>)</span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a>validation<span class="sc">$</span>documents</span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a><span class="co">#&gt;   source_id source_type robots_url effective_url http_status fetch_outcome</span></span>
+<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a><span class="co">#&gt; 1  supplied    supplied       &lt;NA&gt;          &lt;NA&gt;          NA      supplied</span></span>
+<span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a><span class="co">#&gt;   validation_status                  profile byte_size line_count</span></span>
+<span id="cb8-8"><a href="#cb8-8" tabindex="-1"></a><span class="co">#&gt; 1           warning google-parser-compatible        54          3</span></span>
+<span id="cb8-9"><a href="#cb8-9" tabindex="-1"></a><span class="co">#&gt;   active_line_count recognized_directives unknown_directives malformed_lines</span></span>
+<span id="cb8-10"><a href="#cb8-10" tabindex="-1"></a><span class="co">#&gt; 1                 3                     2                  1               0</span></span>
+<span id="cb8-11"><a href="#cb8-11" tabindex="-1"></a><span class="co">#&gt;   user_agent_directives allow_directives disallow_directives sitemap_directives</span></span>
+<span id="cb8-12"><a href="#cb8-12" tabindex="-1"></a><span class="co">#&gt; 1                     1                0                   1                  0</span></span>
+<span id="cb8-13"><a href="#cb8-13" tabindex="-1"></a><span class="co">#&gt;   unsupported_directives encoding has_bom nul_byte_count final_newline</span></span>
+<span id="cb8-14"><a href="#cb8-14" tabindex="-1"></a><span class="co">#&gt; 1                      0    utf-8   FALSE              0          TRUE</span></span>
+<span id="cb8-15"><a href="#cb8-15" tabindex="-1"></a><span class="co">#&gt;   max_bytes body_truncated limit_exceeded diagnostic_count warning_count</span></span>
+<span id="cb8-16"><a href="#cb8-16" tabindex="-1"></a><span class="co">#&gt; 1        NA          FALSE          FALSE                1             1</span></span>
+<span id="cb8-17"><a href="#cb8-17" tabindex="-1"></a><span class="co">#&gt;   error_count</span></span>
+<span id="cb8-18"><a href="#cb8-18" tabindex="-1"></a><span class="co">#&gt; 1           0</span></span>
+<span id="cb8-19"><a href="#cb8-19" tabindex="-1"></a>validation<span class="sc">$</span>diagnostics</span>
+<span id="cb8-20"><a href="#cb8-20" tabindex="-1"></a><span class="co">#&gt;   source_id input_id line severity              code     directive</span></span>
+<span id="cb8-21"><a href="#cb8-21" tabindex="-1"></a><span class="co">#&gt; 1  supplied       NA    3  warning unknown_directive unknown-field</span></span>
+<span id="cb8-22"><a href="#cb8-22" tabindex="-1"></a><span class="co">#&gt;               raw_text                                                 message</span></span>
+<span id="cb8-23"><a href="#cb8-23" tabindex="-1"></a><span class="co">#&gt; 1 unknown-field: value Directive is not recognized by this validation profile.</span></span></code></pre></div>
+<p>The <code>documents</code> table contains byte size, line and
+directive counts, encoding, BOM/NUL and final-newline evidence, and a
+validation status. The <code>diagnostics</code> table has stable line,
+severity, code, directive, raw-text, and message columns. Raw vectors
+are accepted so malformed UTF-8 and NUL bytes can be reported without
+first converting or losing the acquisition bytes.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="co"># Performs live HTTP, so it is not evaluated in the vignette.</span></span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="fu">robots_validate_url</span>(<span class="st">&quot;https://example.com/some/page&quot;</span>)</span></code></pre></div>
+<p>URL validation reuses <code>robots_fetch()</code> and never parses a
+truncated body. For example, a decoded body over <code>max_bytes</code>
+is reported as an acquisition limit failure with
+<code>validation_status = &quot;not_validated&quot;</code>.</p>
+<p>The validation profile is explicitly
+<code>google-parser-compatible</code>: it reflects the package’s pinned
+parser (including accepted typo and missing-colon forms) plus
+conservative group and byte checks. It is not universal crawler or full
+RFC 9309 validation. It also does not infer webmaster intent or fetch
+declared sitemap resources to verify their availability.</p>
+</div>
+<div id="the-url-you-pass-is-the-url-that-is-matched" class="section level2">
+<h2>The URL you pass is the URL that is matched</h2>
+<p><code>robots.txt</code> matching is sensitive to the exact URL bytes:
+path case, query strings, fragments, and percent escapes all matter.
+<code>robotstxtr</code> passes your original URL string to the matcher
+unchanged — it never cleans, decodes, or reserializes it. The upstream
+matcher expects an appropriately encoded, RFC 3986
+<code>%</code>-escaped full URL, so supplying the URL in that form is
+the caller’s responsibility.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="co"># Path case is significant: /Private is disallowed, /private is not.</span></span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a><span class="fu">allowed_by_robots_text</span>(</span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a>  <span class="st">&quot;user-agent: *</span><span class="sc">\n</span><span class="st">disallow: /Private&quot;</span>,</span>
+<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">&quot;https://example.com/Private&quot;</span>, <span class="st">&quot;https://example.com/private&quot;</span>),</span>
+<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a>  <span class="st">&quot;mybot&quot;</span></span>
+<span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a>)<span class="sc">$</span>results[<span class="fu">c</span>(<span class="st">&quot;url&quot;</span>, <span class="st">&quot;allowed&quot;</span>)]</span>
+<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a><span class="co">#&gt;                           url allowed</span></span>
+<span id="cb10-8"><a href="#cb10-8" tabindex="-1"></a><span class="co">#&gt; 1 https://example.com/Private   FALSE</span></span>
+<span id="cb10-9"><a href="#cb10-9" tabindex="-1"></a><span class="co">#&gt; 2 https://example.com/private    TRUE</span></span></code></pre></div>
+</div>
+<div id="summary" class="section level2">
+<h2>Summary</h2>
+<ul>
+<li><code>allowed_by_robots_text()</code> matches against a body you
+supply, fully offline.</li>
+<li><code>allowed_by_robots_url()</code> fetches and matches under a
+deterministic policy.</li>
+<li><code>robots_validate_text()</code> and
+<code>robots_validate_url()</code> diagnose document syntax, structure,
+byte hazards, and acquisition evidence under an explicit profile.</li>
+<li>Both return a stable, vectorized <code>robots_decisions</code>
+object with <code>allowed</code>, <code>decision_source</code>, fetch
+metadata, and per-rule match metadata.</li>
+<li>Decisions come from a vendored snapshot of Google’s own matcher, so
+the quirky parts of <code>robots.txt</code> semantics are handled
+faithfully.</li>
+</ul>
+</div>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

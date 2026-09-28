@@ -1,0 +1,4 @@
+User-agent: aDiDxBoT
+Disallow: /ac-adidxbot
+User-agent: *
+Disallow: /ac-star

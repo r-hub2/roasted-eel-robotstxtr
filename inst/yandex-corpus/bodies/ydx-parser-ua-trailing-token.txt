@@ -1,0 +1,8 @@
+User-agent: Yandex
+Disallow: /parser/ua-trailing-token/control-before$
+User-agent: Yandex extra
+Disallow: /parser/ua-trailing-token/candidate$
+User-agent: Yandex
+Disallow: /parser/ua-trailing-token/control-after$
+Disallow: /parser/ua-trailing-token/control-restart$
+

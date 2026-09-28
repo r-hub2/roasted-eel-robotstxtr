@@ -1,0 +1,8 @@
+User-agent: Yandex
+Disallow: /parser/user-agent-space/control-before$
+User agent: Other
+Disallow: /parser/user-agent-space/candidate$
+User-agent: Yandex
+Disallow: /parser/user-agent-space/control-after$
+Disallow: /parser/user-agent-space/control-restart$
+

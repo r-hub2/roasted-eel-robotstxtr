@@ -1,0 +1,6 @@
+User-agent: Yandex
+Disallow: /blank-mid/private
+
+Allow: /blank-mid/private/public
+Disallow: /blank-mid/late
+

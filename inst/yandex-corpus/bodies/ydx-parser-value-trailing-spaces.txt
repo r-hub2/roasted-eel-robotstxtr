@@ -1,0 +1,7 @@
+User-agent: Yandex
+Disallow: /parser/value-trailing-spaces/control-before$
+Disallow: /parser/value-trailing-spaces/candidate$   
+Disallow: /parser/value-trailing-spaces/control-after$
+User-agent: Yandex
+Disallow: /parser/value-trailing-spaces/control-restart$
+

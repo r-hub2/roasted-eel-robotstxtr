@@ -1,0 +1,7 @@
+User-agent: Yandex
+Disallow: /parser/leading-space-name/control-before$
+  Disallow: /parser/leading-space-name/candidate$
+Disallow: /parser/leading-space-name/control-after$
+User-agent: Yandex
+Disallow: /parser/leading-space-name/control-restart$
+

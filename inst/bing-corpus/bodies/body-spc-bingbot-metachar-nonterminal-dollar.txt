@@ -1,0 +1,2 @@
+User-agent: bingbot
+Disallow: /an-cost$usd

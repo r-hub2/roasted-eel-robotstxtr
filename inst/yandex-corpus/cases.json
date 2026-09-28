@@ -1,0 +1,2482 @@
+[
+  {
+    "case_id": "ydx-01-ua-specificity--yandex-01",
+    "body_id": "ydx-01-ua-specificity",
+    "body_file": "bodies/ydx-01-ua-specificity.txt",
+    "body_sha256": "100a14bbb88b0ccfd60d14de6a420ec7dcd77b4ceb331921e3e44893ad18c2b1",
+    "byte_size": 134,
+    "crawler": "Yandex",
+    "request_target": "/ua/star",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["yandex-user-agent-2026-07-12", "yandex-check-robots-2026-07-12", "obs-2026-07-16-ydx-01-ua-specificity-yandex-crawler-selection-v1"]
+  },
+  {
+    "case_id": "ydx-01-ua-specificity--yandex-02",
+    "body_id": "ydx-01-ua-specificity",
+    "body_file": "bodies/ydx-01-ua-specificity.txt",
+    "body_sha256": "100a14bbb88b0ccfd60d14de6a420ec7dcd77b4ceb331921e3e44893ad18c2b1",
+    "byte_size": 134,
+    "crawler": "Yandex",
+    "request_target": "/ua/general",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 5,
+        "type": "disallow",
+        "value": "/ua/general"
+      }
+    },
+    "sources": ["yandex-user-agent-2026-07-12", "yandex-check-robots-2026-07-12", "obs-2026-07-16-ydx-01-ua-specificity-yandex-crawler-selection-v1"]
+  },
+  {
+    "case_id": "ydx-01-ua-specificity--yandex-03",
+    "body_id": "ydx-01-ua-specificity",
+    "body_file": "bodies/ydx-01-ua-specificity.txt",
+    "body_sha256": "100a14bbb88b0ccfd60d14de6a420ec7dcd77b4ceb331921e3e44893ad18c2b1",
+    "byte_size": 134,
+    "crawler": "Yandex",
+    "request_target": "/ua/additional",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["yandex-user-agent-2026-07-12", "yandex-check-robots-2026-07-12", "obs-2026-07-16-ydx-01-ua-specificity-yandex-crawler-selection-v1"]
+  },
+  {
+    "case_id": "ydx-01-ua-specificity--yandex-04",
+    "body_id": "ydx-01-ua-specificity",
+    "body_file": "bodies/ydx-01-ua-specificity.txt",
+    "body_sha256": "100a14bbb88b0ccfd60d14de6a420ec7dcd77b4ceb331921e3e44893ad18c2b1",
+    "byte_size": 134,
+    "crawler": "Yandex",
+    "request_target": "/ua/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["yandex-user-agent-2026-07-12", "yandex-check-robots-2026-07-12", "obs-2026-07-16-ydx-01-ua-specificity-yandex-crawler-selection-v1"]
+  },
+  {
+    "case_id": "ydx-01-ua-specificity--yandexadditionalbot-01",
+    "body_id": "ydx-01-ua-specificity",
+    "body_file": "bodies/ydx-01-ua-specificity.txt",
+    "body_sha256": "100a14bbb88b0ccfd60d14de6a420ec7dcd77b4ceb331921e3e44893ad18c2b1",
+    "byte_size": 134,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/ua/star",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["yandex-user-agent-2026-07-12", "yandex-check-robots-2026-07-12", "obs-2026-07-16-ydx-01-ua-specificity-yandexadditionalbot-crawler-selection-v1"]
+  },
+  {
+    "case_id": "ydx-01-ua-specificity--yandexadditionalbot-02",
+    "body_id": "ydx-01-ua-specificity",
+    "body_file": "bodies/ydx-01-ua-specificity.txt",
+    "body_sha256": "100a14bbb88b0ccfd60d14de6a420ec7dcd77b4ceb331921e3e44893ad18c2b1",
+    "byte_size": 134,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/ua/general",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["yandex-user-agent-2026-07-12", "yandex-check-robots-2026-07-12", "obs-2026-07-16-ydx-01-ua-specificity-yandexadditionalbot-crawler-selection-v1"]
+  },
+  {
+    "case_id": "ydx-01-ua-specificity--yandexadditionalbot-03",
+    "body_id": "ydx-01-ua-specificity",
+    "body_file": "bodies/ydx-01-ua-specificity.txt",
+    "body_sha256": "100a14bbb88b0ccfd60d14de6a420ec7dcd77b4ceb331921e3e44893ad18c2b1",
+    "byte_size": 134,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/ua/additional",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 8,
+        "type": "disallow",
+        "value": "/ua/additional"
+      }
+    },
+    "sources": ["yandex-user-agent-2026-07-12", "yandex-check-robots-2026-07-12", "obs-2026-07-16-ydx-01-ua-specificity-yandexadditionalbot-crawler-selection-v1"]
+  },
+  {
+    "case_id": "ydx-01-ua-specificity--yandexadditionalbot-04",
+    "body_id": "ydx-01-ua-specificity",
+    "body_file": "bodies/ydx-01-ua-specificity.txt",
+    "body_sha256": "100a14bbb88b0ccfd60d14de6a420ec7dcd77b4ceb331921e3e44893ad18c2b1",
+    "byte_size": 134,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/ua/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["yandex-user-agent-2026-07-12", "yandex-check-robots-2026-07-12", "obs-2026-07-16-ydx-01-ua-specificity-yandexadditionalbot-crawler-selection-v1"]
+  },
+  {
+    "case_id": "ydx-02-repeated-stacked-groups--yandex-01",
+    "body_id": "ydx-02-repeated-stacked-groups",
+    "body_file": "bodies/ydx-02-repeated-stacked-groups.txt",
+    "body_sha256": "d643cfbd625f3e4c5305d00d33cb61c6151ae1f893e4bab3ab9dc54bdf921bda",
+    "byte_size": 145,
+    "crawler": "Yandex",
+    "request_target": "/repeat/shared",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": "/repeat/shared"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-02-repeated-stacked-groups-yandex-core-v2", "obs-2026-07-17-ydx-02-repeated-stacked-groups--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-02-repeated-stacked-groups--yandex-02",
+    "body_id": "ydx-02-repeated-stacked-groups",
+    "body_file": "bodies/ydx-02-repeated-stacked-groups.txt",
+    "body_sha256": "d643cfbd625f3e4c5305d00d33cb61c6151ae1f893e4bab3ab9dc54bdf921bda",
+    "byte_size": 145,
+    "crawler": "Yandex",
+    "request_target": "/repeat/one",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 6,
+        "type": "disallow",
+        "value": "/repeat/one"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-02-repeated-stacked-groups-yandex-core-v2", "obs-2026-07-17-ydx-02-repeated-stacked-groups--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-02-repeated-stacked-groups--yandex-03",
+    "body_id": "ydx-02-repeated-stacked-groups",
+    "body_file": "bodies/ydx-02-repeated-stacked-groups.txt",
+    "body_sha256": "d643cfbd625f3e4c5305d00d33cb61c6151ae1f893e4bab3ab9dc54bdf921bda",
+    "byte_size": 145,
+    "crawler": "Yandex",
+    "request_target": "/repeat/two",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 9,
+        "type": "disallow",
+        "value": "/repeat/two"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-02-repeated-stacked-groups-yandex-core-v2", "obs-2026-07-17-ydx-02-repeated-stacked-groups--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-02-repeated-stacked-groups--yandex-04",
+    "body_id": "ydx-02-repeated-stacked-groups",
+    "body_file": "bodies/ydx-02-repeated-stacked-groups.txt",
+    "body_sha256": "d643cfbd625f3e4c5305d00d33cb61c6151ae1f893e4bab3ab9dc54bdf921bda",
+    "byte_size": 145,
+    "crawler": "Yandex",
+    "request_target": "/repeat/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-02-repeated-stacked-groups-yandex-core-v2", "obs-2026-07-17-ydx-02-repeated-stacked-groups--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-03-blank-after-agent--yandex-01",
+    "body_id": "ydx-03-blank-after-agent",
+    "body_file": "bodies/ydx-03-blank-after-agent.txt",
+    "body_sha256": "b68a5c8b7695df3ee3a8532df84ea3cf30f29ede4e4d7378f1752eba630b2d11",
+    "byte_size": 79,
+    "crawler": "Yandex",
+    "request_target": "/blank-after/blocked",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": "/blank-after/blocked"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-03-blank-after-agent-yandex-core-v2", "obs-2026-07-17-ydx-03-blank-after-agent--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-03-blank-after-agent--yandex-02",
+    "body_id": "ydx-03-blank-after-agent",
+    "body_file": "bodies/ydx-03-blank-after-agent.txt",
+    "body_sha256": "b68a5c8b7695df3ee3a8532df84ea3cf30f29ede4e4d7378f1752eba630b2d11",
+    "byte_size": 79,
+    "crawler": "Yandex",
+    "request_target": "/blank-after/public",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 4,
+        "type": "allow",
+        "value": "/blank-after/public"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-03-blank-after-agent-yandex-core-v2", "obs-2026-07-17-ydx-03-blank-after-agent--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-03-blank-after-agent--yandex-03",
+    "body_id": "ydx-03-blank-after-agent",
+    "body_file": "bodies/ydx-03-blank-after-agent.txt",
+    "body_sha256": "b68a5c8b7695df3ee3a8532df84ea3cf30f29ede4e4d7378f1752eba630b2d11",
+    "byte_size": 79,
+    "crawler": "Yandex",
+    "request_target": "/blank-after/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-03-blank-after-agent-yandex-core-v2", "obs-2026-07-17-ydx-03-blank-after-agent--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-04-blank-mid-group--yandex-01",
+    "body_id": "ydx-04-blank-mid-group",
+    "body_file": "bodies/ydx-04-blank-mid-group.txt",
+    "body_sha256": "4223f713a14349f9ef334ca881882c0d0467d36cb27c51bf85129523cf8a26bb",
+    "byte_size": 109,
+    "crawler": "Yandex",
+    "request_target": "/blank-mid/private",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/blank-mid/private"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-04-blank-mid-group-yandex-core-v2", "obs-2026-07-17-ydx-04-blank-mid-group--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-04-blank-mid-group--yandex-02",
+    "body_id": "ydx-04-blank-mid-group",
+    "body_file": "bodies/ydx-04-blank-mid-group.txt",
+    "body_sha256": "4223f713a14349f9ef334ca881882c0d0467d36cb27c51bf85129523cf8a26bb",
+    "byte_size": 109,
+    "crawler": "Yandex",
+    "request_target": "/blank-mid/private/public",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 4,
+        "type": "allow",
+        "value": "/blank-mid/private/public"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-04-blank-mid-group-yandex-core-v2", "obs-2026-07-17-ydx-04-blank-mid-group--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-04-blank-mid-group--yandex-03",
+    "body_id": "ydx-04-blank-mid-group",
+    "body_file": "bodies/ydx-04-blank-mid-group.txt",
+    "body_sha256": "4223f713a14349f9ef334ca881882c0d0467d36cb27c51bf85129523cf8a26bb",
+    "byte_size": 109,
+    "crawler": "Yandex",
+    "request_target": "/blank-mid/late",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 5,
+        "type": "disallow",
+        "value": "/blank-mid/late"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-04-blank-mid-group-yandex-core-v2", "obs-2026-07-17-ydx-04-blank-mid-group--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-04-blank-mid-group--yandex-04",
+    "body_id": "ydx-04-blank-mid-group",
+    "body_file": "bodies/ydx-04-blank-mid-group.txt",
+    "body_sha256": "4223f713a14349f9ef334ca881882c0d0467d36cb27c51bf85129523cf8a26bb",
+    "byte_size": 109,
+    "crawler": "Yandex",
+    "request_target": "/blank-mid/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-04-blank-mid-group-yandex-core-v2", "obs-2026-07-17-ydx-04-blank-mid-group--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-05-yandex-tie-a",
+    "body_id": "ydx-05-ties-wildcards",
+    "body_file": "bodies/ydx-05-ties-wildcards.txt",
+    "body_sha256": "c5906d142802e427757bcb5ff047c18f62afd7841b7189dd9f87d799f20da10c",
+    "byte_size": 160,
+    "crawler": "Yandex",
+    "request_target": "/tie/a",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 3,
+        "type": "allow",
+        "value": "/tie/a"
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-05-yandex"]
+  },
+  {
+    "case_id": "ydx-05-yandex-tie-a-child",
+    "body_id": "ydx-05-ties-wildcards",
+    "body_file": "bodies/ydx-05-ties-wildcards.txt",
+    "body_sha256": "c5906d142802e427757bcb5ff047c18f62afd7841b7189dd9f87d799f20da10c",
+    "byte_size": 160,
+    "crawler": "Yandex",
+    "request_target": "/tie/a/child",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 3,
+        "type": "allow",
+        "value": "/tie/a"
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-05-yandex"]
+  },
+  {
+    "case_id": "ydx-05-yandex-tie-b",
+    "body_id": "ydx-05-ties-wildcards",
+    "body_file": "bodies/ydx-05-ties-wildcards.txt",
+    "body_sha256": "c5906d142802e427757bcb5ff047c18f62afd7841b7189dd9f87d799f20da10c",
+    "byte_size": 160,
+    "crawler": "Yandex",
+    "request_target": "/tie/b",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 4,
+        "type": "allow",
+        "value": "/tie/b"
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-05-yandex"]
+  },
+  {
+    "case_id": "ydx-05-yandex-tie-b-child",
+    "body_id": "ydx-05-ties-wildcards",
+    "body_file": "bodies/ydx-05-ties-wildcards.txt",
+    "body_sha256": "c5906d142802e427757bcb5ff047c18f62afd7841b7189dd9f87d799f20da10c",
+    "byte_size": 160,
+    "crawler": "Yandex",
+    "request_target": "/tie/b/child",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 4,
+        "type": "allow",
+        "value": "/tie/b"
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-05-yandex"]
+  },
+  {
+    "case_id": "ydx-05-yandex-wild-a-x",
+    "body_id": "ydx-05-ties-wildcards",
+    "body_file": "bodies/ydx-05-ties-wildcards.txt",
+    "body_sha256": "c5906d142802e427757bcb5ff047c18f62afd7841b7189dd9f87d799f20da10c",
+    "byte_size": 160,
+    "crawler": "Yandex",
+    "request_target": "/wild/a/x",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 7,
+        "type": "allow",
+        "value": "/wild/a/*"
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-05-yandex"]
+  },
+  {
+    "case_id": "ydx-05-yandex-wild-a-y",
+    "body_id": "ydx-05-ties-wildcards",
+    "body_file": "bodies/ydx-05-ties-wildcards.txt",
+    "body_sha256": "c5906d142802e427757bcb5ff047c18f62afd7841b7189dd9f87d799f20da10c",
+    "byte_size": 160,
+    "crawler": "Yandex",
+    "request_target": "/wild/a/y",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 7,
+        "type": "allow",
+        "value": "/wild/a/*"
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-05-yandex"]
+  },
+  {
+    "case_id": "ydx-05-yandex-wild-b-x",
+    "body_id": "ydx-05-ties-wildcards",
+    "body_file": "bodies/ydx-05-ties-wildcards.txt",
+    "body_sha256": "c5906d142802e427757bcb5ff047c18f62afd7841b7189dd9f87d799f20da10c",
+    "byte_size": 160,
+    "crawler": "Yandex",
+    "request_target": "/wild/b/x",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 6,
+        "type": "disallow",
+        "value": "/wild/*/x"
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-05-yandex"]
+  },
+  {
+    "case_id": "ydx-05-yandex-wild-root",
+    "body_id": "ydx-05-ties-wildcards",
+    "body_file": "bodies/ydx-05-ties-wildcards.txt",
+    "body_sha256": "c5906d142802e427757bcb5ff047c18f62afd7841b7189dd9f87d799f20da10c",
+    "byte_size": 160,
+    "crawler": "Yandex",
+    "request_target": "/wild/root",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 9,
+        "type": "allow",
+        "value": "/wild/root$"
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-05-yandex"]
+  },
+  {
+    "case_id": "ydx-05-yandex-wild-rootx",
+    "body_id": "ydx-05-ties-wildcards",
+    "body_file": "bodies/ydx-05-ties-wildcards.txt",
+    "body_sha256": "c5906d142802e427757bcb5ff047c18f62afd7841b7189dd9f87d799f20da10c",
+    "byte_size": 160,
+    "crawler": "Yandex",
+    "request_target": "/wild/rootx",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 8,
+        "type": "disallow",
+        "value": "/wild/root*"
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-05-yandex"]
+  },
+  {
+    "case_id": "ydx-06-additional-open",
+    "body_id": "ydx-06-empty-directives",
+    "body_file": "bodies/ydx-06-empty-directives.txt",
+    "body_sha256": "f85b30ad0b5cf8156331daeb17c779d8a3a2bc55bc132c2b296eb5859ba111a8",
+    "byte_size": 107,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/empty/open",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 7,
+        "type": "disallow",
+        "value": "/"
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-06-yandex-additional"]
+  },
+  {
+    "case_id": "ydx-06-additional-root",
+    "body_id": "ydx-06-empty-directives",
+    "body_file": "bodies/ydx-06-empty-directives.txt",
+    "body_sha256": "f85b30ad0b5cf8156331daeb17c779d8a3a2bc55bc132c2b296eb5859ba111a8",
+    "byte_size": 107,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 7,
+        "type": "disallow",
+        "value": "/"
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-06-yandex-additional"]
+  },
+  {
+    "case_id": "ydx-06-additional-y-block",
+    "body_id": "ydx-06-empty-directives",
+    "body_file": "bodies/ydx-06-empty-directives.txt",
+    "body_sha256": "f85b30ad0b5cf8156331daeb17c779d8a3a2bc55bc132c2b296eb5859ba111a8",
+    "byte_size": 107,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/empty/y-block",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 7,
+        "type": "disallow",
+        "value": "/"
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-06-yandex-additional"]
+  },
+  {
+    "case_id": "ydx-06-yandex-open",
+    "body_id": "ydx-06-empty-directives",
+    "body_file": "bodies/ydx-06-empty-directives.txt",
+    "body_sha256": "f85b30ad0b5cf8156331daeb17c779d8a3a2bc55bc132c2b296eb5859ba111a8",
+    "byte_size": 107,
+    "crawler": "Yandex",
+    "request_target": "/empty/open",
+    "expected": {
+      "decision": "allow",
+      "source": "effective_empty_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": ""
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-06-yandex"]
+  },
+  {
+    "case_id": "ydx-06-yandex-y-block",
+    "body_id": "ydx-06-empty-directives",
+    "body_file": "bodies/ydx-06-empty-directives.txt",
+    "body_sha256": "f85b30ad0b5cf8156331daeb17c779d8a3a2bc55bc132c2b296eb5859ba111a8",
+    "byte_size": 107,
+    "crawler": "Yandex",
+    "request_target": "/empty/y-block",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": "/empty/y-block"
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-06-yandex"]
+  },
+  {
+    "case_id": "ydx-07-malformed-recovery--yandex-01",
+    "body_id": "ydx-07-malformed-recovery",
+    "body_file": "bodies/ydx-07-malformed-recovery.txt",
+    "body_sha256": "3adab4e44ceb770129467c232d7729c575afc7e221e77878665ce055308cd8f2",
+    "byte_size": 137,
+    "crawler": "Yandex",
+    "request_target": "/mal/orphan",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-07-malformed-recovery-yandex-core-v2", "obs-2026-07-17-ydx-07-malformed-recovery--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-07-malformed-recovery--yandex-02",
+    "body_id": "ydx-07-malformed-recovery",
+    "body_file": "bodies/ydx-07-malformed-recovery.txt",
+    "body_sha256": "3adab4e44ceb770129467c232d7729c575afc7e221e77878665ce055308cd8f2",
+    "byte_size": 137,
+    "crawler": "Yandex",
+    "request_target": "/no-leading-slash",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-07-malformed-recovery-yandex-core-v2", "obs-2026-07-17-ydx-07-malformed-recovery--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-07-malformed-recovery--yandex-03",
+    "body_id": "ydx-07-malformed-recovery",
+    "body_file": "bodies/ydx-07-malformed-recovery.txt",
+    "body_sha256": "3adab4e44ceb770129467c232d7729c575afc7e221e77878665ce055308cd8f2",
+    "byte_size": 137,
+    "crawler": "Yandex",
+    "request_target": "/mal/good",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 5,
+        "type": "disallow",
+        "value": "/mal/good"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-07-malformed-recovery-yandex-core-v2", "obs-2026-07-17-ydx-07-malformed-recovery--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-07-malformed-recovery--yandex-04",
+    "body_id": "ydx-07-malformed-recovery",
+    "body_file": "bodies/ydx-07-malformed-recovery.txt",
+    "body_sha256": "3adab4e44ceb770129467c232d7729c575afc7e221e77878665ce055308cd8f2",
+    "byte_size": 137,
+    "crawler": "Yandex",
+    "request_target": "/mal/good/public",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 6,
+        "type": "allow",
+        "value": "/mal/good/public"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-07-malformed-recovery-yandex-core-v2", "obs-2026-07-17-ydx-07-malformed-recovery--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-07-malformed-recovery--yandex-05",
+    "body_id": "ydx-07-malformed-recovery",
+    "body_file": "bodies/ydx-07-malformed-recovery.txt",
+    "body_sha256": "3adab4e44ceb770129467c232d7729c575afc7e221e77878665ce055308cd8f2",
+    "byte_size": 137,
+    "crawler": "Yandex",
+    "request_target": "/mal/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-07-malformed-recovery-yandex-core-v2", "obs-2026-07-17-ydx-07-malformed-recovery--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-11-yandex-open",
+    "body_id": "ydx-11-empty-disallow-first",
+    "body_file": "bodies/ydx-11-empty-disallow-first.txt",
+    "body_sha256": "4268c6644dfb4b50a822602aebe340c484453a4228b7f5cc1e46811293ee2a38",
+    "byte_size": 41,
+    "crawler": "Yandex",
+    "request_target": "/empty/open",
+    "expected": {
+      "decision": "allow",
+      "source": "effective_empty_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": ""
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-11-yandex"]
+  },
+  {
+    "case_id": "ydx-11-yandex-root",
+    "body_id": "ydx-11-empty-disallow-first",
+    "body_file": "bodies/ydx-11-empty-disallow-first.txt",
+    "body_sha256": "4268c6644dfb4b50a822602aebe340c484453a4228b7f5cc1e46811293ee2a38",
+    "byte_size": 41,
+    "crawler": "Yandex",
+    "request_target": "/",
+    "expected": {
+      "decision": "allow",
+      "source": "effective_empty_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": ""
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-11-yandex"]
+  },
+  {
+    "case_id": "ydx-11-yandex-y-block",
+    "body_id": "ydx-11-empty-disallow-first",
+    "body_file": "bodies/ydx-11-empty-disallow-first.txt",
+    "body_sha256": "4268c6644dfb4b50a822602aebe340c484453a4228b7f5cc1e46811293ee2a38",
+    "byte_size": 41,
+    "crawler": "Yandex",
+    "request_target": "/empty/y-block",
+    "expected": {
+      "decision": "allow",
+      "source": "effective_empty_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": ""
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-11-yandex"]
+  },
+  {
+    "case_id": "ydx-12-yandex-open",
+    "body_id": "ydx-12-empty-disallow-last",
+    "body_file": "bodies/ydx-12-empty-disallow-last.txt",
+    "body_sha256": "00618ffefa4b421d972fd1090fe27b6c9bcacde1365f52736859eee214e790ea",
+    "byte_size": 41,
+    "crawler": "Yandex",
+    "request_target": "/empty/open",
+    "expected": {
+      "decision": "allow",
+      "source": "effective_empty_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": ""
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-12-yandex"]
+  },
+  {
+    "case_id": "ydx-12-yandex-root",
+    "body_id": "ydx-12-empty-disallow-last",
+    "body_file": "bodies/ydx-12-empty-disallow-last.txt",
+    "body_sha256": "00618ffefa4b421d972fd1090fe27b6c9bcacde1365f52736859eee214e790ea",
+    "byte_size": 41,
+    "crawler": "Yandex",
+    "request_target": "/",
+    "expected": {
+      "decision": "allow",
+      "source": "effective_empty_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": ""
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-12-yandex"]
+  },
+  {
+    "case_id": "ydx-12-yandex-y-block",
+    "body_id": "ydx-12-empty-disallow-last",
+    "body_file": "bodies/ydx-12-empty-disallow-last.txt",
+    "body_sha256": "00618ffefa4b421d972fd1090fe27b6c9bcacde1365f52736859eee214e790ea",
+    "byte_size": 41,
+    "crawler": "Yandex",
+    "request_target": "/empty/y-block",
+    "expected": {
+      "decision": "allow",
+      "source": "effective_empty_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": ""
+      }
+    },
+    "sources": ["yandex-allow-disallow-2026-07-12", "obs-2026-07-12-ydx-12-yandex"]
+  },
+  {
+    "case_id": "ydx-13-wildcard-specificity-replica-v1--yandex-01",
+    "body_id": "ydx-13-wildcard-specificity-replica-v1",
+    "body_file": "bodies/ydx-13-wildcard-specificity-replica-v1.txt",
+    "body_sha256": "1371936cce199b57df61a88e6b64304d830e8e8989a108dd25c5ce416ecd2a67",
+    "byte_size": 127,
+    "crawler": "Yandex",
+    "request_target": "/probe/wild/ab",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 3,
+        "type": "allow",
+        "value": "/probe/wild/a*b"
+      }
+    },
+    "sources": ["obs-2026-07-12-ydx-13-yandex-r2", "obs-2026-07-16-ydx-13-wildcard-specificity-replica-v1-yandex-wildcard-specificity-v1"],
+    "observation_case_ids": {
+      "obs-2026-07-12-ydx-13-yandex-r2": "ydx-13-wildcard-specificity--yandex-01"
+    }
+  },
+  {
+    "case_id": "ydx-13-wildcard-specificity-replica-v1--yandex-02",
+    "body_id": "ydx-13-wildcard-specificity-replica-v1",
+    "body_file": "bodies/ydx-13-wildcard-specificity-replica-v1.txt",
+    "body_sha256": "1371936cce199b57df61a88e6b64304d830e8e8989a108dd25c5ce416ecd2a67",
+    "byte_size": 127,
+    "crawler": "Yandex",
+    "request_target": "/probe/wild/axb",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 3,
+        "type": "allow",
+        "value": "/probe/wild/a*b"
+      }
+    },
+    "sources": ["obs-2026-07-12-ydx-13-yandex-r2", "obs-2026-07-16-ydx-13-wildcard-specificity-replica-v1-yandex-wildcard-specificity-v1"],
+    "observation_case_ids": {
+      "obs-2026-07-12-ydx-13-yandex-r2": "ydx-13-wildcard-specificity--yandex-02"
+    }
+  },
+  {
+    "case_id": "ydx-13-wildcard-specificity-replica-v1--yandex-03",
+    "body_id": "ydx-13-wildcard-specificity-replica-v1",
+    "body_file": "bodies/ydx-13-wildcard-specificity-replica-v1.txt",
+    "body_sha256": "1371936cce199b57df61a88e6b64304d830e8e8989a108dd25c5ce416ecd2a67",
+    "byte_size": 127,
+    "crawler": "Yandex",
+    "request_target": "/probe/anchor/exact",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 5,
+        "type": "allow",
+        "value": "/probe/anchor/exact"
+      }
+    },
+    "sources": ["obs-2026-07-12-ydx-13-yandex-r2", "obs-2026-07-16-ydx-13-wildcard-specificity-replica-v1-yandex-wildcard-specificity-v1"],
+    "observation_case_ids": {
+      "obs-2026-07-12-ydx-13-yandex-r2": "ydx-13-wildcard-specificity--yandex-03"
+    }
+  },
+  {
+    "case_id": "ydx-13-wildcard-specificity-replica-v1--yandex-04",
+    "body_id": "ydx-13-wildcard-specificity-replica-v1",
+    "body_file": "bodies/ydx-13-wildcard-specificity-replica-v1.txt",
+    "body_sha256": "1371936cce199b57df61a88e6b64304d830e8e8989a108dd25c5ce416ecd2a67",
+    "byte_size": 127,
+    "crawler": "Yandex",
+    "request_target": "/probe/anchor/exactx",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 5,
+        "type": "allow",
+        "value": "/probe/anchor/exact"
+      }
+    },
+    "sources": ["obs-2026-07-12-ydx-13-yandex-r2", "obs-2026-07-16-ydx-13-wildcard-specificity-replica-v1-yandex-wildcard-specificity-v1"],
+    "observation_case_ids": {
+      "obs-2026-07-12-ydx-13-yandex-r2": "ydx-13-wildcard-specificity--yandex-04"
+    }
+  },
+  {
+    "case_id": "ydx-crawler-agent-case--yandexadditionalbot-01",
+    "body_id": "ydx-crawler-agent-case",
+    "body_file": "bodies/ydx-crawler-agent-case.txt",
+    "body_sha256": "900b2575b4cab4af924dc859330419cf82c7a62149a871668823c1252add3a8f",
+    "byte_size": 166,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/crawler/case/yandex",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-agent-case-yandexadditionalbot-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-agent-case--yandexadditionalbot-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-agent-case--yandexadditionalbot-02",
+    "body_id": "ydx-crawler-agent-case",
+    "body_file": "bodies/ydx-crawler-agent-case.txt",
+    "body_sha256": "900b2575b4cab4af924dc859330419cf82c7a62149a871668823c1252add3a8f",
+    "byte_size": 166,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/crawler/case/additional",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 5,
+        "type": "disallow",
+        "value": "/crawler/case/additional"
+      }
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-agent-case-yandexadditionalbot-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-agent-case--yandexadditionalbot-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-agent-case--yandexadditionalbot-03",
+    "body_id": "ydx-crawler-agent-case",
+    "body_file": "bodies/ydx-crawler-agent-case.txt",
+    "body_sha256": "900b2575b4cab4af924dc859330419cf82c7a62149a871668823c1252add3a8f",
+    "byte_size": 166,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/crawler/case/wildcard",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-agent-case-yandexadditionalbot-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-agent-case--yandexadditionalbot-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-agent-case--yandexadditionalbot-04",
+    "body_id": "ydx-crawler-agent-case",
+    "body_file": "bodies/ydx-crawler-agent-case.txt",
+    "body_sha256": "900b2575b4cab4af924dc859330419cf82c7a62149a871668823c1252add3a8f",
+    "byte_size": 166,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/crawler/case/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-agent-case-yandexadditionalbot-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-agent-case--yandexadditionalbot-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-repeated-tier--yandex-01",
+    "body_id": "ydx-crawler-repeated-tier",
+    "body_file": "bodies/ydx-crawler-repeated-tier.txt",
+    "body_sha256": "a3800b8e07be68069555aa3dc5ed432ef248265d1c124c70fa8298cc560998e1",
+    "byte_size": 321,
+    "crawler": "Yandex",
+    "request_target": "/crawler/repeated/yandex-one",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/crawler/repeated/yandex-one"
+      }
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-repeated-tier-yandex-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-repeated-tier--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-repeated-tier--yandex-02",
+    "body_id": "ydx-crawler-repeated-tier",
+    "body_file": "bodies/ydx-crawler-repeated-tier.txt",
+    "body_sha256": "a3800b8e07be68069555aa3dc5ed432ef248265d1c124c70fa8298cc560998e1",
+    "byte_size": 321,
+    "crawler": "Yandex",
+    "request_target": "/crawler/repeated/yandex-two",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 5,
+        "type": "disallow",
+        "value": "/crawler/repeated/yandex-two"
+      }
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-repeated-tier-yandex-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-repeated-tier--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-repeated-tier--yandex-03",
+    "body_id": "ydx-crawler-repeated-tier",
+    "body_file": "bodies/ydx-crawler-repeated-tier.txt",
+    "body_sha256": "a3800b8e07be68069555aa3dc5ed432ef248265d1c124c70fa8298cc560998e1",
+    "byte_size": 321,
+    "crawler": "Yandex",
+    "request_target": "/crawler/repeated/additional-one",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-repeated-tier-yandex-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-repeated-tier--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-repeated-tier--yandex-04",
+    "body_id": "ydx-crawler-repeated-tier",
+    "body_file": "bodies/ydx-crawler-repeated-tier.txt",
+    "body_sha256": "a3800b8e07be68069555aa3dc5ed432ef248265d1c124c70fa8298cc560998e1",
+    "byte_size": 321,
+    "crawler": "Yandex",
+    "request_target": "/crawler/repeated/additional-two",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-repeated-tier-yandex-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-repeated-tier--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-repeated-tier--yandex-05",
+    "body_id": "ydx-crawler-repeated-tier",
+    "body_file": "bodies/ydx-crawler-repeated-tier.txt",
+    "body_sha256": "a3800b8e07be68069555aa3dc5ed432ef248265d1c124c70fa8298cc560998e1",
+    "byte_size": 321,
+    "crawler": "Yandex",
+    "request_target": "/crawler/repeated/wildcard",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-repeated-tier-yandex-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-repeated-tier--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-repeated-tier--yandex-06",
+    "body_id": "ydx-crawler-repeated-tier",
+    "body_file": "bodies/ydx-crawler-repeated-tier.txt",
+    "body_sha256": "a3800b8e07be68069555aa3dc5ed432ef248265d1c124c70fa8298cc560998e1",
+    "byte_size": 321,
+    "crawler": "Yandex",
+    "request_target": "/crawler/repeated/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-repeated-tier-yandex-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-repeated-tier--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-repeated-tier--yandexadditionalbot-01",
+    "body_id": "ydx-crawler-repeated-tier",
+    "body_file": "bodies/ydx-crawler-repeated-tier.txt",
+    "body_sha256": "a3800b8e07be68069555aa3dc5ed432ef248265d1c124c70fa8298cc560998e1",
+    "byte_size": 321,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/crawler/repeated/yandex-one",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-repeated-tier-yandexadditionalbot-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-repeated-tier--yandexadditionalbot-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-repeated-tier--yandexadditionalbot-02",
+    "body_id": "ydx-crawler-repeated-tier",
+    "body_file": "bodies/ydx-crawler-repeated-tier.txt",
+    "body_sha256": "a3800b8e07be68069555aa3dc5ed432ef248265d1c124c70fa8298cc560998e1",
+    "byte_size": 321,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/crawler/repeated/yandex-two",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-repeated-tier-yandexadditionalbot-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-repeated-tier--yandexadditionalbot-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-repeated-tier--yandexadditionalbot-03",
+    "body_id": "ydx-crawler-repeated-tier",
+    "body_file": "bodies/ydx-crawler-repeated-tier.txt",
+    "body_sha256": "a3800b8e07be68069555aa3dc5ed432ef248265d1c124c70fa8298cc560998e1",
+    "byte_size": 321,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/crawler/repeated/additional-one",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 8,
+        "type": "disallow",
+        "value": "/crawler/repeated/additional-one"
+      }
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-repeated-tier-yandexadditionalbot-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-repeated-tier--yandexadditionalbot-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-repeated-tier--yandexadditionalbot-04",
+    "body_id": "ydx-crawler-repeated-tier",
+    "body_file": "bodies/ydx-crawler-repeated-tier.txt",
+    "body_sha256": "a3800b8e07be68069555aa3dc5ed432ef248265d1c124c70fa8298cc560998e1",
+    "byte_size": 321,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/crawler/repeated/additional-two",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 11,
+        "type": "disallow",
+        "value": "/crawler/repeated/additional-two"
+      }
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-repeated-tier-yandexadditionalbot-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-repeated-tier--yandexadditionalbot-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-repeated-tier--yandexadditionalbot-05",
+    "body_id": "ydx-crawler-repeated-tier",
+    "body_file": "bodies/ydx-crawler-repeated-tier.txt",
+    "body_sha256": "a3800b8e07be68069555aa3dc5ed432ef248265d1c124c70fa8298cc560998e1",
+    "byte_size": 321,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/crawler/repeated/wildcard",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-repeated-tier-yandexadditionalbot-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-repeated-tier--yandexadditionalbot-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-repeated-tier--yandexadditionalbot-06",
+    "body_id": "ydx-crawler-repeated-tier",
+    "body_file": "bodies/ydx-crawler-repeated-tier.txt",
+    "body_sha256": "a3800b8e07be68069555aa3dc5ed432ef248265d1c124c70fa8298cc560998e1",
+    "byte_size": 321,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/crawler/repeated/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-repeated-tier-yandexadditionalbot-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-repeated-tier--yandexadditionalbot-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-stacked-agent--yandex-01",
+    "body_id": "ydx-crawler-stacked-agent",
+    "body_file": "bodies/ydx-crawler-stacked-agent.txt",
+    "body_sha256": "194db3ab22900ab5d9b4dfff749cb24d4c3c07ef9893b5f718547329a1c189c7",
+    "byte_size": 219,
+    "crawler": "Yandex",
+    "request_target": "/crawler/stacked/yandex",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": "/crawler/stacked/yandex"
+      }
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-stacked-agent-yandex-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-stacked-agent--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-stacked-agent--yandex-02",
+    "body_id": "ydx-crawler-stacked-agent",
+    "body_file": "bodies/ydx-crawler-stacked-agent.txt",
+    "body_sha256": "194db3ab22900ab5d9b4dfff749cb24d4c3c07ef9893b5f718547329a1c189c7",
+    "byte_size": 219,
+    "crawler": "Yandex",
+    "request_target": "/crawler/stacked/additional",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-stacked-agent-yandex-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-stacked-agent--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-stacked-agent--yandex-03",
+    "body_id": "ydx-crawler-stacked-agent",
+    "body_file": "bodies/ydx-crawler-stacked-agent.txt",
+    "body_sha256": "194db3ab22900ab5d9b4dfff749cb24d4c3c07ef9893b5f718547329a1c189c7",
+    "byte_size": 219,
+    "crawler": "Yandex",
+    "request_target": "/crawler/stacked/wildcard",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-stacked-agent-yandex-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-stacked-agent--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-stacked-agent--yandex-04",
+    "body_id": "ydx-crawler-stacked-agent",
+    "body_file": "bodies/ydx-crawler-stacked-agent.txt",
+    "body_sha256": "194db3ab22900ab5d9b4dfff749cb24d4c3c07ef9893b5f718547329a1c189c7",
+    "byte_size": 219,
+    "crawler": "Yandex",
+    "request_target": "/crawler/stacked/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-stacked-agent-yandex-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-stacked-agent--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-stacked-agent--yandexadditionalbot-01",
+    "body_id": "ydx-crawler-stacked-agent",
+    "body_file": "bodies/ydx-crawler-stacked-agent.txt",
+    "body_sha256": "194db3ab22900ab5d9b4dfff749cb24d4c3c07ef9893b5f718547329a1c189c7",
+    "byte_size": 219,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/crawler/stacked/yandex",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-stacked-agent-yandexadditionalbot-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-stacked-agent--yandexadditionalbot-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-stacked-agent--yandexadditionalbot-02",
+    "body_id": "ydx-crawler-stacked-agent",
+    "body_file": "bodies/ydx-crawler-stacked-agent.txt",
+    "body_sha256": "194db3ab22900ab5d9b4dfff749cb24d4c3c07ef9893b5f718547329a1c189c7",
+    "byte_size": 219,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/crawler/stacked/additional",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 7,
+        "type": "disallow",
+        "value": "/crawler/stacked/additional"
+      }
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-stacked-agent-yandexadditionalbot-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-stacked-agent--yandexadditionalbot-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-stacked-agent--yandexadditionalbot-03",
+    "body_id": "ydx-crawler-stacked-agent",
+    "body_file": "bodies/ydx-crawler-stacked-agent.txt",
+    "body_sha256": "194db3ab22900ab5d9b4dfff749cb24d4c3c07ef9893b5f718547329a1c189c7",
+    "byte_size": 219,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/crawler/stacked/wildcard",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-stacked-agent-yandexadditionalbot-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-stacked-agent--yandexadditionalbot-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-crawler-stacked-agent--yandexadditionalbot-04",
+    "body_id": "ydx-crawler-stacked-agent",
+    "body_file": "bodies/ydx-crawler-stacked-agent.txt",
+    "body_sha256": "194db3ab22900ab5d9b4dfff749cb24d4c3c07ef9893b5f718547329a1c189c7",
+    "byte_size": 219,
+    "crawler": "YandexAdditionalBot",
+    "request_target": "/crawler/stacked/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-16-ydx-crawler-stacked-agent-yandexadditionalbot-crawler-selection-v1", "obs-2026-07-17-ydx-crawler-stacked-agent--yandexadditionalbot-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-blank-after-agent--yandex-01",
+    "body_id": "ydx-parser-blank-after-agent",
+    "body_file": "bodies/ydx-parser-blank-after-agent.txt",
+    "body_sha256": "d857f1faa72b180ba6e913e265b7fb4f9cbcad47a0a82271dd46163906ba483a",
+    "byte_size": 262,
+    "crawler": "Yandex",
+    "request_target": "/parser/blank-after-agent/control-before",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/parser/blank-after-agent/control-before$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-blank-after-agent-yandex-core-v2", "obs-2026-07-17-ydx-parser-blank-after-agent--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-blank-after-agent--yandex-02",
+    "body_id": "ydx-parser-blank-after-agent",
+    "body_file": "bodies/ydx-parser-blank-after-agent.txt",
+    "body_sha256": "d857f1faa72b180ba6e913e265b7fb4f9cbcad47a0a82271dd46163906ba483a",
+    "byte_size": 262,
+    "crawler": "Yandex",
+    "request_target": "/parser/blank-after-agent/candidate",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 5,
+        "type": "disallow",
+        "value": "/parser/blank-after-agent/candidate$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-blank-after-agent-yandex-core-v2", "obs-2026-07-17-ydx-parser-blank-after-agent--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-blank-after-agent--yandex-03",
+    "body_id": "ydx-parser-blank-after-agent",
+    "body_file": "bodies/ydx-parser-blank-after-agent.txt",
+    "body_sha256": "d857f1faa72b180ba6e913e265b7fb4f9cbcad47a0a82271dd46163906ba483a",
+    "byte_size": 262,
+    "crawler": "Yandex",
+    "request_target": "/parser/blank-after-agent/control-after",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 6,
+        "type": "disallow",
+        "value": "/parser/blank-after-agent/control-after$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-blank-after-agent-yandex-core-v2", "obs-2026-07-17-ydx-parser-blank-after-agent--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-blank-after-agent--yandex-04",
+    "body_id": "ydx-parser-blank-after-agent",
+    "body_file": "bodies/ydx-parser-blank-after-agent.txt",
+    "body_sha256": "d857f1faa72b180ba6e913e265b7fb4f9cbcad47a0a82271dd46163906ba483a",
+    "byte_size": 262,
+    "crawler": "Yandex",
+    "request_target": "/parser/blank-after-agent/control-restart",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 8,
+        "type": "disallow",
+        "value": "/parser/blank-after-agent/control-restart$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-blank-after-agent-yandex-core-v2", "obs-2026-07-17-ydx-parser-blank-after-agent--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-blank-after-agent--yandex-05",
+    "body_id": "ydx-parser-blank-after-agent",
+    "body_file": "bodies/ydx-parser-blank-after-agent.txt",
+    "body_sha256": "d857f1faa72b180ba6e913e265b7fb4f9cbcad47a0a82271dd46163906ba483a",
+    "byte_size": 262,
+    "crawler": "Yandex",
+    "request_target": "/parser/blank-after-agent/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-blank-after-agent-yandex-core-v2", "obs-2026-07-17-ydx-parser-blank-after-agent--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-blank-mid-group--yandex-01",
+    "body_id": "ydx-parser-blank-mid-group",
+    "body_file": "bodies/ydx-parser-blank-mid-group.txt",
+    "body_sha256": "bb87cef0f5699b7d27f0140dc7ee32d6e714e28fbbd6839d9efcdec8aba1857d",
+    "byte_size": 235,
+    "crawler": "Yandex",
+    "request_target": "/parser/blank-mid-group/control-before",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/parser/blank-mid-group/control-before$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-blank-mid-group-yandex-core-v2", "obs-2026-07-17-ydx-parser-blank-mid-group--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-blank-mid-group--yandex-02",
+    "body_id": "ydx-parser-blank-mid-group",
+    "body_file": "bodies/ydx-parser-blank-mid-group.txt",
+    "body_sha256": "bb87cef0f5699b7d27f0140dc7ee32d6e714e28fbbd6839d9efcdec8aba1857d",
+    "byte_size": 235,
+    "crawler": "Yandex",
+    "request_target": "/parser/blank-mid-group/candidate",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 4,
+        "type": "disallow",
+        "value": "/parser/blank-mid-group/candidate$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-blank-mid-group-yandex-core-v2", "obs-2026-07-17-ydx-parser-blank-mid-group--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-blank-mid-group--yandex-03",
+    "body_id": "ydx-parser-blank-mid-group",
+    "body_file": "bodies/ydx-parser-blank-mid-group.txt",
+    "body_sha256": "bb87cef0f5699b7d27f0140dc7ee32d6e714e28fbbd6839d9efcdec8aba1857d",
+    "byte_size": 235,
+    "crawler": "Yandex",
+    "request_target": "/parser/blank-mid-group/control-after",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 5,
+        "type": "disallow",
+        "value": "/parser/blank-mid-group/control-after$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-blank-mid-group-yandex-core-v2", "obs-2026-07-17-ydx-parser-blank-mid-group--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-blank-mid-group--yandex-04",
+    "body_id": "ydx-parser-blank-mid-group",
+    "body_file": "bodies/ydx-parser-blank-mid-group.txt",
+    "body_sha256": "bb87cef0f5699b7d27f0140dc7ee32d6e714e28fbbd6839d9efcdec8aba1857d",
+    "byte_size": 235,
+    "crawler": "Yandex",
+    "request_target": "/parser/blank-mid-group/control-restart",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 7,
+        "type": "disallow",
+        "value": "/parser/blank-mid-group/control-restart$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-blank-mid-group-yandex-core-v2", "obs-2026-07-17-ydx-parser-blank-mid-group--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-blank-mid-group--yandex-05",
+    "body_id": "ydx-parser-blank-mid-group",
+    "body_file": "bodies/ydx-parser-blank-mid-group.txt",
+    "body_sha256": "bb87cef0f5699b7d27f0140dc7ee32d6e714e28fbbd6839d9efcdec8aba1857d",
+    "byte_size": 235,
+    "crawler": "Yandex",
+    "request_target": "/parser/blank-mid-group/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-blank-mid-group-yandex-core-v2", "obs-2026-07-17-ydx-parser-blank-mid-group--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-directive-suffix--yandex-01",
+    "body_id": "ydx-parser-directive-suffix",
+    "body_file": "bodies/ydx-parser-directive-suffix.txt",
+    "body_sha256": "9d8d36ae55c7da363bbb7f9106309442529dfa5c2e86f2f9f9c076364700f4c3",
+    "byte_size": 244,
+    "crawler": "Yandex",
+    "request_target": "/parser/directive-suffix/control-before",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/parser/directive-suffix/control-before$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-directive-suffix-yandex-core-v2", "obs-2026-07-17-ydx-parser-directive-suffix--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-directive-suffix--yandex-02",
+    "body_id": "ydx-parser-directive-suffix",
+    "body_file": "bodies/ydx-parser-directive-suffix.txt",
+    "body_sha256": "9d8d36ae55c7da363bbb7f9106309442529dfa5c2e86f2f9f9c076364700f4c3",
+    "byte_size": 244,
+    "crawler": "Yandex",
+    "request_target": "/parser/directive-suffix/candidate",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-directive-suffix-yandex-core-v2", "obs-2026-07-17-ydx-parser-directive-suffix--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-directive-suffix--yandex-03",
+    "body_id": "ydx-parser-directive-suffix",
+    "body_file": "bodies/ydx-parser-directive-suffix.txt",
+    "body_sha256": "9d8d36ae55c7da363bbb7f9106309442529dfa5c2e86f2f9f9c076364700f4c3",
+    "byte_size": 244,
+    "crawler": "Yandex",
+    "request_target": "/parser/directive-suffix/control-after",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 4,
+        "type": "disallow",
+        "value": "/parser/directive-suffix/control-after$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-directive-suffix-yandex-core-v2", "obs-2026-07-17-ydx-parser-directive-suffix--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-directive-suffix--yandex-04",
+    "body_id": "ydx-parser-directive-suffix",
+    "body_file": "bodies/ydx-parser-directive-suffix.txt",
+    "body_sha256": "9d8d36ae55c7da363bbb7f9106309442529dfa5c2e86f2f9f9c076364700f4c3",
+    "byte_size": 244,
+    "crawler": "Yandex",
+    "request_target": "/parser/directive-suffix/control-restart",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 6,
+        "type": "disallow",
+        "value": "/parser/directive-suffix/control-restart$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-directive-suffix-yandex-core-v2", "obs-2026-07-17-ydx-parser-directive-suffix--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-directive-suffix--yandex-05",
+    "body_id": "ydx-parser-directive-suffix",
+    "body_file": "bodies/ydx-parser-directive-suffix.txt",
+    "body_sha256": "9d8d36ae55c7da363bbb7f9106309442529dfa5c2e86f2f9f9c076364700f4c3",
+    "byte_size": 244,
+    "crawler": "Yandex",
+    "request_target": "/parser/directive-suffix/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-directive-suffix-yandex-core-v2", "obs-2026-07-17-ydx-parser-directive-suffix--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-leading-space-name--yandex-01",
+    "body_id": "ydx-parser-leading-space-name",
+    "body_file": "bodies/ydx-parser-leading-space-name.txt",
+    "body_sha256": "fbf1426e6336098cc93bb210dca7096a7002554b791d87f1d82eded8bff6705f",
+    "byte_size": 248,
+    "crawler": "Yandex",
+    "request_target": "/parser/leading-space-name/control-before",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/parser/leading-space-name/control-before$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-leading-space-name-yandex-core-v2", "obs-2026-07-17-ydx-parser-leading-space-name--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-leading-space-name--yandex-02",
+    "body_id": "ydx-parser-leading-space-name",
+    "body_file": "bodies/ydx-parser-leading-space-name.txt",
+    "body_sha256": "fbf1426e6336098cc93bb210dca7096a7002554b791d87f1d82eded8bff6705f",
+    "byte_size": 248,
+    "crawler": "Yandex",
+    "request_target": "/parser/leading-space-name/candidate",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": "/parser/leading-space-name/candidate$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-leading-space-name-yandex-core-v2", "obs-2026-07-17-ydx-parser-leading-space-name--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-leading-space-name--yandex-03",
+    "body_id": "ydx-parser-leading-space-name",
+    "body_file": "bodies/ydx-parser-leading-space-name.txt",
+    "body_sha256": "fbf1426e6336098cc93bb210dca7096a7002554b791d87f1d82eded8bff6705f",
+    "byte_size": 248,
+    "crawler": "Yandex",
+    "request_target": "/parser/leading-space-name/control-after",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 4,
+        "type": "disallow",
+        "value": "/parser/leading-space-name/control-after$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-leading-space-name-yandex-core-v2", "obs-2026-07-17-ydx-parser-leading-space-name--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-leading-space-name--yandex-04",
+    "body_id": "ydx-parser-leading-space-name",
+    "body_file": "bodies/ydx-parser-leading-space-name.txt",
+    "body_sha256": "fbf1426e6336098cc93bb210dca7096a7002554b791d87f1d82eded8bff6705f",
+    "byte_size": 248,
+    "crawler": "Yandex",
+    "request_target": "/parser/leading-space-name/control-restart",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 6,
+        "type": "disallow",
+        "value": "/parser/leading-space-name/control-restart$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-leading-space-name-yandex-core-v2", "obs-2026-07-17-ydx-parser-leading-space-name--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-leading-space-name--yandex-05",
+    "body_id": "ydx-parser-leading-space-name",
+    "body_file": "bodies/ydx-parser-leading-space-name.txt",
+    "body_sha256": "fbf1426e6336098cc93bb210dca7096a7002554b791d87f1d82eded8bff6705f",
+    "byte_size": 248,
+    "crawler": "Yandex",
+    "request_target": "/parser/leading-space-name/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-leading-space-name-yandex-core-v2", "obs-2026-07-17-ydx-parser-leading-space-name--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-missing-colon--yandex-01",
+    "body_id": "ydx-parser-missing-colon",
+    "body_file": "bodies/ydx-parser-missing-colon.txt",
+    "body_sha256": "9b46caf1c9a9f789e578135594d3698d0451260649b5c6efaf4248423e54412e",
+    "byte_size": 225,
+    "crawler": "Yandex",
+    "request_target": "/parser/missing-colon/control-before",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/parser/missing-colon/control-before$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-missing-colon-yandex-core-v2", "obs-2026-07-17-ydx-parser-missing-colon--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-missing-colon--yandex-02",
+    "body_id": "ydx-parser-missing-colon",
+    "body_file": "bodies/ydx-parser-missing-colon.txt",
+    "body_sha256": "9b46caf1c9a9f789e578135594d3698d0451260649b5c6efaf4248423e54412e",
+    "byte_size": 225,
+    "crawler": "Yandex",
+    "request_target": "/parser/missing-colon/candidate",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-missing-colon-yandex-core-v2", "obs-2026-07-17-ydx-parser-missing-colon--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-missing-colon--yandex-03",
+    "body_id": "ydx-parser-missing-colon",
+    "body_file": "bodies/ydx-parser-missing-colon.txt",
+    "body_sha256": "9b46caf1c9a9f789e578135594d3698d0451260649b5c6efaf4248423e54412e",
+    "byte_size": 225,
+    "crawler": "Yandex",
+    "request_target": "/parser/missing-colon/control-after",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 4,
+        "type": "disallow",
+        "value": "/parser/missing-colon/control-after$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-missing-colon-yandex-core-v2", "obs-2026-07-17-ydx-parser-missing-colon--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-missing-colon--yandex-04",
+    "body_id": "ydx-parser-missing-colon",
+    "body_file": "bodies/ydx-parser-missing-colon.txt",
+    "body_sha256": "9b46caf1c9a9f789e578135594d3698d0451260649b5c6efaf4248423e54412e",
+    "byte_size": 225,
+    "crawler": "Yandex",
+    "request_target": "/parser/missing-colon/control-restart",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 6,
+        "type": "disallow",
+        "value": "/parser/missing-colon/control-restart$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-missing-colon-yandex-core-v2", "obs-2026-07-17-ydx-parser-missing-colon--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-missing-colon--yandex-05",
+    "body_id": "ydx-parser-missing-colon",
+    "body_file": "bodies/ydx-parser-missing-colon.txt",
+    "body_sha256": "9b46caf1c9a9f789e578135594d3698d0451260649b5c6efaf4248423e54412e",
+    "byte_size": 225,
+    "crawler": "Yandex",
+    "request_target": "/parser/missing-colon/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-missing-colon-yandex-core-v2", "obs-2026-07-17-ydx-parser-missing-colon--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-missing-leading-slash--yandex-01",
+    "body_id": "ydx-parser-missing-leading-slash",
+    "body_file": "bodies/ydx-parser-missing-leading-slash.txt",
+    "body_sha256": "5da6dc237b88a637840ecf118e8961fdcf9910532177dda9ff6b83fd32fae19d",
+    "byte_size": 257,
+    "crawler": "Yandex",
+    "request_target": "/parser/missing-leading-slash/control-before",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/parser/missing-leading-slash/control-before$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-missing-leading-slash-yandex-core-v2", "obs-2026-07-17-ydx-parser-missing-leading-slash--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-missing-leading-slash--yandex-02",
+    "body_id": "ydx-parser-missing-leading-slash",
+    "body_file": "bodies/ydx-parser-missing-leading-slash.txt",
+    "body_sha256": "5da6dc237b88a637840ecf118e8961fdcf9910532177dda9ff6b83fd32fae19d",
+    "byte_size": 257,
+    "crawler": "Yandex",
+    "request_target": "/parser/missing-leading-slash/candidate",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-missing-leading-slash-yandex-core-v2", "obs-2026-07-17-ydx-parser-missing-leading-slash--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-missing-leading-slash--yandex-04",
+    "body_id": "ydx-parser-missing-leading-slash",
+    "body_file": "bodies/ydx-parser-missing-leading-slash.txt",
+    "body_sha256": "5da6dc237b88a637840ecf118e8961fdcf9910532177dda9ff6b83fd32fae19d",
+    "byte_size": 257,
+    "crawler": "Yandex",
+    "request_target": "/parser/missing-leading-slash/control-after",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 4,
+        "type": "disallow",
+        "value": "/parser/missing-leading-slash/control-after$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-missing-leading-slash-yandex-core-v2", "obs-2026-07-17-ydx-parser-missing-leading-slash--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-missing-leading-slash--yandex-05",
+    "body_id": "ydx-parser-missing-leading-slash",
+    "body_file": "bodies/ydx-parser-missing-leading-slash.txt",
+    "body_sha256": "5da6dc237b88a637840ecf118e8961fdcf9910532177dda9ff6b83fd32fae19d",
+    "byte_size": 257,
+    "crawler": "Yandex",
+    "request_target": "/parser/missing-leading-slash/control-restart",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 6,
+        "type": "disallow",
+        "value": "/parser/missing-leading-slash/control-restart$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-missing-leading-slash-yandex-core-v2", "obs-2026-07-17-ydx-parser-missing-leading-slash--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-missing-leading-slash--yandex-06",
+    "body_id": "ydx-parser-missing-leading-slash",
+    "body_file": "bodies/ydx-parser-missing-leading-slash.txt",
+    "body_sha256": "5da6dc237b88a637840ecf118e8961fdcf9910532177dda9ff6b83fd32fae19d",
+    "byte_size": 257,
+    "crawler": "Yandex",
+    "request_target": "/parser/missing-leading-slash/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-missing-leading-slash-yandex-core-v2", "obs-2026-07-17-ydx-parser-missing-leading-slash--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-orphan-before-agent--yandex-01",
+    "body_id": "ydx-parser-orphan-before-agent",
+    "body_file": "bodies/ydx-parser-orphan-before-agent.txt",
+    "body_sha256": "01dfe45262b2ea8862fb9bf9bf4db536462e97fc5c59eb63317dcc7fdc49eb65",
+    "byte_size": 257,
+    "crawler": "Yandex",
+    "request_target": "/parser/orphan-before-agent/candidate",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-orphan-before-agent-yandex-core-v2", "obs-2026-07-17-ydx-parser-orphan-before-agent--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-orphan-before-agent--yandex-02",
+    "body_id": "ydx-parser-orphan-before-agent",
+    "body_file": "bodies/ydx-parser-orphan-before-agent.txt",
+    "body_sha256": "01dfe45262b2ea8862fb9bf9bf4db536462e97fc5c59eb63317dcc7fdc49eb65",
+    "byte_size": 257,
+    "crawler": "Yandex",
+    "request_target": "/parser/orphan-before-agent/control-after-one",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": "/parser/orphan-before-agent/control-after-one$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-orphan-before-agent-yandex-core-v2", "obs-2026-07-17-ydx-parser-orphan-before-agent--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-orphan-before-agent--yandex-03",
+    "body_id": "ydx-parser-orphan-before-agent",
+    "body_file": "bodies/ydx-parser-orphan-before-agent.txt",
+    "body_sha256": "01dfe45262b2ea8862fb9bf9bf4db536462e97fc5c59eb63317dcc7fdc49eb65",
+    "byte_size": 257,
+    "crawler": "Yandex",
+    "request_target": "/parser/orphan-before-agent/control-after-two",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 4,
+        "type": "disallow",
+        "value": "/parser/orphan-before-agent/control-after-two$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-orphan-before-agent-yandex-core-v2", "obs-2026-07-17-ydx-parser-orphan-before-agent--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-orphan-before-agent--yandex-04",
+    "body_id": "ydx-parser-orphan-before-agent",
+    "body_file": "bodies/ydx-parser-orphan-before-agent.txt",
+    "body_sha256": "01dfe45262b2ea8862fb9bf9bf4db536462e97fc5c59eb63317dcc7fdc49eb65",
+    "byte_size": 257,
+    "crawler": "Yandex",
+    "request_target": "/parser/orphan-before-agent/control-restart",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 6,
+        "type": "disallow",
+        "value": "/parser/orphan-before-agent/control-restart$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-orphan-before-agent-yandex-core-v2", "obs-2026-07-17-ydx-parser-orphan-before-agent--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-orphan-before-agent--yandex-05",
+    "body_id": "ydx-parser-orphan-before-agent",
+    "body_file": "bodies/ydx-parser-orphan-before-agent.txt",
+    "body_sha256": "01dfe45262b2ea8862fb9bf9bf4db536462e97fc5c59eb63317dcc7fdc49eb65",
+    "byte_size": 257,
+    "crawler": "Yandex",
+    "request_target": "/parser/orphan-before-agent/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-orphan-before-agent-yandex-core-v2", "obs-2026-07-17-ydx-parser-orphan-before-agent--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-postcolon-tab--yandex-01",
+    "body_id": "ydx-parser-postcolon-tab",
+    "body_file": "bodies/ydx-parser-postcolon-tab.txt",
+    "body_sha256": "bbb48bc426e258afac3d69a94178b44850aca0dd1941698db636447cab6ad4d9",
+    "byte_size": 226,
+    "crawler": "Yandex",
+    "request_target": "/parser/postcolon-tab/control-before",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/parser/postcolon-tab/control-before$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-postcolon-tab-yandex-core-v2", "obs-2026-07-17-ydx-parser-postcolon-tab--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-postcolon-tab--yandex-02",
+    "body_id": "ydx-parser-postcolon-tab",
+    "body_file": "bodies/ydx-parser-postcolon-tab.txt",
+    "body_sha256": "bbb48bc426e258afac3d69a94178b44850aca0dd1941698db636447cab6ad4d9",
+    "byte_size": 226,
+    "crawler": "Yandex",
+    "request_target": "/parser/postcolon-tab/candidate",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": "/parser/postcolon-tab/candidate$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-postcolon-tab-yandex-core-v2", "obs-2026-07-17-ydx-parser-postcolon-tab--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-postcolon-tab--yandex-03",
+    "body_id": "ydx-parser-postcolon-tab",
+    "body_file": "bodies/ydx-parser-postcolon-tab.txt",
+    "body_sha256": "bbb48bc426e258afac3d69a94178b44850aca0dd1941698db636447cab6ad4d9",
+    "byte_size": 226,
+    "crawler": "Yandex",
+    "request_target": "/parser/postcolon-tab/control-after",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 4,
+        "type": "disallow",
+        "value": "/parser/postcolon-tab/control-after$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-postcolon-tab-yandex-core-v2", "obs-2026-07-17-ydx-parser-postcolon-tab--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-postcolon-tab--yandex-04",
+    "body_id": "ydx-parser-postcolon-tab",
+    "body_file": "bodies/ydx-parser-postcolon-tab.txt",
+    "body_sha256": "bbb48bc426e258afac3d69a94178b44850aca0dd1941698db636447cab6ad4d9",
+    "byte_size": 226,
+    "crawler": "Yandex",
+    "request_target": "/parser/postcolon-tab/control-restart",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 6,
+        "type": "disallow",
+        "value": "/parser/postcolon-tab/control-restart$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-postcolon-tab-yandex-core-v2", "obs-2026-07-17-ydx-parser-postcolon-tab--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-postcolon-tab--yandex-05",
+    "body_id": "ydx-parser-postcolon-tab",
+    "body_file": "bodies/ydx-parser-postcolon-tab.txt",
+    "body_sha256": "bbb48bc426e258afac3d69a94178b44850aca0dd1941698db636447cab6ad4d9",
+    "byte_size": 226,
+    "crawler": "Yandex",
+    "request_target": "/parser/postcolon-tab/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-postcolon-tab-yandex-core-v2", "obs-2026-07-17-ydx-parser-postcolon-tab--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-typo-disalow--yandex-01",
+    "body_id": "ydx-parser-typo-disalow",
+    "body_file": "bodies/ydx-parser-typo-disalow.txt",
+    "body_sha256": "35812ac701d3a9ecc49781f9c064c4a375af46121490b6bcd0027497e788e9ba",
+    "byte_size": 221,
+    "crawler": "Yandex",
+    "request_target": "/parser/typo-disalow/control-before",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/parser/typo-disalow/control-before$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-typo-disalow-yandex-core-v2", "obs-2026-07-17-ydx-parser-typo-disalow--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-typo-disalow--yandex-02",
+    "body_id": "ydx-parser-typo-disalow",
+    "body_file": "bodies/ydx-parser-typo-disalow.txt",
+    "body_sha256": "35812ac701d3a9ecc49781f9c064c4a375af46121490b6bcd0027497e788e9ba",
+    "byte_size": 221,
+    "crawler": "Yandex",
+    "request_target": "/parser/typo-disalow/candidate",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-typo-disalow-yandex-core-v2", "obs-2026-07-17-ydx-parser-typo-disalow--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-typo-disalow--yandex-03",
+    "body_id": "ydx-parser-typo-disalow",
+    "body_file": "bodies/ydx-parser-typo-disalow.txt",
+    "body_sha256": "35812ac701d3a9ecc49781f9c064c4a375af46121490b6bcd0027497e788e9ba",
+    "byte_size": 221,
+    "crawler": "Yandex",
+    "request_target": "/parser/typo-disalow/control-after",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 4,
+        "type": "disallow",
+        "value": "/parser/typo-disalow/control-after$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-typo-disalow-yandex-core-v2", "obs-2026-07-17-ydx-parser-typo-disalow--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-typo-disalow--yandex-04",
+    "body_id": "ydx-parser-typo-disalow",
+    "body_file": "bodies/ydx-parser-typo-disalow.txt",
+    "body_sha256": "35812ac701d3a9ecc49781f9c064c4a375af46121490b6bcd0027497e788e9ba",
+    "byte_size": 221,
+    "crawler": "Yandex",
+    "request_target": "/parser/typo-disalow/control-restart",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 6,
+        "type": "disallow",
+        "value": "/parser/typo-disalow/control-restart$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-typo-disalow-yandex-core-v2", "obs-2026-07-17-ydx-parser-typo-disalow--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-typo-disalow--yandex-05",
+    "body_id": "ydx-parser-typo-disalow",
+    "body_file": "bodies/ydx-parser-typo-disalow.txt",
+    "body_sha256": "35812ac701d3a9ecc49781f9c064c4a375af46121490b6bcd0027497e788e9ba",
+    "byte_size": 221,
+    "crawler": "Yandex",
+    "request_target": "/parser/typo-disalow/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-typo-disalow-yandex-core-v2", "obs-2026-07-17-ydx-parser-typo-disalow--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-ua-trailing-token--yandex-01",
+    "body_id": "ydx-parser-ua-trailing-token",
+    "body_file": "bodies/ydx-parser-ua-trailing-token.txt",
+    "body_sha256": "4c688e99404d3eb028e5b6bd1c17396c579c805e02ddbe4b42fbfa97b44bb233",
+    "byte_size": 267,
+    "crawler": "Yandex",
+    "request_target": "/parser/ua-trailing-token/control-before",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/parser/ua-trailing-token/control-before$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-ua-trailing-token-yandex-core-v2", "obs-2026-07-17-ydx-parser-ua-trailing-token--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-ua-trailing-token--yandex-02",
+    "body_id": "ydx-parser-ua-trailing-token",
+    "body_file": "bodies/ydx-parser-ua-trailing-token.txt",
+    "body_sha256": "4c688e99404d3eb028e5b6bd1c17396c579c805e02ddbe4b42fbfa97b44bb233",
+    "byte_size": 267,
+    "crawler": "Yandex",
+    "request_target": "/parser/ua-trailing-token/candidate",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-ua-trailing-token-yandex-core-v2", "obs-2026-07-17-ydx-parser-ua-trailing-token--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-ua-trailing-token--yandex-03",
+    "body_id": "ydx-parser-ua-trailing-token",
+    "body_file": "bodies/ydx-parser-ua-trailing-token.txt",
+    "body_sha256": "4c688e99404d3eb028e5b6bd1c17396c579c805e02ddbe4b42fbfa97b44bb233",
+    "byte_size": 267,
+    "crawler": "Yandex",
+    "request_target": "/parser/ua-trailing-token/control-after",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 6,
+        "type": "disallow",
+        "value": "/parser/ua-trailing-token/control-after$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-ua-trailing-token-yandex-core-v2", "obs-2026-07-17-ydx-parser-ua-trailing-token--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-ua-trailing-token--yandex-04",
+    "body_id": "ydx-parser-ua-trailing-token",
+    "body_file": "bodies/ydx-parser-ua-trailing-token.txt",
+    "body_sha256": "4c688e99404d3eb028e5b6bd1c17396c579c805e02ddbe4b42fbfa97b44bb233",
+    "byte_size": 267,
+    "crawler": "Yandex",
+    "request_target": "/parser/ua-trailing-token/control-restart",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 7,
+        "type": "disallow",
+        "value": "/parser/ua-trailing-token/control-restart$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-ua-trailing-token-yandex-core-v2", "obs-2026-07-17-ydx-parser-ua-trailing-token--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-ua-trailing-token--yandex-05",
+    "body_id": "ydx-parser-ua-trailing-token",
+    "body_file": "bodies/ydx-parser-ua-trailing-token.txt",
+    "body_sha256": "4c688e99404d3eb028e5b6bd1c17396c579c805e02ddbe4b42fbfa97b44bb233",
+    "byte_size": 267,
+    "crawler": "Yandex",
+    "request_target": "/parser/ua-trailing-token/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-ua-trailing-token-yandex-core-v2", "obs-2026-07-17-ydx-parser-ua-trailing-token--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-user-agent-space--yandex-01",
+    "body_id": "ydx-parser-user-agent-space",
+    "body_file": "bodies/ydx-parser-user-agent-space.txt",
+    "body_sha256": "46bd256be49bff617129dce24e236f93ee5779c2f0799712c1d3a17aa3228632",
+    "byte_size": 256,
+    "crawler": "Yandex",
+    "request_target": "/parser/user-agent-space/control-before",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/parser/user-agent-space/control-before$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-user-agent-space-yandex-core-v2", "obs-2026-07-17-ydx-parser-user-agent-space--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-user-agent-space--yandex-02",
+    "body_id": "ydx-parser-user-agent-space",
+    "body_file": "bodies/ydx-parser-user-agent-space.txt",
+    "body_sha256": "46bd256be49bff617129dce24e236f93ee5779c2f0799712c1d3a17aa3228632",
+    "byte_size": 256,
+    "crawler": "Yandex",
+    "request_target": "/parser/user-agent-space/candidate",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 4,
+        "type": "disallow",
+        "value": "/parser/user-agent-space/candidate$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-user-agent-space-yandex-core-v2", "obs-2026-07-17-ydx-parser-user-agent-space--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-user-agent-space--yandex-03",
+    "body_id": "ydx-parser-user-agent-space",
+    "body_file": "bodies/ydx-parser-user-agent-space.txt",
+    "body_sha256": "46bd256be49bff617129dce24e236f93ee5779c2f0799712c1d3a17aa3228632",
+    "byte_size": 256,
+    "crawler": "Yandex",
+    "request_target": "/parser/user-agent-space/control-after",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 6,
+        "type": "disallow",
+        "value": "/parser/user-agent-space/control-after$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-user-agent-space-yandex-core-v2", "obs-2026-07-17-ydx-parser-user-agent-space--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-user-agent-space--yandex-04",
+    "body_id": "ydx-parser-user-agent-space",
+    "body_file": "bodies/ydx-parser-user-agent-space.txt",
+    "body_sha256": "46bd256be49bff617129dce24e236f93ee5779c2f0799712c1d3a17aa3228632",
+    "byte_size": 256,
+    "crawler": "Yandex",
+    "request_target": "/parser/user-agent-space/control-restart",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 7,
+        "type": "disallow",
+        "value": "/parser/user-agent-space/control-restart$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-user-agent-space-yandex-core-v2", "obs-2026-07-17-ydx-parser-user-agent-space--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-user-agent-space--yandex-05",
+    "body_id": "ydx-parser-user-agent-space",
+    "body_file": "bodies/ydx-parser-user-agent-space.txt",
+    "body_sha256": "46bd256be49bff617129dce24e236f93ee5779c2f0799712c1d3a17aa3228632",
+    "byte_size": 256,
+    "crawler": "Yandex",
+    "request_target": "/parser/user-agent-space/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-user-agent-space-yandex-core-v2", "obs-2026-07-17-ydx-parser-user-agent-space--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-value-trailing-spaces--yandex-01",
+    "body_id": "ydx-parser-value-trailing-spaces",
+    "body_file": "bodies/ydx-parser-value-trailing-spaces.txt",
+    "body_sha256": "534369f6847376f7ff4ba0b6d415c78f94fa0dc8dcb5a20209e0d2ae15768a08",
+    "byte_size": 261,
+    "crawler": "Yandex",
+    "request_target": "/parser/value-trailing-spaces/control-before",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/parser/value-trailing-spaces/control-before$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-value-trailing-spaces-yandex-core-v2", "obs-2026-07-17-ydx-parser-value-trailing-spaces--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-value-trailing-spaces--yandex-02",
+    "body_id": "ydx-parser-value-trailing-spaces",
+    "body_file": "bodies/ydx-parser-value-trailing-spaces.txt",
+    "body_sha256": "534369f6847376f7ff4ba0b6d415c78f94fa0dc8dcb5a20209e0d2ae15768a08",
+    "byte_size": 261,
+    "crawler": "Yandex",
+    "request_target": "/parser/value-trailing-spaces/candidate",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": "/parser/value-trailing-spaces/candidate$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-value-trailing-spaces-yandex-core-v2", "obs-2026-07-17-ydx-parser-value-trailing-spaces--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-value-trailing-spaces--yandex-03",
+    "body_id": "ydx-parser-value-trailing-spaces",
+    "body_file": "bodies/ydx-parser-value-trailing-spaces.txt",
+    "body_sha256": "534369f6847376f7ff4ba0b6d415c78f94fa0dc8dcb5a20209e0d2ae15768a08",
+    "byte_size": 261,
+    "crawler": "Yandex",
+    "request_target": "/parser/value-trailing-spaces/control-after",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 4,
+        "type": "disallow",
+        "value": "/parser/value-trailing-spaces/control-after$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-value-trailing-spaces-yandex-core-v2", "obs-2026-07-17-ydx-parser-value-trailing-spaces--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-value-trailing-spaces--yandex-04",
+    "body_id": "ydx-parser-value-trailing-spaces",
+    "body_file": "bodies/ydx-parser-value-trailing-spaces.txt",
+    "body_sha256": "534369f6847376f7ff4ba0b6d415c78f94fa0dc8dcb5a20209e0d2ae15768a08",
+    "byte_size": 261,
+    "crawler": "Yandex",
+    "request_target": "/parser/value-trailing-spaces/control-restart",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 6,
+        "type": "disallow",
+        "value": "/parser/value-trailing-spaces/control-restart$"
+      }
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-value-trailing-spaces-yandex-core-v2", "obs-2026-07-17-ydx-parser-value-trailing-spaces--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-parser-value-trailing-spaces--yandex-05",
+    "body_id": "ydx-parser-value-trailing-spaces",
+    "body_file": "bodies/ydx-parser-value-trailing-spaces.txt",
+    "body_sha256": "534369f6847376f7ff4ba0b6d415c78f94fa0dc8dcb5a20209e0d2ae15768a08",
+    "byte_size": 261,
+    "crawler": "Yandex",
+    "request_target": "/parser/value-trailing-spaces/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-15-ydx-parser-value-trailing-spaces-yandex-core-v2", "obs-2026-07-17-ydx-parser-value-trailing-spaces--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-wildcard-specificity-matrix-v1--yandex-01",
+    "body_id": "ydx-wildcard-specificity-matrix-v1",
+    "body_file": "bodies/ydx-wildcard-specificity-matrix-v1.txt",
+    "body_sha256": "9a6b2eb5056fd0fc8636cccec6e4292a5dc8a60a4bbfd930a97fc32c3b48545a",
+    "byte_size": 316,
+    "crawler": "Yandex",
+    "request_target": "/spec/literal/ab",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/spec/literal/ab*"
+      }
+    },
+    "sources": ["obs-2026-07-16-ydx-wildcard-specificity-matrix-v1-yandex-wildcard-specificity-v1", "obs-2026-07-17-ydx-wildcard-specificity-matrix-v1--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-wildcard-specificity-matrix-v1--yandex-02",
+    "body_id": "ydx-wildcard-specificity-matrix-v1",
+    "body_file": "bodies/ydx-wildcard-specificity-matrix-v1.txt",
+    "body_sha256": "9a6b2eb5056fd0fc8636cccec6e4292a5dc8a60a4bbfd930a97fc32c3b48545a",
+    "byte_size": 316,
+    "crawler": "Yandex",
+    "request_target": "/spec/consume/ab/c",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 4,
+        "type": "allow",
+        "value": "/spec/consume/a*b"
+      }
+    },
+    "sources": ["obs-2026-07-16-ydx-wildcard-specificity-matrix-v1-yandex-wildcard-specificity-v1", "obs-2026-07-17-ydx-wildcard-specificity-matrix-v1--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-wildcard-specificity-matrix-v1--yandex-03",
+    "body_id": "ydx-wildcard-specificity-matrix-v1",
+    "body_file": "bodies/ydx-wildcard-specificity-matrix-v1.txt",
+    "body_sha256": "9a6b2eb5056fd0fc8636cccec6e4292a5dc8a60a4bbfd930a97fc32c3b48545a",
+    "byte_size": 316,
+    "crawler": "Yandex",
+    "request_target": "/spec/consume/ab?c",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 4,
+        "type": "allow",
+        "value": "/spec/consume/a*b"
+      }
+    },
+    "sources": ["obs-2026-07-16-ydx-wildcard-specificity-matrix-v1-yandex-wildcard-specificity-v1", "obs-2026-07-17-ydx-wildcard-specificity-matrix-v1--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-wildcard-specificity-matrix-v1--yandex-04",
+    "body_id": "ydx-wildcard-specificity-matrix-v1",
+    "body_file": "bodies/ydx-wildcard-specificity-matrix-v1.txt",
+    "body_sha256": "9a6b2eb5056fd0fc8636cccec6e4292a5dc8a60a4bbfd930a97fc32c3b48545a",
+    "byte_size": 316,
+    "crawler": "Yandex",
+    "request_target": "/spec/order/disallow-first",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 7,
+        "type": "allow",
+        "value": "/spec/order/disallow-first"
+      }
+    },
+    "sources": ["obs-2026-07-16-ydx-wildcard-specificity-matrix-v1-yandex-wildcard-specificity-v1", "obs-2026-07-17-ydx-wildcard-specificity-matrix-v1--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-wildcard-specificity-matrix-v1--yandex-05",
+    "body_id": "ydx-wildcard-specificity-matrix-v1",
+    "body_file": "bodies/ydx-wildcard-specificity-matrix-v1.txt",
+    "body_sha256": "9a6b2eb5056fd0fc8636cccec6e4292a5dc8a60a4bbfd930a97fc32c3b48545a",
+    "byte_size": 316,
+    "crawler": "Yandex",
+    "request_target": "/spec/order/allow-first",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 8,
+        "type": "allow",
+        "value": "/spec/order/allow-first"
+      }
+    },
+    "sources": ["obs-2026-07-16-ydx-wildcard-specificity-matrix-v1-yandex-wildcard-specificity-v1", "obs-2026-07-17-ydx-wildcard-specificity-matrix-v1--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-wildcard-specificity-matrix-v1--yandex-06",
+    "body_id": "ydx-wildcard-specificity-matrix-v1",
+    "body_file": "bodies/ydx-wildcard-specificity-matrix-v1.txt",
+    "body_sha256": "9a6b2eb5056fd0fc8636cccec6e4292a5dc8a60a4bbfd930a97fc32c3b48545a",
+    "byte_size": 316,
+    "crawler": "Yandex",
+    "request_target": "/spec/control/allowed",
+    "expected": {
+      "decision": "allow",
+      "source": "rule_allow",
+      "matched_rule": {
+        "line": 11,
+        "type": "allow",
+        "value": "/spec/control/allowed$"
+      }
+    },
+    "sources": ["obs-2026-07-16-ydx-wildcard-specificity-matrix-v1-yandex-wildcard-specificity-v1", "obs-2026-07-17-ydx-wildcard-specificity-matrix-v1--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-wildcard-specificity-matrix-v1--yandex-07",
+    "body_id": "ydx-wildcard-specificity-matrix-v1",
+    "body_file": "bodies/ydx-wildcard-specificity-matrix-v1.txt",
+    "body_sha256": "9a6b2eb5056fd0fc8636cccec6e4292a5dc8a60a4bbfd930a97fc32c3b48545a",
+    "byte_size": 316,
+    "crawler": "Yandex",
+    "request_target": "/spec/control/blocked",
+    "expected": {
+      "decision": "disallow",
+      "source": "rule_disallow",
+      "matched_rule": {
+        "line": 10,
+        "type": "disallow",
+        "value": "/spec/control/"
+      }
+    },
+    "sources": ["obs-2026-07-16-ydx-wildcard-specificity-matrix-v1-yandex-wildcard-specificity-v1", "obs-2026-07-17-ydx-wildcard-specificity-matrix-v1--yandex-accepted-evidence-replication-v1"]
+  },
+  {
+    "case_id": "ydx-wildcard-specificity-matrix-v1--yandex-08",
+    "body_id": "ydx-wildcard-specificity-matrix-v1",
+    "body_file": "bodies/ydx-wildcard-specificity-matrix-v1.txt",
+    "body_sha256": "9a6b2eb5056fd0fc8636cccec6e4292a5dc8a60a4bbfd930a97fc32c3b48545a",
+    "byte_size": 316,
+    "crawler": "Yandex",
+    "request_target": "/spec/open",
+    "expected": {
+      "decision": "allow",
+      "source": "default_allow",
+      "matched_rule": null
+    },
+    "sources": ["obs-2026-07-16-ydx-wildcard-specificity-matrix-v1-yandex-wildcard-specificity-v1", "obs-2026-07-17-ydx-wildcard-specificity-matrix-v1--yandex-accepted-evidence-replication-v1"]
+  }
+]

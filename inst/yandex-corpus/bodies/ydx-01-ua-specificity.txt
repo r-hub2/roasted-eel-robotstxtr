@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /ua/star
+
+User-agent: Yandex
+Disallow: /ua/general
+
+User-agent: YandexAdditionalBot
+Disallow: /ua/additional
+

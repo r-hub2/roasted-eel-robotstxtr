@@ -1,0 +1,2 @@
+User-agent: bingbot
+Disallow: /hl-a%2fb$

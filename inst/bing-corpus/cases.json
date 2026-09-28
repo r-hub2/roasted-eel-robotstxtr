@@ -1,0 +1,4840 @@
+[
+  {
+    "case_id": "obs-ea-adidxbot-empty-allow-before-disallow-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-adidxbot-empty-allow-inert"],
+    "probe_case_id": "pc-ea-adidxbot-empty-allow-before-disallow-negative",
+    "body_ref": "body-ea-adidxbot-empty-allow-before-disallow",
+    "body_file": "bodies/body-ea-adidxbot-empty-allow-before-disallow.txt",
+    "body_sha256": "5d6adfa791d7b06fa3684327fdbe755e6a8ed84dec9dc59fe436c9ffb2ea8e90",
+    "byte_size": 41,
+    "request_target": "/z/item?probe=empty-allow-before-disallow-negative",
+    "request_target_sha256": "4c8e701172f9a56f74576af4aa867ebbcb0f32d2cc020ed26e30f1421398cc44",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ea-adidxbot-empty-allow-before-disallow-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-adidxbot-empty-allow-inert"],
+    "probe_case_id": "pc-ea-adidxbot-empty-allow-before-disallow-positive",
+    "body_ref": "body-ea-adidxbot-empty-allow-before-disallow",
+    "body_file": "bodies/body-ea-adidxbot-empty-allow-before-disallow.txt",
+    "body_sha256": "5d6adfa791d7b06fa3684327fdbe755e6a8ed84dec9dc59fe436c9ffb2ea8e90",
+    "byte_size": 41,
+    "request_target": "/e/item?probe=empty-allow-before-disallow-positive",
+    "request_target_sha256": "907228cc2ac2c13f8983bb47e8853b8d6a78156f8b89b5703c580adbea85a83d",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": "/e",
+        "value_raw_hex": "2f65"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ea-adidxbot-empty-allow-only-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-adidxbot-empty-allow-inert"],
+    "probe_case_id": "pc-ea-adidxbot-empty-allow-only-negative",
+    "body_ref": "body-ea-adidxbot-empty-allow-only",
+    "body_file": "bodies/body-ea-adidxbot-empty-allow-only.txt",
+    "body_sha256": "430a1eb78cfa9e0318b0f6e3e35d578f985f2a4de7941b4394d14a765803a98f",
+    "byte_size": 28,
+    "request_target": "/z/item?probe=empty-allow-only-negative",
+    "request_target_sha256": "f64c0bfff45e0ef69f233958ad01fd12e2212a7b36626bacc8e332d4a54cf477",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ea-adidxbot-empty-allow-only-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-adidxbot-empty-allow-inert"],
+    "probe_case_id": "pc-ea-adidxbot-empty-allow-only-positive",
+    "body_ref": "body-ea-adidxbot-empty-allow-only",
+    "body_file": "bodies/body-ea-adidxbot-empty-allow-only.txt",
+    "body_sha256": "430a1eb78cfa9e0318b0f6e3e35d578f985f2a4de7941b4394d14a765803a98f",
+    "byte_size": 28,
+    "request_target": "/e/item?probe=empty-allow-only-positive",
+    "request_target_sha256": "c090032371247e5e64179c342a45570dc50c5597af169d0b07fc8d688e67f327",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ea-adidxbot-empty-allow-with-disallow-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-adidxbot-empty-allow-inert"],
+    "probe_case_id": "pc-ea-adidxbot-empty-allow-with-disallow-negative",
+    "body_ref": "body-ea-adidxbot-empty-allow-with-disallow",
+    "body_file": "bodies/body-ea-adidxbot-empty-allow-with-disallow.txt",
+    "body_sha256": "fe035e0ed60f138539f87c5505c163125cdc249aadecba06f8f7bb65d6821208",
+    "byte_size": 41,
+    "request_target": "/z/item?probe=empty-allow-with-disallow-negative",
+    "request_target_sha256": "d0dc144eeff78d6c1b831d571b39215aa85d7bd988a43b0d9e865db41b919a7a",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ea-adidxbot-empty-allow-with-disallow-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-adidxbot-empty-allow-inert"],
+    "probe_case_id": "pc-ea-adidxbot-empty-allow-with-disallow-positive",
+    "body_ref": "body-ea-adidxbot-empty-allow-with-disallow",
+    "body_file": "bodies/body-ea-adidxbot-empty-allow-with-disallow.txt",
+    "body_sha256": "fe035e0ed60f138539f87c5505c163125cdc249aadecba06f8f7bb65d6821208",
+    "byte_size": 41,
+    "request_target": "/e/item?probe=empty-allow-with-disallow-positive",
+    "request_target_sha256": "ff340d58126be771cc08054827194abec8affede011b6799517d598896bc2d0a",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/e",
+        "value_raw_hex": "2f65"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ea-adidxbot-empty-disallow-after-rule-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-adidxbot-empty-disallow-inert"],
+    "probe_case_id": "pc-ea-adidxbot-empty-disallow-after-rule-negative",
+    "body_ref": "body-ea-adidxbot-empty-disallow-after-rule",
+    "body_file": "bodies/body-ea-adidxbot-empty-disallow-after-rule.txt",
+    "body_sha256": "a05aa9eeb86bfed7e8c5a29df6678a44cb3f8645079e490e5409224905a6a930",
+    "byte_size": 44,
+    "request_target": "/z/item?probe=empty-disallow-after-rule-negative",
+    "request_target_sha256": "a8c13199bea828c97c599bcca193d55a2f981006dafe28fc2df251db15c5a8cf",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ea-adidxbot-empty-disallow-after-rule-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-adidxbot-empty-disallow-inert"],
+    "probe_case_id": "pc-ea-adidxbot-empty-disallow-after-rule-positive",
+    "body_ref": "body-ea-adidxbot-empty-disallow-after-rule",
+    "body_file": "bodies/body-ea-adidxbot-empty-disallow-after-rule.txt",
+    "body_sha256": "a05aa9eeb86bfed7e8c5a29df6678a44cb3f8645079e490e5409224905a6a930",
+    "byte_size": 44,
+    "request_target": "/e/item?probe=empty-disallow-after-rule-positive",
+    "request_target_sha256": "bad7aba089fd351975eb66b35777e71e88f907842b6bfc00c2e83f83db05a2dc",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/e",
+        "value_raw_hex": "2f65"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ea-adidxbot-empty-disallow-before-rule-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-adidxbot-empty-disallow-inert"],
+    "probe_case_id": "pc-ea-adidxbot-empty-disallow-before-rule-negative",
+    "body_ref": "body-ea-adidxbot-empty-disallow-before-rule",
+    "body_file": "bodies/body-ea-adidxbot-empty-disallow-before-rule.txt",
+    "body_sha256": "f348c37d4286457048e628aa52046ba2a7406f521ed153fbe585d6186fe44890",
+    "byte_size": 44,
+    "request_target": "/z/item?probe=empty-disallow-before-rule-negative",
+    "request_target_sha256": "f406245abaa18f752758954d875f784372d1fe888ee6877ab7b8b6acc9c04bf3",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ea-adidxbot-empty-disallow-before-rule-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-adidxbot-empty-disallow-inert"],
+    "probe_case_id": "pc-ea-adidxbot-empty-disallow-before-rule-positive",
+    "body_ref": "body-ea-adidxbot-empty-disallow-before-rule",
+    "body_file": "bodies/body-ea-adidxbot-empty-disallow-before-rule.txt",
+    "body_sha256": "f348c37d4286457048e628aa52046ba2a7406f521ed153fbe585d6186fe44890",
+    "byte_size": 44,
+    "request_target": "/e/item?probe=empty-disallow-before-rule-positive",
+    "request_target_sha256": "c9172f5b40fe76eb99f4a88f76f8477bc73659ca9fd8a2a5d0c7b53dbfc084be",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": "/e",
+        "value_raw_hex": "2f65"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ea-adidxbot-empty-disallow-only-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-adidxbot-empty-disallow-inert"],
+    "probe_case_id": "pc-ea-adidxbot-empty-disallow-only-negative",
+    "body_ref": "body-ea-adidxbot-empty-disallow-only",
+    "body_file": "bodies/body-ea-adidxbot-empty-disallow-only.txt",
+    "body_sha256": "eb59c460032d2780218970a19cbeb322c4c2049cb90a64bcdd617c4d8203a7c6",
+    "byte_size": 31,
+    "request_target": "/z/item?probe=empty-disallow-only-negative",
+    "request_target_sha256": "c558e8d0277a4f593d5cc100a9bccfa38f0bf0415ea8c268968d24c751252bb7",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ea-adidxbot-empty-disallow-only-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-adidxbot-empty-disallow-inert"],
+    "probe_case_id": "pc-ea-adidxbot-empty-disallow-only-positive",
+    "body_ref": "body-ea-adidxbot-empty-disallow-only",
+    "body_file": "bodies/body-ea-adidxbot-empty-disallow-only.txt",
+    "body_sha256": "eb59c460032d2780218970a19cbeb322c4c2049cb90a64bcdd617c4d8203a7c6",
+    "byte_size": 31,
+    "request_target": "/e/item?probe=empty-disallow-only-positive",
+    "request_target_sha256": "03c8975f322defdb5448180b2d898512593274c932da2a8a4fb6ffd181b48027",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ea-bingbot-empty-allow-before-disallow-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-bingbot-empty-allow-inert"],
+    "probe_case_id": "pc-ea-bingbot-empty-allow-before-disallow-negative",
+    "body_ref": "body-ea-bingbot-empty-allow-before-disallow",
+    "body_file": "bodies/body-ea-bingbot-empty-allow-before-disallow.txt",
+    "body_sha256": "e2a3e5d72612044790156276ef2617cebdf691fed3e5619fa1bc465adf369295",
+    "byte_size": 40,
+    "request_target": "/z/item?probe=empty-allow-before-disallow-negative",
+    "request_target_sha256": "4c8e701172f9a56f74576af4aa867ebbcb0f32d2cc020ed26e30f1421398cc44",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ea-bingbot-empty-allow-before-disallow-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-bingbot-empty-allow-inert"],
+    "probe_case_id": "pc-ea-bingbot-empty-allow-before-disallow-positive",
+    "body_ref": "body-ea-bingbot-empty-allow-before-disallow",
+    "body_file": "bodies/body-ea-bingbot-empty-allow-before-disallow.txt",
+    "body_sha256": "e2a3e5d72612044790156276ef2617cebdf691fed3e5619fa1bc465adf369295",
+    "byte_size": 40,
+    "request_target": "/e/item?probe=empty-allow-before-disallow-positive",
+    "request_target_sha256": "907228cc2ac2c13f8983bb47e8853b8d6a78156f8b89b5703c580adbea85a83d",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": "/e",
+        "value_raw_hex": "2f65"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ea-bingbot-empty-allow-only-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-bingbot-empty-allow-inert"],
+    "probe_case_id": "pc-ea-bingbot-empty-allow-only-negative",
+    "body_ref": "body-ea-bingbot-empty-allow-only",
+    "body_file": "bodies/body-ea-bingbot-empty-allow-only.txt",
+    "body_sha256": "84792f0e741d6c72219156feb54ac8759d8dcc950eed1cd3ca7bf8e5353feade",
+    "byte_size": 27,
+    "request_target": "/z/item?probe=empty-allow-only-negative",
+    "request_target_sha256": "f64c0bfff45e0ef69f233958ad01fd12e2212a7b36626bacc8e332d4a54cf477",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ea-bingbot-empty-allow-only-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-bingbot-empty-allow-inert"],
+    "probe_case_id": "pc-ea-bingbot-empty-allow-only-positive",
+    "body_ref": "body-ea-bingbot-empty-allow-only",
+    "body_file": "bodies/body-ea-bingbot-empty-allow-only.txt",
+    "body_sha256": "84792f0e741d6c72219156feb54ac8759d8dcc950eed1cd3ca7bf8e5353feade",
+    "byte_size": 27,
+    "request_target": "/e/item?probe=empty-allow-only-positive",
+    "request_target_sha256": "c090032371247e5e64179c342a45570dc50c5597af169d0b07fc8d688e67f327",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ea-bingbot-empty-allow-with-disallow-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-bingbot-empty-allow-inert"],
+    "probe_case_id": "pc-ea-bingbot-empty-allow-with-disallow-negative",
+    "body_ref": "body-ea-bingbot-empty-allow-with-disallow",
+    "body_file": "bodies/body-ea-bingbot-empty-allow-with-disallow.txt",
+    "body_sha256": "4b69d35c82e9b686c69ccf16e2f1953193c21acdd4435c454a3ce1c680cb0a0b",
+    "byte_size": 40,
+    "request_target": "/z/item?probe=empty-allow-with-disallow-negative",
+    "request_target_sha256": "d0dc144eeff78d6c1b831d571b39215aa85d7bd988a43b0d9e865db41b919a7a",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ea-bingbot-empty-allow-with-disallow-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-bingbot-empty-allow-inert"],
+    "probe_case_id": "pc-ea-bingbot-empty-allow-with-disallow-positive",
+    "body_ref": "body-ea-bingbot-empty-allow-with-disallow",
+    "body_file": "bodies/body-ea-bingbot-empty-allow-with-disallow.txt",
+    "body_sha256": "4b69d35c82e9b686c69ccf16e2f1953193c21acdd4435c454a3ce1c680cb0a0b",
+    "byte_size": 40,
+    "request_target": "/e/item?probe=empty-allow-with-disallow-positive",
+    "request_target_sha256": "ff340d58126be771cc08054827194abec8affede011b6799517d598896bc2d0a",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/e",
+        "value_raw_hex": "2f65"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ea-bingbot-empty-disallow-after-rule-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-bingbot-empty-disallow-inert"],
+    "probe_case_id": "pc-ea-bingbot-empty-disallow-after-rule-negative",
+    "body_ref": "body-ea-bingbot-empty-disallow-after-rule",
+    "body_file": "bodies/body-ea-bingbot-empty-disallow-after-rule.txt",
+    "body_sha256": "19e447e726f2358b6b07ccfd0f7bb5b6ac02f626bff3bc2c799c2b42786e6f88",
+    "byte_size": 43,
+    "request_target": "/z/item?probe=empty-disallow-after-rule-negative",
+    "request_target_sha256": "a8c13199bea828c97c599bcca193d55a2f981006dafe28fc2df251db15c5a8cf",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ea-bingbot-empty-disallow-after-rule-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-bingbot-empty-disallow-inert"],
+    "probe_case_id": "pc-ea-bingbot-empty-disallow-after-rule-positive",
+    "body_ref": "body-ea-bingbot-empty-disallow-after-rule",
+    "body_file": "bodies/body-ea-bingbot-empty-disallow-after-rule.txt",
+    "body_sha256": "19e447e726f2358b6b07ccfd0f7bb5b6ac02f626bff3bc2c799c2b42786e6f88",
+    "byte_size": 43,
+    "request_target": "/e/item?probe=empty-disallow-after-rule-positive",
+    "request_target_sha256": "bad7aba089fd351975eb66b35777e71e88f907842b6bfc00c2e83f83db05a2dc",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/e",
+        "value_raw_hex": "2f65"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ea-bingbot-empty-disallow-before-rule-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-bingbot-empty-disallow-inert"],
+    "probe_case_id": "pc-ea-bingbot-empty-disallow-before-rule-negative",
+    "body_ref": "body-ea-bingbot-empty-disallow-before-rule",
+    "body_file": "bodies/body-ea-bingbot-empty-disallow-before-rule.txt",
+    "body_sha256": "e6d4b8749a3f43c7bc796feb711e2dc4fb0f14776dc92105029cd9a6722610ce",
+    "byte_size": 43,
+    "request_target": "/z/item?probe=empty-disallow-before-rule-negative",
+    "request_target_sha256": "f406245abaa18f752758954d875f784372d1fe888ee6877ab7b8b6acc9c04bf3",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ea-bingbot-empty-disallow-before-rule-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-bingbot-empty-disallow-inert"],
+    "probe_case_id": "pc-ea-bingbot-empty-disallow-before-rule-positive",
+    "body_ref": "body-ea-bingbot-empty-disallow-before-rule",
+    "body_file": "bodies/body-ea-bingbot-empty-disallow-before-rule.txt",
+    "body_sha256": "e6d4b8749a3f43c7bc796feb711e2dc4fb0f14776dc92105029cd9a6722610ce",
+    "byte_size": 43,
+    "request_target": "/e/item?probe=empty-disallow-before-rule-positive",
+    "request_target_sha256": "c9172f5b40fe76eb99f4a88f76f8477bc73659ca9fd8a2a5d0c7b53dbfc084be",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": "/e",
+        "value_raw_hex": "2f65"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ea-bingbot-empty-disallow-only-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-bingbot-empty-disallow-inert"],
+    "probe_case_id": "pc-ea-bingbot-empty-disallow-only-negative",
+    "body_ref": "body-ea-bingbot-empty-disallow-only",
+    "body_file": "bodies/body-ea-bingbot-empty-disallow-only.txt",
+    "body_sha256": "0d0d132d75e54087cefad21d638f7f509774cee6deb052af7c3ac8f469408f52",
+    "byte_size": 30,
+    "request_target": "/z/item?probe=empty-disallow-only-negative",
+    "request_target_sha256": "c558e8d0277a4f593d5cc100a9bccfa38f0bf0415ea8c268968d24c751252bb7",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ea-bingbot-empty-disallow-only-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-empty-access-v1",
+    "expectation_ids": ["exp-ea-bingbot-empty-disallow-inert"],
+    "probe_case_id": "pc-ea-bingbot-empty-disallow-only-positive",
+    "body_ref": "body-ea-bingbot-empty-disallow-only",
+    "body_file": "bodies/body-ea-bingbot-empty-disallow-only.txt",
+    "body_sha256": "0d0d132d75e54087cefad21d638f7f509774cee6deb052af7c3ac8f469408f52",
+    "byte_size": 30,
+    "request_target": "/e/item?probe=empty-disallow-only-positive",
+    "request_target_sha256": "03c8975f322defdb5448180b2d898512593274c932da2a8a4fb6ffd181b48027",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ord-adidxbot-implicit-suffix-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-adidxbot-implicit-suffix"],
+    "probe_case_id": "pc-ord-adidxbot-implicit-suffix-negative",
+    "body_ref": "body-ord-adidxbot-implicit-suffix",
+    "body_file": "bodies/body-ord-adidxbot-implicit-suffix.txt",
+    "body_sha256": "249a7d0297c82b4580ce243ec3439061acd04d0cd023ef8721f4501f50662039",
+    "byte_size": 40,
+    "request_target": "/is-pag?probe=implicit-suffix-negative",
+    "request_target_sha256": "9c25eada2ee0ba29c195b4ecb1f5efa2f00df38082161ac208061b3c27a3b4e0",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ord-adidxbot-implicit-suffix-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-adidxbot-implicit-suffix"],
+    "probe_case_id": "pc-ord-adidxbot-implicit-suffix-positive",
+    "body_ref": "body-ord-adidxbot-implicit-suffix",
+    "body_file": "bodies/body-ord-adidxbot-implicit-suffix.txt",
+    "body_sha256": "249a7d0297c82b4580ce243ec3439061acd04d0cd023ef8721f4501f50662039",
+    "byte_size": 40,
+    "request_target": "/is-page-extra?probe=implicit-suffix-positive",
+    "request_target_sha256": "dca2fbc231a161f3470ce86ea5ca78aab902e95696b2c15b5672ad9a9ba263df",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/is-page",
+        "value_raw_hex": "2f69732d70616765"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ord-adidxbot-no-match-default-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-adidxbot-no-match-default"],
+    "probe_case_id": "pc-ord-adidxbot-no-match-default-negative",
+    "body_ref": "body-ord-adidxbot-no-match-default",
+    "body_file": "bodies/body-ord-adidxbot-no-match-default.txt",
+    "body_sha256": "3aef9509ebf8d5648e43cb226a50680ceb730e40e77fcf57550d4edb7a975413",
+    "byte_size": 43,
+    "request_target": "/nm-open/item?probe=no-match-default-negative",
+    "request_target_sha256": "2b3e5f5370d17db587a665a457379919c80545310ac36874b8c0b0340c774558",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ord-adidxbot-no-match-default-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-adidxbot-no-match-default"],
+    "probe_case_id": "pc-ord-adidxbot-no-match-default-positive",
+    "body_ref": "body-ord-adidxbot-no-match-default",
+    "body_file": "bodies/body-ord-adidxbot-no-match-default.txt",
+    "body_sha256": "3aef9509ebf8d5648e43cb226a50680ceb730e40e77fcf57550d4edb7a975413",
+    "byte_size": 43,
+    "request_target": "/nm-blocked/item?probe=no-match-default-positive",
+    "request_target_sha256": "43ed2f06b0d0318b723ca649ea7e4bf3314547bd1a4ce143ed06f2749a256c7b",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/nm-blocked",
+        "value_raw_hex": "2f6e6d2d626c6f636b6564"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ord-adidxbot-ordinary-prefix-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-adidxbot-ordinary-prefix"],
+    "probe_case_id": "pc-ord-adidxbot-ordinary-prefix-negative",
+    "body_ref": "body-ord-adidxbot-ordinary-prefix",
+    "body_file": "bodies/body-ord-adidxbot-ordinary-prefix.txt",
+    "body_sha256": "510c7291bb684d2bf1f437fd430e3977b409bfd72a78772ddcf5394fcdd35f51",
+    "byte_size": 39,
+    "request_target": "/op-other/item?probe=ordinary-prefix-negative",
+    "request_target_sha256": "9eb512aebd2c836a6b5211372570790fd54199cba18b88d185fbd0428f0a37d7",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ord-adidxbot-ordinary-prefix-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-adidxbot-ordinary-prefix"],
+    "probe_case_id": "pc-ord-adidxbot-ordinary-prefix-positive",
+    "body_ref": "body-ord-adidxbot-ordinary-prefix",
+    "body_file": "bodies/body-ord-adidxbot-ordinary-prefix.txt",
+    "body_sha256": "510c7291bb684d2bf1f437fd430e3977b409bfd72a78772ddcf5394fcdd35f51",
+    "byte_size": 39,
+    "request_target": "/op-dir/item?probe=ordinary-prefix-positive",
+    "request_target_sha256": "85fe31c1edd29c7ab4fd23ea9200801b2b654134176710cb883b3e1014bc55f2",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/op-dir",
+        "value_raw_hex": "2f6f702d646972"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ord-adidxbot-query-controls-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-adidxbot-query-controls"],
+    "probe_case_id": "pc-ord-adidxbot-query-controls-negative",
+    "body_ref": "body-ord-adidxbot-query-controls",
+    "body_file": "bodies/body-ord-adidxbot-query-controls.txt",
+    "body_sha256": "6d596ce5b58e1c68a33b3f74b4de332b9a58a07912a44b68c83e0ccd31faa891",
+    "byte_size": 40,
+    "request_target": "/qc-open?probe=query-controls-negative",
+    "request_target_sha256": "de438271b95caa9b48606a98d75c2db0f53057a2b8816ab8186cbc69b9a56c3d",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ord-adidxbot-query-controls-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-adidxbot-query-controls"],
+    "probe_case_id": "pc-ord-adidxbot-query-controls-positive",
+    "body_ref": "body-ord-adidxbot-query-controls",
+    "body_file": "bodies/body-ord-adidxbot-query-controls.txt",
+    "body_sha256": "6d596ce5b58e1c68a33b3f74b4de332b9a58a07912a44b68c83e0ccd31faa891",
+    "byte_size": 40,
+    "request_target": "/qc-path?probe=query-controls-positive",
+    "request_target_sha256": "f8097a919357ae794a8c08708a01b002489750f3115e548d16aebcda7b14daaa",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/qc-path",
+        "value_raw_hex": "2f71632d70617468"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ord-adidxbot-root-deep-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-adidxbot-root"],
+    "probe_case_id": "pc-ord-adidxbot-root-deep-positive",
+    "body_ref": "body-ord-adidxbot-root",
+    "body_file": "bodies/body-ord-adidxbot-root.txt",
+    "body_sha256": "9428e06f601f34795bfc0928173e8741c2d53df7e07f08f0cdf8cd0257653dad",
+    "byte_size": 33,
+    "request_target": "/root-any/item?probe=root-deep-positive",
+    "request_target_sha256": "2c7790012d21c7edf32dbaec6a5e4d8553d3b95668b65aab6ef67a3e889b5ad8",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/",
+        "value_raw_hex": "2f"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ord-adidxbot-root-exact-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-adidxbot-root"],
+    "probe_case_id": "pc-ord-adidxbot-root-exact-positive",
+    "body_ref": "body-ord-adidxbot-root",
+    "body_file": "bodies/body-ord-adidxbot-root.txt",
+    "body_sha256": "9428e06f601f34795bfc0928173e8741c2d53df7e07f08f0cdf8cd0257653dad",
+    "byte_size": 33,
+    "request_target": "/?probe=root-exact-positive",
+    "request_target_sha256": "886cb81c83608d515be98f053953625a220b6aad511db34a9555c64abfbb1c65",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/",
+        "value_raw_hex": "2f"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ord-bingbot-implicit-suffix-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-bingbot-implicit-suffix"],
+    "probe_case_id": "pc-ord-bingbot-implicit-suffix-negative",
+    "body_ref": "body-ord-bingbot-implicit-suffix",
+    "body_file": "bodies/body-ord-bingbot-implicit-suffix.txt",
+    "body_sha256": "7658959380cbab8fa8e6d3649a105064582df0216c2cc5aa7f31a3bc7cd15046",
+    "byte_size": 39,
+    "request_target": "/is-pag?probe=implicit-suffix-negative",
+    "request_target_sha256": "9c25eada2ee0ba29c195b4ecb1f5efa2f00df38082161ac208061b3c27a3b4e0",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ord-bingbot-implicit-suffix-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-bingbot-implicit-suffix"],
+    "probe_case_id": "pc-ord-bingbot-implicit-suffix-positive",
+    "body_ref": "body-ord-bingbot-implicit-suffix",
+    "body_file": "bodies/body-ord-bingbot-implicit-suffix.txt",
+    "body_sha256": "7658959380cbab8fa8e6d3649a105064582df0216c2cc5aa7f31a3bc7cd15046",
+    "byte_size": 39,
+    "request_target": "/is-page-extra?probe=implicit-suffix-positive",
+    "request_target_sha256": "dca2fbc231a161f3470ce86ea5ca78aab902e95696b2c15b5672ad9a9ba263df",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/is-page",
+        "value_raw_hex": "2f69732d70616765"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ord-bingbot-no-match-default-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-bingbot-no-match-default"],
+    "probe_case_id": "pc-ord-bingbot-no-match-default-negative",
+    "body_ref": "body-ord-bingbot-no-match-default",
+    "body_file": "bodies/body-ord-bingbot-no-match-default.txt",
+    "body_sha256": "128fc614ef3a8a7221729660a2196c5da7a3764e18709ddebc0a705a83faf378",
+    "byte_size": 42,
+    "request_target": "/nm-open/item?probe=no-match-default-negative",
+    "request_target_sha256": "2b3e5f5370d17db587a665a457379919c80545310ac36874b8c0b0340c774558",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ord-bingbot-no-match-default-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-bingbot-no-match-default"],
+    "probe_case_id": "pc-ord-bingbot-no-match-default-positive",
+    "body_ref": "body-ord-bingbot-no-match-default",
+    "body_file": "bodies/body-ord-bingbot-no-match-default.txt",
+    "body_sha256": "128fc614ef3a8a7221729660a2196c5da7a3764e18709ddebc0a705a83faf378",
+    "byte_size": 42,
+    "request_target": "/nm-blocked/item?probe=no-match-default-positive",
+    "request_target_sha256": "43ed2f06b0d0318b723ca649ea7e4bf3314547bd1a4ce143ed06f2749a256c7b",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/nm-blocked",
+        "value_raw_hex": "2f6e6d2d626c6f636b6564"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ord-bingbot-ordinary-prefix-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-bingbot-ordinary-prefix"],
+    "probe_case_id": "pc-ord-bingbot-ordinary-prefix-negative",
+    "body_ref": "body-ord-bingbot-ordinary-prefix",
+    "body_file": "bodies/body-ord-bingbot-ordinary-prefix.txt",
+    "body_sha256": "e195e09820e84ba1ee880b6165eea41aa94bf3ed215764fc81023727e388fa7d",
+    "byte_size": 38,
+    "request_target": "/op-other/item?probe=ordinary-prefix-negative",
+    "request_target_sha256": "9eb512aebd2c836a6b5211372570790fd54199cba18b88d185fbd0428f0a37d7",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ord-bingbot-ordinary-prefix-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-bingbot-ordinary-prefix"],
+    "probe_case_id": "pc-ord-bingbot-ordinary-prefix-positive",
+    "body_ref": "body-ord-bingbot-ordinary-prefix",
+    "body_file": "bodies/body-ord-bingbot-ordinary-prefix.txt",
+    "body_sha256": "e195e09820e84ba1ee880b6165eea41aa94bf3ed215764fc81023727e388fa7d",
+    "byte_size": 38,
+    "request_target": "/op-dir/item?probe=ordinary-prefix-positive",
+    "request_target_sha256": "85fe31c1edd29c7ab4fd23ea9200801b2b654134176710cb883b3e1014bc55f2",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/op-dir",
+        "value_raw_hex": "2f6f702d646972"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ord-bingbot-query-controls-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-bingbot-query-controls"],
+    "probe_case_id": "pc-ord-bingbot-query-controls-negative",
+    "body_ref": "body-ord-bingbot-query-controls",
+    "body_file": "bodies/body-ord-bingbot-query-controls.txt",
+    "body_sha256": "c9a5037c75ffcb072f6023f9986be4510ad82f1f1516bad49137c1e90c61c9e9",
+    "byte_size": 39,
+    "request_target": "/qc-open?probe=query-controls-negative",
+    "request_target_sha256": "de438271b95caa9b48606a98d75c2db0f53057a2b8816ab8186cbc69b9a56c3d",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-ord-bingbot-query-controls-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-bingbot-query-controls"],
+    "probe_case_id": "pc-ord-bingbot-query-controls-positive",
+    "body_ref": "body-ord-bingbot-query-controls",
+    "body_file": "bodies/body-ord-bingbot-query-controls.txt",
+    "body_sha256": "c9a5037c75ffcb072f6023f9986be4510ad82f1f1516bad49137c1e90c61c9e9",
+    "byte_size": 39,
+    "request_target": "/qc-path?probe=query-controls-positive",
+    "request_target_sha256": "f8097a919357ae794a8c08708a01b002489750f3115e548d16aebcda7b14daaa",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/qc-path",
+        "value_raw_hex": "2f71632d70617468"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ord-bingbot-root-deep-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-bingbot-root"],
+    "probe_case_id": "pc-ord-bingbot-root-deep-positive",
+    "body_ref": "body-ord-bingbot-root",
+    "body_file": "bodies/body-ord-bingbot-root.txt",
+    "body_sha256": "aa39356828cbaf1c05dbe6cf712787d78d0e0dc57ead511a6f93513c34ee98d6",
+    "byte_size": 32,
+    "request_target": "/root-any/item?probe=root-deep-positive",
+    "request_target_sha256": "2c7790012d21c7edf32dbaec6a5e4d8553d3b95668b65aab6ef67a3e889b5ad8",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/",
+        "value_raw_hex": "2f"
+      }
+    }
+  },
+  {
+    "case_id": "obs-ord-bingbot-root-exact-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-ordinary-v1",
+    "expectation_ids": ["exp-ord-bingbot-root"],
+    "probe_case_id": "pc-ord-bingbot-root-exact-positive",
+    "body_ref": "body-ord-bingbot-root",
+    "body_file": "bodies/body-ord-bingbot-root.txt",
+    "body_sha256": "aa39356828cbaf1c05dbe6cf712787d78d0e0dc57ead511a6f93513c34ee98d6",
+    "byte_size": 32,
+    "request_target": "/?probe=root-exact-positive",
+    "request_target_sha256": "886cb81c83608d515be98f053953625a220b6aad511db34a9555c64abfbb1c65",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/",
+        "value_raw_hex": "2f"
+      }
+    }
+  },
+  {
+    "case_id": "obs-prec-adidxbot-comment-inline-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-adidxbot-inline-comment"],
+    "probe_case_id": "pc-prec-adidxbot-comment-inline-negative",
+    "body_ref": "body-prec-adidxbot-comment-inline",
+    "body_file": "bodies/body-prec-adidxbot-comment-inline.txt",
+    "body_sha256": "5a28b2174fe481d4cea673a5888d35bbef52b5471cce9236b24a39bf099dd988",
+    "byte_size": 40,
+    "request_target": "/z/item?probe=comment-inline-negative",
+    "request_target_sha256": "ad8b28564f9bb2222d610d237c917564fd6aaa59800775f72ab14258900777ae",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-adidxbot-comment-inline-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-adidxbot-inline-comment"],
+    "probe_case_id": "pc-prec-adidxbot-comment-inline-positive",
+    "body_ref": "body-prec-adidxbot-comment-inline",
+    "body_file": "bodies/body-prec-adidxbot-comment-inline.txt",
+    "body_sha256": "5a28b2174fe481d4cea673a5888d35bbef52b5471cce9236b24a39bf099dd988",
+    "byte_size": 40,
+    "request_target": "/r/item?probe=comment-inline-positive",
+    "request_target_sha256": "f12b0b79f0375cfe8afd7e3f6390d2e6f02733556dfc9004a7bf38b027d64d0c",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/r",
+        "value_raw_hex": "2f72"
+      }
+    }
+  },
+  {
+    "case_id": "obs-prec-adidxbot-missing-slash-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-adidxbot-missing-leading-slash"],
+    "probe_case_id": "pc-prec-adidxbot-missing-slash-negative",
+    "body_ref": "body-prec-adidxbot-missing-slash",
+    "body_file": "bodies/body-prec-adidxbot-missing-slash.txt",
+    "body_sha256": "76826da74fce0e97d9b8f84c699245ac8c76a689a9399f50330679612bcd8a4d",
+    "byte_size": 34,
+    "request_target": "/z/item?probe=missing-slash-negative",
+    "request_target_sha256": "6b1ac8378cc3ff0181de45ad577a9fb92108cbfd79c8b6afcd621615d77bc6fa",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-adidxbot-missing-slash-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-adidxbot-missing-leading-slash"],
+    "probe_case_id": "pc-prec-adidxbot-missing-slash-positive",
+    "body_ref": "body-prec-adidxbot-missing-slash",
+    "body_file": "bodies/body-prec-adidxbot-missing-slash.txt",
+    "body_sha256": "76826da74fce0e97d9b8f84c699245ac8c76a689a9399f50330679612bcd8a4d",
+    "byte_size": 34,
+    "request_target": "/rp/item?probe=missing-slash-positive",
+    "request_target_sha256": "23337479f4e90174ccc2313d877954477c1818a9cefb0df9c9dec5bf2f9358da",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-adidxbot-name-mixed-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-adidxbot-field-name-case"],
+    "probe_case_id": "pc-prec-adidxbot-name-mixed-negative",
+    "body_ref": "body-prec-adidxbot-name-mixed",
+    "body_file": "bodies/body-prec-adidxbot-name-mixed.txt",
+    "body_sha256": "c4bef006504b3740a22f3b4a3fd9f243429c628620b4fd2b83ca21c77a1bf89f",
+    "byte_size": 34,
+    "request_target": "/z/item?probe=name-mixed-negative",
+    "request_target_sha256": "70255c369876218a8b84341167c55637ab2d8b2a19e9828951ac2b16f358e2e0",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-adidxbot-name-mixed-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-adidxbot-field-name-case"],
+    "probe_case_id": "pc-prec-adidxbot-name-mixed-positive",
+    "body_ref": "body-prec-adidxbot-name-mixed",
+    "body_file": "bodies/body-prec-adidxbot-name-mixed.txt",
+    "body_sha256": "c4bef006504b3740a22f3b4a3fd9f243429c628620b4fd2b83ca21c77a1bf89f",
+    "byte_size": 34,
+    "request_target": "/r/item?probe=name-mixed-positive",
+    "request_target_sha256": "7532101859dac7de94a88c7bae689bc56d790d10b6c94b86310aa38713a5bc94",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/r",
+        "value_raw_hex": "2f72"
+      }
+    }
+  },
+  {
+    "case_id": "obs-prec-adidxbot-name-upper-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-adidxbot-field-name-case"],
+    "probe_case_id": "pc-prec-adidxbot-name-upper-negative",
+    "body_ref": "body-prec-adidxbot-name-upper",
+    "body_file": "bodies/body-prec-adidxbot-name-upper.txt",
+    "body_sha256": "669d708b3cd600ed4914f680732954cdcc2023f32773f2d8e4f89c0fdca21a0c",
+    "byte_size": 34,
+    "request_target": "/z/item?probe=name-upper-negative",
+    "request_target_sha256": "e75cb35039a9f64e91086e34eb9f5812746df07410954d233ee412196aa8d357",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-adidxbot-name-upper-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-adidxbot-field-name-case"],
+    "probe_case_id": "pc-prec-adidxbot-name-upper-positive",
+    "body_ref": "body-prec-adidxbot-name-upper",
+    "body_file": "bodies/body-prec-adidxbot-name-upper.txt",
+    "body_sha256": "669d708b3cd600ed4914f680732954cdcc2023f32773f2d8e4f89c0fdca21a0c",
+    "byte_size": 34,
+    "request_target": "/r/item?probe=name-upper-positive",
+    "request_target_sha256": "09c1ca93cd5d369495941992eb716f7e55076a5472f2437dac4a4097c494b454",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/r",
+        "value_raw_hex": "2f72"
+      }
+    }
+  },
+  {
+    "case_id": "obs-prec-adidxbot-orphan-rule-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-adidxbot-orphan-rule-discarded"],
+    "probe_case_id": "pc-prec-adidxbot-orphan-rule-negative",
+    "body_ref": "body-prec-adidxbot-orphan-rule",
+    "body_file": "bodies/body-prec-adidxbot-orphan-rule.txt",
+    "body_sha256": "eddae020b1f2ad79448a39261dfd6585320e4a3529efa0dda3710f378fa095b0",
+    "byte_size": 47,
+    "request_target": "/z/item?probe=orphan-rule-negative",
+    "request_target_sha256": "b1b3f122217c474d51af8eafa8d31912eb69e76352f25c30b11e59c99832ac9d",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-adidxbot-orphan-rule-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-adidxbot-orphan-rule-discarded"],
+    "probe_case_id": "pc-prec-adidxbot-orphan-rule-positive",
+    "body_ref": "body-prec-adidxbot-orphan-rule",
+    "body_file": "bodies/body-prec-adidxbot-orphan-rule.txt",
+    "body_sha256": "eddae020b1f2ad79448a39261dfd6585320e4a3529efa0dda3710f378fa095b0",
+    "byte_size": 47,
+    "request_target": "/r/item?probe=orphan-rule-positive",
+    "request_target_sha256": "c4e09ee16794a49a83c525fbc37fe20f973044340f1bfd044dc0fbdbd1330596",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-adidxbot-ows-around-colon-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-adidxbot-optional-whitespace"],
+    "probe_case_id": "pc-prec-adidxbot-ows-around-colon-negative",
+    "body_ref": "body-prec-adidxbot-ows-around-colon",
+    "body_file": "bodies/body-prec-adidxbot-ows-around-colon.txt",
+    "body_sha256": "cdd4e1311c0b2d51de72fd8226da95da5e2fc8e924f3bc346aab00b5dc49c1fa",
+    "byte_size": 35,
+    "request_target": "/z/item?probe=ows-around-colon-negative",
+    "request_target_sha256": "87286a741820074ee3aa252ab366c23e66ac0fcd045379a8d63c08fb1e3b269b",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-adidxbot-ows-around-colon-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-adidxbot-optional-whitespace"],
+    "probe_case_id": "pc-prec-adidxbot-ows-around-colon-positive",
+    "body_ref": "body-prec-adidxbot-ows-around-colon",
+    "body_file": "bodies/body-prec-adidxbot-ows-around-colon.txt",
+    "body_sha256": "cdd4e1311c0b2d51de72fd8226da95da5e2fc8e924f3bc346aab00b5dc49c1fa",
+    "byte_size": 35,
+    "request_target": "/r/item?probe=ows-around-colon-positive",
+    "request_target_sha256": "33531b7c16e15c4798b9f3a33de9e8ffb9f38df15bdca6d2f0ab114456d341a3",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/r",
+        "value_raw_hex": "2f72"
+      }
+    }
+  },
+  {
+    "case_id": "obs-prec-adidxbot-ows-no-space-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-adidxbot-optional-whitespace"],
+    "probe_case_id": "pc-prec-adidxbot-ows-no-space-negative",
+    "body_ref": "body-prec-adidxbot-ows-no-space",
+    "body_file": "bodies/body-prec-adidxbot-ows-no-space.txt",
+    "body_sha256": "203d3ecde415fc1243ee4379001c605a26302d718b5d1906880e5558eb46e754",
+    "byte_size": 33,
+    "request_target": "/z/item?probe=ows-no-space-negative",
+    "request_target_sha256": "e21e7e7d70e086f4a5d81d991bf0551a23fe670162cea2b199e2846995c7be0b",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-adidxbot-ows-no-space-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-adidxbot-optional-whitespace"],
+    "probe_case_id": "pc-prec-adidxbot-ows-no-space-positive",
+    "body_ref": "body-prec-adidxbot-ows-no-space",
+    "body_file": "bodies/body-prec-adidxbot-ows-no-space.txt",
+    "body_sha256": "203d3ecde415fc1243ee4379001c605a26302d718b5d1906880e5558eb46e754",
+    "byte_size": 33,
+    "request_target": "/r/item?probe=ows-no-space-positive",
+    "request_target_sha256": "dab045df61d79e26aa9ee2bb22df39c6ea1816c33cf3e80780d429e4d08921f7",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/r",
+        "value_raw_hex": "2f72"
+      }
+    }
+  },
+  {
+    "case_id": "obs-prec-adidxbot-ows-tab-value-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-adidxbot-optional-whitespace"],
+    "probe_case_id": "pc-prec-adidxbot-ows-tab-value-negative",
+    "body_ref": "body-prec-adidxbot-ows-tab-value",
+    "body_file": "bodies/body-prec-adidxbot-ows-tab-value.txt",
+    "body_sha256": "11ee583d4d87bb7068488152134e49f4ea07fce024ce469a3ade8123142bf311",
+    "byte_size": 34,
+    "request_target": "/z/item?probe=ows-tab-value-negative",
+    "request_target_sha256": "25eb63a13144549296c2b2cb6960a86fe284cc59c806cdb9dbbb93ca9217e031",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-adidxbot-ows-tab-value-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-adidxbot-optional-whitespace"],
+    "probe_case_id": "pc-prec-adidxbot-ows-tab-value-positive",
+    "body_ref": "body-prec-adidxbot-ows-tab-value",
+    "body_file": "bodies/body-prec-adidxbot-ows-tab-value.txt",
+    "body_sha256": "11ee583d4d87bb7068488152134e49f4ea07fce024ce469a3ade8123142bf311",
+    "byte_size": 34,
+    "request_target": "/r/item?probe=ows-tab-value-positive",
+    "request_target_sha256": "a6683e12fb49c7d2dcc210ba2a7f24c35e12a507239f829a92c3b6ac42ed8e12",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/r",
+        "value_raw_hex": "2f72"
+      }
+    }
+  },
+  {
+    "case_id": "obs-prec-bingbot-comment-inline-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-bingbot-inline-comment"],
+    "probe_case_id": "pc-prec-bingbot-comment-inline-negative",
+    "body_ref": "body-prec-bingbot-comment-inline",
+    "body_file": "bodies/body-prec-bingbot-comment-inline.txt",
+    "body_sha256": "11dfb93ff7a0bb38d54ff091cbf2ab873ba99b852347794541162610eed0c64f",
+    "byte_size": 39,
+    "request_target": "/z/item?probe=comment-inline-negative",
+    "request_target_sha256": "ad8b28564f9bb2222d610d237c917564fd6aaa59800775f72ab14258900777ae",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-bingbot-comment-inline-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-bingbot-inline-comment"],
+    "probe_case_id": "pc-prec-bingbot-comment-inline-positive",
+    "body_ref": "body-prec-bingbot-comment-inline",
+    "body_file": "bodies/body-prec-bingbot-comment-inline.txt",
+    "body_sha256": "11dfb93ff7a0bb38d54ff091cbf2ab873ba99b852347794541162610eed0c64f",
+    "byte_size": 39,
+    "request_target": "/r/item?probe=comment-inline-positive",
+    "request_target_sha256": "f12b0b79f0375cfe8afd7e3f6390d2e6f02733556dfc9004a7bf38b027d64d0c",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/r",
+        "value_raw_hex": "2f72"
+      }
+    }
+  },
+  {
+    "case_id": "obs-prec-bingbot-missing-slash-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-bingbot-missing-leading-slash"],
+    "probe_case_id": "pc-prec-bingbot-missing-slash-negative",
+    "body_ref": "body-prec-bingbot-missing-slash",
+    "body_file": "bodies/body-prec-bingbot-missing-slash.txt",
+    "body_sha256": "ed72c38a13c08dbb4b1f4cb53f79124be037f1d32ca567acfebc74859091dd0e",
+    "byte_size": 33,
+    "request_target": "/z/item?probe=missing-slash-negative",
+    "request_target_sha256": "6b1ac8378cc3ff0181de45ad577a9fb92108cbfd79c8b6afcd621615d77bc6fa",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-bingbot-missing-slash-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-bingbot-missing-leading-slash"],
+    "probe_case_id": "pc-prec-bingbot-missing-slash-positive",
+    "body_ref": "body-prec-bingbot-missing-slash",
+    "body_file": "bodies/body-prec-bingbot-missing-slash.txt",
+    "body_sha256": "ed72c38a13c08dbb4b1f4cb53f79124be037f1d32ca567acfebc74859091dd0e",
+    "byte_size": 33,
+    "request_target": "/rp/item?probe=missing-slash-positive",
+    "request_target_sha256": "23337479f4e90174ccc2313d877954477c1818a9cefb0df9c9dec5bf2f9358da",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-bingbot-name-mixed-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-bingbot-field-name-case"],
+    "probe_case_id": "pc-prec-bingbot-name-mixed-negative",
+    "body_ref": "body-prec-bingbot-name-mixed",
+    "body_file": "bodies/body-prec-bingbot-name-mixed.txt",
+    "body_sha256": "bf91984a6c6294c4ed115dd4b85515db2db4643c974f51b21d111c8c939b7979",
+    "byte_size": 33,
+    "request_target": "/z/item?probe=name-mixed-negative",
+    "request_target_sha256": "70255c369876218a8b84341167c55637ab2d8b2a19e9828951ac2b16f358e2e0",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-bingbot-name-mixed-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-bingbot-field-name-case"],
+    "probe_case_id": "pc-prec-bingbot-name-mixed-positive",
+    "body_ref": "body-prec-bingbot-name-mixed",
+    "body_file": "bodies/body-prec-bingbot-name-mixed.txt",
+    "body_sha256": "bf91984a6c6294c4ed115dd4b85515db2db4643c974f51b21d111c8c939b7979",
+    "byte_size": 33,
+    "request_target": "/r/item?probe=name-mixed-positive",
+    "request_target_sha256": "7532101859dac7de94a88c7bae689bc56d790d10b6c94b86310aa38713a5bc94",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/r",
+        "value_raw_hex": "2f72"
+      }
+    }
+  },
+  {
+    "case_id": "obs-prec-bingbot-name-upper-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-bingbot-field-name-case"],
+    "probe_case_id": "pc-prec-bingbot-name-upper-negative",
+    "body_ref": "body-prec-bingbot-name-upper",
+    "body_file": "bodies/body-prec-bingbot-name-upper.txt",
+    "body_sha256": "5f74fc182a0b5a5b5b650b2b01bf57a7a8f38ecec0b9ac21e9ca0e1cc2778e4c",
+    "byte_size": 33,
+    "request_target": "/z/item?probe=name-upper-negative",
+    "request_target_sha256": "e75cb35039a9f64e91086e34eb9f5812746df07410954d233ee412196aa8d357",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-bingbot-name-upper-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-bingbot-field-name-case"],
+    "probe_case_id": "pc-prec-bingbot-name-upper-positive",
+    "body_ref": "body-prec-bingbot-name-upper",
+    "body_file": "bodies/body-prec-bingbot-name-upper.txt",
+    "body_sha256": "5f74fc182a0b5a5b5b650b2b01bf57a7a8f38ecec0b9ac21e9ca0e1cc2778e4c",
+    "byte_size": 33,
+    "request_target": "/r/item?probe=name-upper-positive",
+    "request_target_sha256": "09c1ca93cd5d369495941992eb716f7e55076a5472f2437dac4a4097c494b454",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/r",
+        "value_raw_hex": "2f72"
+      }
+    }
+  },
+  {
+    "case_id": "obs-prec-bingbot-orphan-rule-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-bingbot-orphan-rule-discarded"],
+    "probe_case_id": "pc-prec-bingbot-orphan-rule-negative",
+    "body_ref": "body-prec-bingbot-orphan-rule",
+    "body_file": "bodies/body-prec-bingbot-orphan-rule.txt",
+    "body_sha256": "74c82513568ec4144e980007ad7f6b63ff36321db31a0f522d859c08c6616174",
+    "byte_size": 46,
+    "request_target": "/z/item?probe=orphan-rule-negative",
+    "request_target_sha256": "b1b3f122217c474d51af8eafa8d31912eb69e76352f25c30b11e59c99832ac9d",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-bingbot-orphan-rule-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-bingbot-orphan-rule-discarded"],
+    "probe_case_id": "pc-prec-bingbot-orphan-rule-positive",
+    "body_ref": "body-prec-bingbot-orphan-rule",
+    "body_file": "bodies/body-prec-bingbot-orphan-rule.txt",
+    "body_sha256": "74c82513568ec4144e980007ad7f6b63ff36321db31a0f522d859c08c6616174",
+    "byte_size": 46,
+    "request_target": "/r/item?probe=orphan-rule-positive",
+    "request_target_sha256": "c4e09ee16794a49a83c525fbc37fe20f973044340f1bfd044dc0fbdbd1330596",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-bingbot-ows-around-colon-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-bingbot-optional-whitespace"],
+    "probe_case_id": "pc-prec-bingbot-ows-around-colon-negative",
+    "body_ref": "body-prec-bingbot-ows-around-colon",
+    "body_file": "bodies/body-prec-bingbot-ows-around-colon.txt",
+    "body_sha256": "0772e306fc7da2b98ccc3c7fc2764dc6092ac3a196025ad8dcaa582e6b7546ac",
+    "byte_size": 34,
+    "request_target": "/z/item?probe=ows-around-colon-negative",
+    "request_target_sha256": "87286a741820074ee3aa252ab366c23e66ac0fcd045379a8d63c08fb1e3b269b",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-bingbot-ows-around-colon-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-bingbot-optional-whitespace"],
+    "probe_case_id": "pc-prec-bingbot-ows-around-colon-positive",
+    "body_ref": "body-prec-bingbot-ows-around-colon",
+    "body_file": "bodies/body-prec-bingbot-ows-around-colon.txt",
+    "body_sha256": "0772e306fc7da2b98ccc3c7fc2764dc6092ac3a196025ad8dcaa582e6b7546ac",
+    "byte_size": 34,
+    "request_target": "/r/item?probe=ows-around-colon-positive",
+    "request_target_sha256": "33531b7c16e15c4798b9f3a33de9e8ffb9f38df15bdca6d2f0ab114456d341a3",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/r",
+        "value_raw_hex": "2f72"
+      }
+    }
+  },
+  {
+    "case_id": "obs-prec-bingbot-ows-no-space-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-bingbot-optional-whitespace"],
+    "probe_case_id": "pc-prec-bingbot-ows-no-space-negative",
+    "body_ref": "body-prec-bingbot-ows-no-space",
+    "body_file": "bodies/body-prec-bingbot-ows-no-space.txt",
+    "body_sha256": "28c097b7faf80711152cdf0798d18f01e6195d2021d84da3c770480852ce23db",
+    "byte_size": 32,
+    "request_target": "/z/item?probe=ows-no-space-negative",
+    "request_target_sha256": "e21e7e7d70e086f4a5d81d991bf0551a23fe670162cea2b199e2846995c7be0b",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-bingbot-ows-no-space-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-bingbot-optional-whitespace"],
+    "probe_case_id": "pc-prec-bingbot-ows-no-space-positive",
+    "body_ref": "body-prec-bingbot-ows-no-space",
+    "body_file": "bodies/body-prec-bingbot-ows-no-space.txt",
+    "body_sha256": "28c097b7faf80711152cdf0798d18f01e6195d2021d84da3c770480852ce23db",
+    "byte_size": 32,
+    "request_target": "/r/item?probe=ows-no-space-positive",
+    "request_target_sha256": "dab045df61d79e26aa9ee2bb22df39c6ea1816c33cf3e80780d429e4d08921f7",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/r",
+        "value_raw_hex": "2f72"
+      }
+    }
+  },
+  {
+    "case_id": "obs-prec-bingbot-ows-tab-value-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-bingbot-optional-whitespace"],
+    "probe_case_id": "pc-prec-bingbot-ows-tab-value-negative",
+    "body_ref": "body-prec-bingbot-ows-tab-value",
+    "body_file": "bodies/body-prec-bingbot-ows-tab-value.txt",
+    "body_sha256": "9d1123a51995401471f883c07f327cb52d6c7bf19f6cf1f68eb834782d84669e",
+    "byte_size": 33,
+    "request_target": "/z/item?probe=ows-tab-value-negative",
+    "request_target_sha256": "25eb63a13144549296c2b2cb6960a86fe284cc59c806cdb9dbbb93ca9217e031",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-prec-bingbot-ows-tab-value-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-parser-recovery-v1",
+    "expectation_ids": ["exp-prec-bingbot-optional-whitespace"],
+    "probe_case_id": "pc-prec-bingbot-ows-tab-value-positive",
+    "body_ref": "body-prec-bingbot-ows-tab-value",
+    "body_file": "bodies/body-prec-bingbot-ows-tab-value.txt",
+    "body_sha256": "9d1123a51995401471f883c07f327cb52d6c7bf19f6cf1f68eb834782d84669e",
+    "byte_size": 33,
+    "request_target": "/r/item?probe=ows-tab-value-positive",
+    "request_target_sha256": "a6683e12fb49c7d2dcc210ba2a7f24c35e12a507239f829a92c3b6ac42ed8e12",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/r",
+        "value_raw_hex": "2f72"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sel-adidxbot-affix-containing-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-selection-v1",
+    "expectation_ids": ["exp-sel-adidxbot-wildcard-fallback"],
+    "probe_case_id": "pc-sel-adidxbot-affix-containing-positive",
+    "body_ref": "body-sel-adidxbot-affix-containing",
+    "body_file": "bodies/body-sel-adidxbot-affix-containing.txt",
+    "body_sha256": "0ce4069f7ba2d7d2143d0b2f15ec70799b394240f8be532f205be0ea15f9529e",
+    "byte_size": 80,
+    "request_target": "/an-star/item?probe=adidxbot-affix-containing-positive",
+    "request_target_sha256": "a8feccc6dbe044bd67e56ba42cdc19d7d17b019ba197759b86f733f0b4ff49be",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sel-adidxbot-affix-prefix-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-selection-v1",
+    "expectation_ids": ["exp-sel-adidxbot-wildcard-fallback"],
+    "probe_case_id": "pc-sel-adidxbot-affix-prefix-positive",
+    "body_ref": "body-sel-adidxbot-affix-prefix",
+    "body_file": "bodies/body-sel-adidxbot-affix-prefix.txt",
+    "body_sha256": "7f212d3ab5db71bf790b0411dec7a97a3c3baac47182003be3fc569eb54b36f8",
+    "byte_size": 79,
+    "request_target": "/ap-star/item?probe=adidxbot-affix-prefix-positive",
+    "request_target_sha256": "ab754b52261f04d0f94e5090012a8709802e047de9fabeb9e65573fc42b8fb51",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sel-adidxbot-affix-suffix-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-selection-v1",
+    "expectation_ids": ["exp-sel-adidxbot-wildcard-fallback"],
+    "probe_case_id": "pc-sel-adidxbot-affix-suffix-positive",
+    "body_ref": "body-sel-adidxbot-affix-suffix",
+    "body_file": "bodies/body-sel-adidxbot-affix-suffix.txt",
+    "body_sha256": "fba560dc84b3c30a204d08ad3a7f2ae1a52798fb93aee3f3fa21a6f78c56b5f8",
+    "byte_size": 79,
+    "request_target": "/as-star/item?probe=adidxbot-affix-suffix-positive",
+    "request_target_sha256": "d99eacaffc8684cadb78ce6a6d4ef510e09033d073e6ec2f21d5a97840d611d9",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sel-adidxbot-agent-case-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-selection-v1",
+    "expectation_ids": ["exp-sel-adidxbot-token-case"],
+    "probe_case_id": "pc-sel-adidxbot-agent-case-negative",
+    "body_ref": "body-sel-adidxbot-agent-case",
+    "body_file": "bodies/body-sel-adidxbot-agent-case.txt",
+    "body_sha256": "837dfb8bcf51626e91389a6d9a0cd8ecc53b0451f261a90d4af292b39680d6e0",
+    "byte_size": 77,
+    "request_target": "/ac-star/item?probe=adidxbot-agent-case-negative",
+    "request_target_sha256": "01181fd9dd646189d3eccfb5971e81d2edeb46b3f237c5440956761ecf48c173",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sel-adidxbot-agent-case-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-selection-v1",
+    "expectation_ids": ["exp-sel-adidxbot-token-case"],
+    "probe_case_id": "pc-sel-adidxbot-agent-case-positive",
+    "body_ref": "body-sel-adidxbot-agent-case",
+    "body_file": "bodies/body-sel-adidxbot-agent-case.txt",
+    "body_sha256": "837dfb8bcf51626e91389a6d9a0cd8ecc53b0451f261a90d4af292b39680d6e0",
+    "byte_size": 77,
+    "request_target": "/ac-adidxbot/item?probe=adidxbot-agent-case-positive",
+    "request_target_sha256": "fdbced9a0fb59f50ec12e86afdea55cae73604be3ca54c32dcd63f1591ffe464",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/ac-adidxbot",
+        "value_raw_hex": "2f61632d6164696478626f74"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sel-adidxbot-exact-vs-wildcard-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-selection-v1",
+    "expectation_ids": ["exp-sel-adidxbot-tier-tokens"],
+    "probe_case_id": "pc-sel-adidxbot-exact-vs-wildcard-negative",
+    "body_ref": "body-sel-adidxbot-exact-vs-wildcard",
+    "body_file": "bodies/body-sel-adidxbot-exact-vs-wildcard.txt",
+    "body_sha256": "179a1fe6ff78bb8c26600849d0f1d680bd4c406c762e1a2dffda88063096ec7e",
+    "byte_size": 77,
+    "request_target": "/ew-star/item?probe=adidxbot-exact-vs-wildcard-negative",
+    "request_target_sha256": "194fd34154807627853e156a9920f7cec311f96d762481b562c72d2f7a20844f",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sel-adidxbot-exact-vs-wildcard-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-selection-v1",
+    "expectation_ids": ["exp-sel-adidxbot-tier-tokens"],
+    "probe_case_id": "pc-sel-adidxbot-exact-vs-wildcard-positive",
+    "body_ref": "body-sel-adidxbot-exact-vs-wildcard",
+    "body_file": "bodies/body-sel-adidxbot-exact-vs-wildcard.txt",
+    "body_sha256": "179a1fe6ff78bb8c26600849d0f1d680bd4c406c762e1a2dffda88063096ec7e",
+    "byte_size": 77,
+    "request_target": "/ew-adidxbot/item?probe=adidxbot-exact-vs-wildcard-positive",
+    "request_target_sha256": "ce70a6873cf34f6268a2e05852a67c637c81b08929036990e7b8cb0dbce5c20a",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/ew-adidxbot",
+        "value_raw_hex": "2f65772d6164696478626f74"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sel-adidxbot-no-selected-tier",
+    "profile": "adidxbot",
+    "unit": "adidxbot-selection-v1",
+    "expectation_ids": ["exp-sel-adidxbot-no-tier"],
+    "probe_case_id": "pc-sel-adidxbot-no-selected-tier",
+    "body_ref": "body-sel-adidxbot-no-selected-tier",
+    "body_file": "bodies/body-sel-adidxbot-no-selected-tier.txt",
+    "body_sha256": "b2c37868eea68985ca5ab3f9948ee1e13ca8d76a3c96344553817bbdb6b2d26c",
+    "byte_size": 44,
+    "request_target": "/ns-otherbot/item?probe=adidxbot-no-selected-tier",
+    "request_target_sha256": "4883281a564de8a728bed8d533e4d9b38ebbc79fe6ec239d242e642ac2422bc4",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sel-adidxbot-repeated-tier-first",
+    "profile": "adidxbot",
+    "unit": "adidxbot-selection-v1",
+    "expectation_ids": ["exp-sel-adidxbot-stacked-and-repeated-groups"],
+    "probe_case_id": "pc-sel-adidxbot-repeated-tier-first",
+    "body_ref": "body-sel-adidxbot-repeated-tier",
+    "body_file": "bodies/body-sel-adidxbot-repeated-tier.txt",
+    "body_sha256": "1c7f56815e602754eab36db62c4503998510403bafe71c4d9c771b1ff6b7fe72",
+    "byte_size": 116,
+    "request_target": "/rt-first/item?probe=adidxbot-repeated-tier-first",
+    "request_target_sha256": "8c98d508413723a2a8bbf1eb9de51a262a168416b2f8359277005eb2ec94a411",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/rt-first",
+        "value_raw_hex": "2f72742d6669727374"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sel-adidxbot-repeated-tier-second",
+    "profile": "adidxbot",
+    "unit": "adidxbot-selection-v1",
+    "expectation_ids": ["exp-sel-adidxbot-stacked-and-repeated-groups"],
+    "probe_case_id": "pc-sel-adidxbot-repeated-tier-second",
+    "body_ref": "body-sel-adidxbot-repeated-tier",
+    "body_file": "bodies/body-sel-adidxbot-repeated-tier.txt",
+    "body_sha256": "1c7f56815e602754eab36db62c4503998510403bafe71c4d9c771b1ff6b7fe72",
+    "byte_size": 116,
+    "request_target": "/rt-second/item?probe=adidxbot-repeated-tier-second",
+    "request_target_sha256": "59951b07cc1dcfeaec69c59c5412e456f78b45987f08973d96f973e7797d8ecf",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 4,
+        "type": "disallow",
+        "value": "/rt-second",
+        "value_raw_hex": "2f72742d7365636f6e64"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sel-adidxbot-stacked-agent-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-selection-v1",
+    "expectation_ids": ["exp-sel-adidxbot-stacked-and-repeated-groups"],
+    "probe_case_id": "pc-sel-adidxbot-stacked-agent-positive",
+    "body_ref": "body-sel-adidxbot-stacked-agent",
+    "body_file": "bodies/body-sel-adidxbot-stacked-agent.txt",
+    "body_sha256": "9a930303ec5a2fc0040963c60888818e3589d44b45d80b9143bc94ad6a143196",
+    "byte_size": 98,
+    "request_target": "/sa-stacked/item?probe=adidxbot-stacked-agent-positive",
+    "request_target_sha256": "4200c09b0602dafa9df258fb7d9bbf45c6097a3f92c08a7d7b18c099aa0ff904",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": "/sa-stacked",
+        "value_raw_hex": "2f73612d737461636b6564"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sel-adidxbot-wildcard-fallback-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-selection-v1",
+    "expectation_ids": ["exp-sel-adidxbot-wildcard-fallback"],
+    "probe_case_id": "pc-sel-adidxbot-wildcard-fallback-positive",
+    "body_ref": "body-sel-adidxbot-wildcard-fallback",
+    "body_file": "bodies/body-sel-adidxbot-wildcard-fallback.txt",
+    "body_sha256": "01ce55fa19aa8ee3bb02e22f2084033abf4feb077f6955250469e89ffc29fe9b",
+    "byte_size": 77,
+    "request_target": "/wf-star/item?probe=adidxbot-wildcard-fallback-positive",
+    "request_target_sha256": "32e0c3f274fc19c23c78f8daafb6b253d75073a01a2e1a7af360209140c68d1d",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sel-bingbot-agent-case-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-selection-v1",
+    "expectation_ids": ["exp-sel-bingbot-token-case"],
+    "probe_case_id": "pc-sel-bingbot-agent-case-negative",
+    "body_ref": "body-sel-bingbot-agent-case",
+    "body_file": "bodies/body-sel-bingbot-agent-case.txt",
+    "body_sha256": "cfd81eaa9b0ec1d53b9b613f49f0b23caf24d6c08d80176ebe2cc70128ec508d",
+    "byte_size": 75,
+    "request_target": "/ac-star/item?probe=agent-case-negative",
+    "request_target_sha256": "98b4ae6463b0eeac8e3b576e15aa91cea0b9f41adb2e79dc63d906fa69d82260",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sel-bingbot-agent-case-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-selection-v1",
+    "expectation_ids": ["exp-sel-bingbot-token-case"],
+    "probe_case_id": "pc-sel-bingbot-agent-case-positive",
+    "body_ref": "body-sel-bingbot-agent-case",
+    "body_file": "bodies/body-sel-bingbot-agent-case.txt",
+    "body_sha256": "cfd81eaa9b0ec1d53b9b613f49f0b23caf24d6c08d80176ebe2cc70128ec508d",
+    "byte_size": 75,
+    "request_target": "/ac-bingbot/item?probe=agent-case-positive",
+    "request_target_sha256": "8fadfb3dae52957139b53b4f8d92d2098b8633bcfe2234a2e3e1acf1828b4898",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/ac-bingbot",
+        "value_raw_hex": "2f61632d62696e67626f74"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sel-bingbot-exact-vs-wildcard-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-selection-v1",
+    "expectation_ids": ["exp-sel-bingbot-tier-tokens"],
+    "probe_case_id": "pc-sel-bingbot-exact-vs-wildcard-negative",
+    "body_ref": "body-sel-bingbot-exact-vs-wildcard",
+    "body_file": "bodies/body-sel-bingbot-exact-vs-wildcard.txt",
+    "body_sha256": "fade09eeaa125ac389189063bdfffd5fbce9e25d5491e2561351f3269bb67ed4",
+    "byte_size": 75,
+    "request_target": "/ew-star/item?probe=exact-vs-wildcard-negative",
+    "request_target_sha256": "6422b409c0bc6ac62557d57841fc5369ab3d392504f2cfbcb951b6e20c6b1075",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sel-bingbot-exact-vs-wildcard-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-selection-v1",
+    "expectation_ids": ["exp-sel-bingbot-tier-tokens"],
+    "probe_case_id": "pc-sel-bingbot-exact-vs-wildcard-positive",
+    "body_ref": "body-sel-bingbot-exact-vs-wildcard",
+    "body_file": "bodies/body-sel-bingbot-exact-vs-wildcard.txt",
+    "body_sha256": "fade09eeaa125ac389189063bdfffd5fbce9e25d5491e2561351f3269bb67ed4",
+    "byte_size": 75,
+    "request_target": "/ew-bingbot/item?probe=exact-vs-wildcard-positive",
+    "request_target_sha256": "edbdac7ae06a6ce70c37a7d40a5dea0119549003d9d135a2322baf11214bc0d7",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/ew-bingbot",
+        "value_raw_hex": "2f65772d62696e67626f74"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sel-bingbot-no-selected-tier",
+    "profile": "bingbot",
+    "unit": "bingbot-selection-v1",
+    "expectation_ids": ["exp-sel-bingbot-no-tier"],
+    "probe_case_id": "pc-sel-bingbot-no-selected-tier",
+    "body_ref": "body-sel-bingbot-no-selected-tier",
+    "body_file": "bodies/body-sel-bingbot-no-selected-tier.txt",
+    "body_sha256": "b2c37868eea68985ca5ab3f9948ee1e13ca8d76a3c96344553817bbdb6b2d26c",
+    "byte_size": 44,
+    "request_target": "/ns-otherbot/item?probe=no-selected-tier",
+    "request_target_sha256": "f6d280e2d267682f402788688b5e7b8467fa89eabe75eb0c0e44db75bba3e395",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sel-bingbot-repeated-tier-first",
+    "profile": "bingbot",
+    "unit": "bingbot-selection-v1",
+    "expectation_ids": ["exp-sel-bingbot-repeated-groups"],
+    "probe_case_id": "pc-sel-bingbot-repeated-tier-first",
+    "body_ref": "body-sel-bingbot-repeated-tier",
+    "body_file": "bodies/body-sel-bingbot-repeated-tier.txt",
+    "body_sha256": "671347cd898f36991a507b7bd3ff775a77e80253edfeb82a3eac4c6611fb15d4",
+    "byte_size": 114,
+    "request_target": "/rt-first/item?probe=repeated-tier-first",
+    "request_target_sha256": "87f61e1db9fe4e9d1b3df86381b35e70c11d49ad03784081f1f8da1d074c75f1",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/rt-first",
+        "value_raw_hex": "2f72742d6669727374"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sel-bingbot-repeated-tier-second",
+    "profile": "bingbot",
+    "unit": "bingbot-selection-v1",
+    "expectation_ids": ["exp-sel-bingbot-repeated-groups"],
+    "probe_case_id": "pc-sel-bingbot-repeated-tier-second",
+    "body_ref": "body-sel-bingbot-repeated-tier",
+    "body_file": "bodies/body-sel-bingbot-repeated-tier.txt",
+    "body_sha256": "671347cd898f36991a507b7bd3ff775a77e80253edfeb82a3eac4c6611fb15d4",
+    "byte_size": 114,
+    "request_target": "/rt-second/item?probe=repeated-tier-second",
+    "request_target_sha256": "a78ef8cead3e78e90570f440ef065e4df590aeca59757192e74baceb201e2db3",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 4,
+        "type": "disallow",
+        "value": "/rt-second",
+        "value_raw_hex": "2f72742d7365636f6e64"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sel-bingbot-stacked-agent-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-selection-v1",
+    "expectation_ids": ["exp-sel-bingbot-stacked-declarations"],
+    "probe_case_id": "pc-sel-bingbot-stacked-agent-negative",
+    "body_ref": "body-sel-bingbot-stacked-agent",
+    "body_file": "bodies/body-sel-bingbot-stacked-agent.txt",
+    "body_sha256": "2672851956cc2119fa434d25fd2c0af2db315195eaf2af2738e01f39fce7f08e",
+    "byte_size": 97,
+    "request_target": "/sa-star/item?probe=stacked-agent-negative",
+    "request_target_sha256": "48780791dacc20527323680467363f039cd9becebc941c57356b53d8522cf84b",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sel-bingbot-stacked-agent-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-selection-v1",
+    "expectation_ids": ["exp-sel-bingbot-stacked-declarations"],
+    "probe_case_id": "pc-sel-bingbot-stacked-agent-positive",
+    "body_ref": "body-sel-bingbot-stacked-agent",
+    "body_file": "bodies/body-sel-bingbot-stacked-agent.txt",
+    "body_sha256": "2672851956cc2119fa434d25fd2c0af2db315195eaf2af2738e01f39fce7f08e",
+    "byte_size": 97,
+    "request_target": "/sa-stacked/item?probe=stacked-agent-positive",
+    "request_target_sha256": "beadd0ee683729bdabbaa8a2bec07b65154f13df8a522e114143c48485b06361",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": "/sa-stacked",
+        "value_raw_hex": "2f73612d737461636b6564"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sel-bingbot-wildcard-fallback-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-selection-v1",
+    "expectation_ids": ["exp-sel-bingbot-wildcard-fallback"],
+    "probe_case_id": "pc-sel-bingbot-wildcard-fallback-negative",
+    "body_ref": "body-sel-bingbot-wildcard-fallback",
+    "body_file": "bodies/body-sel-bingbot-wildcard-fallback.txt",
+    "body_sha256": "01ce55fa19aa8ee3bb02e22f2084033abf4feb077f6955250469e89ffc29fe9b",
+    "byte_size": 77,
+    "request_target": "/wf-otherbot/item?probe=wildcard-fallback-negative",
+    "request_target_sha256": "b9829b6629fa10757cc43f0edf02c3b618ea714b836ae6188e7f784faa0b6f35",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sel-bingbot-wildcard-fallback-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-selection-v1",
+    "expectation_ids": ["exp-sel-bingbot-wildcard-fallback"],
+    "probe_case_id": "pc-sel-bingbot-wildcard-fallback-positive",
+    "body_ref": "body-sel-bingbot-wildcard-fallback",
+    "body_file": "bodies/body-sel-bingbot-wildcard-fallback.txt",
+    "body_sha256": "01ce55fa19aa8ee3bb02e22f2084033abf4feb077f6955250469e89ffc29fe9b",
+    "byte_size": 77,
+    "request_target": "/wf-star/item?probe=wildcard-fallback-positive",
+    "request_target_sha256": "2430fd888d197bccecdcfc5e867a6bdbff5b1e082ecb38ffa1ec4dfe6eaa10ae",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 4,
+        "type": "disallow",
+        "value": "/wf-star",
+        "value_raw_hex": "2f77662d73746172"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-anchor-terminal-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-anchor-terminal"],
+    "probe_case_id": "pc-spc-adidxbot-anchor-terminal-negative",
+    "body_ref": "body-spc-adidxbot-anchor-terminal",
+    "body_file": "bodies/body-spc-adidxbot-anchor-terminal.txt",
+    "body_sha256": "c79e9a726d58c29ef45b0d2dfe1ea09d21369d7c074faccf915cc6786a860286",
+    "byte_size": 42,
+    "request_target": "/at-exact/more",
+    "request_target_sha256": "7077c6c5a3a8af582a52f1b2727ba0f2140255210fa4a10ebe6e41ed8a3b92fd",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-anchor-terminal-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-anchor-terminal"],
+    "probe_case_id": "pc-spc-adidxbot-anchor-terminal-positive",
+    "body_ref": "body-spc-adidxbot-anchor-terminal",
+    "body_file": "bodies/body-spc-adidxbot-anchor-terminal.txt",
+    "body_sha256": "c79e9a726d58c29ef45b0d2dfe1ea09d21369d7c074faccf915cc6786a860286",
+    "byte_size": 42,
+    "request_target": "/at-exact",
+    "request_target_sha256": "014e586e02c8e300cc957c824d673f6ae6405eef8b96fd9a9a412a642459e2d1",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/at-exact$",
+        "value_raw_hex": "2f61742d657861637424"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-encoded-slash-hexcase-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-percent-hexcase-upper"],
+    "probe_case_id": "pc-spc-adidxbot-encoded-slash-hexcase-positive",
+    "body_ref": "body-spc-adidxbot-encoded-slash",
+    "body_file": "bodies/body-spc-adidxbot-encoded-slash.txt",
+    "body_sha256": "632b0d2555f63488542a07eebb4244045ab0ca91950bba9f507871c53461b114",
+    "byte_size": 42,
+    "request_target": "/es-a%2fb",
+    "request_target_sha256": "72dcbde24a316e6c9b00ab8070cfd7ab6017773e0a1f1c2831300b50935644eb",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-encoded-slash-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-percent-hexcase-upper", "exp-spc-adidxbot-percent-no-decode"],
+    "probe_case_id": "pc-spc-adidxbot-encoded-slash-negative",
+    "body_ref": "body-spc-adidxbot-encoded-slash",
+    "body_file": "bodies/body-spc-adidxbot-encoded-slash.txt",
+    "body_sha256": "632b0d2555f63488542a07eebb4244045ab0ca91950bba9f507871c53461b114",
+    "byte_size": 42,
+    "request_target": "/es-a/b",
+    "request_target_sha256": "9fb21fba9ea03b43322a3de81bc76d1ca134fe1a8f22635872751f937b2ec036",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-encoded-slash-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-percent-hexcase-upper"],
+    "probe_case_id": "pc-spc-adidxbot-encoded-slash-positive",
+    "body_ref": "body-spc-adidxbot-encoded-slash",
+    "body_file": "bodies/body-spc-adidxbot-encoded-slash.txt",
+    "body_sha256": "632b0d2555f63488542a07eebb4244045ab0ca91950bba9f507871c53461b114",
+    "byte_size": 42,
+    "request_target": "/es-a%2Fb",
+    "request_target_sha256": "9412bf7942f24b25b859ee23534e3c3d0302114ff930018ee12c3b6ab589df0e",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/es-a%2Fb$",
+        "value_raw_hex": "2f65732d612532466224"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-encoded-star-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-percent-no-decode"],
+    "probe_case_id": "pc-spc-adidxbot-encoded-star-negative",
+    "body_ref": "body-spc-adidxbot-encoded-star",
+    "body_file": "bodies/body-spc-adidxbot-encoded-star.txt",
+    "body_sha256": "15c81b86d76e1fe8415753222f6af9e8793557fc41270bb7c1e4740df1bfdc32",
+    "byte_size": 40,
+    "request_target": "/ez-anything",
+    "request_target_sha256": "1af6ae0a155085f230563ec412e363c50aabc3bbf8279458f1de7d3ce0ffc155",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-encoded-star-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-percent-no-decode"],
+    "probe_case_id": "pc-spc-adidxbot-encoded-star-positive",
+    "body_ref": "body-spc-adidxbot-encoded-star",
+    "body_file": "bodies/body-spc-adidxbot-encoded-star.txt",
+    "body_sha256": "15c81b86d76e1fe8415753222f6af9e8793557fc41270bb7c1e4740df1bfdc32",
+    "byte_size": 40,
+    "request_target": "/ez-%2A",
+    "request_target_sha256": "1d0dc21700b06720865dfd4a6d4286b08987c3e5a0a824703e239c63e1febd30",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/ez-%2A$",
+        "value_raw_hex": "2f657a2d25324124"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-encoded-unreserved-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-percent-no-decode"],
+    "probe_case_id": "pc-spc-adidxbot-encoded-unreserved-negative",
+    "body_ref": "body-spc-adidxbot-encoded-unreserved",
+    "body_file": "bodies/body-spc-adidxbot-encoded-unreserved.txt",
+    "body_sha256": "7582eca81199399a31b91b1ff3a40b88a7da449802eccb4863c7531dbbae9e1d",
+    "byte_size": 40,
+    "request_target": "/eu-b",
+    "request_target_sha256": "95c54d3ca0cc08ccd3cdb62f1e71d738fdcfc9e2d5e7846e641abb22cb576a32",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-encoded-unreserved-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-percent-no-decode"],
+    "probe_case_id": "pc-spc-adidxbot-encoded-unreserved-positive",
+    "body_ref": "body-spc-adidxbot-encoded-unreserved",
+    "body_file": "bodies/body-spc-adidxbot-encoded-unreserved.txt",
+    "body_sha256": "7582eca81199399a31b91b1ff3a40b88a7da449802eccb4863c7531dbbae9e1d",
+    "byte_size": 40,
+    "request_target": "/eu-%62",
+    "request_target_sha256": "d1b4598081b8a16f64e2205421fc3bd2b382334dff16e7f82bfe5eaac6abb138",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/eu-%62$",
+        "value_raw_hex": "2f65752d25363224"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-malformed-percent-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-percent-no-decode"],
+    "probe_case_id": "pc-spc-adidxbot-malformed-percent-negative",
+    "body_ref": "body-spc-adidxbot-malformed-percent",
+    "body_file": "bodies/body-spc-adidxbot-malformed-percent.txt",
+    "body_sha256": "88dfb5e3d3f7710dad3aee7011225f4e0ab85dc432c0265bb18e077440dc4b44",
+    "byte_size": 38,
+    "request_target": "/mp-%25",
+    "request_target_sha256": "cf6c577791b8013933f2d08b01aeef4b14f1b030c63a4c5b0033c9edc35b2461",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-malformed-percent-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-percent-no-decode"],
+    "probe_case_id": "pc-spc-adidxbot-malformed-percent-positive",
+    "body_ref": "body-spc-adidxbot-malformed-percent",
+    "body_file": "bodies/body-spc-adidxbot-malformed-percent.txt",
+    "body_sha256": "88dfb5e3d3f7710dad3aee7011225f4e0ab85dc432c0265bb18e077440dc4b44",
+    "byte_size": 38,
+    "request_target": "/mp-%",
+    "request_target_sha256": "1492220cfdd9c0a3eac0f243b93022f37456c29340c844443b489d53d33e1189",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/mp-%$",
+        "value_raw_hex": "2f6d702d2524"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-metachar-nonterminal-dollar-anchor-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-nonterminal-dollar"],
+    "probe_case_id": "pc-spc-adidxbot-metachar-nonterminal-dollar-anchor-negative",
+    "body_ref": "body-spc-adidxbot-metachar-nonterminal-dollar",
+    "body_file": "bodies/body-spc-adidxbot-metachar-nonterminal-dollar.txt",
+    "body_sha256": "e5f059338c91ee681ba5c4b45dc7dfe6bcf16a5f9e38dceeffc64b8af025dbcf",
+    "byte_size": 44,
+    "request_target": "/an-cost",
+    "request_target_sha256": "cd329b12aa475bd0d08faece1048bbdd029f356f0a1869f23bf7f4cb507e4ed3",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-metachar-nonterminal-dollar-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-nonterminal-dollar"],
+    "probe_case_id": "pc-spc-adidxbot-metachar-nonterminal-dollar-negative",
+    "body_ref": "body-spc-adidxbot-metachar-nonterminal-dollar",
+    "body_file": "bodies/body-spc-adidxbot-metachar-nonterminal-dollar.txt",
+    "body_sha256": "e5f059338c91ee681ba5c4b45dc7dfe6bcf16a5f9e38dceeffc64b8af025dbcf",
+    "byte_size": 44,
+    "request_target": "/an-costXusd",
+    "request_target_sha256": "ffb06605b24bc4b5aef9ed51e691a6df0a71117e28e12b8f742fd4b60d66d4a0",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-metachar-nonterminal-dollar-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-nonterminal-dollar"],
+    "probe_case_id": "pc-spc-adidxbot-metachar-nonterminal-dollar-positive",
+    "body_ref": "body-spc-adidxbot-metachar-nonterminal-dollar",
+    "body_file": "bodies/body-spc-adidxbot-metachar-nonterminal-dollar.txt",
+    "body_sha256": "e5f059338c91ee681ba5c4b45dc7dfe6bcf16a5f9e38dceeffc64b8af025dbcf",
+    "byte_size": 44,
+    "request_target": "/an-cost$usd/more",
+    "request_target_sha256": "5e85b3864a403e7e74a96a47a8cc90dadc5a5baf2c9f58f0e64d3e58676556cc",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/an-cost$usd",
+        "value_raw_hex": "2f616e2d636f737424757364"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-metachar-question-literal-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-query-in-match"],
+    "probe_case_id": "pc-spc-adidxbot-metachar-question-literal-negative",
+    "body_ref": "body-spc-adidxbot-metachar-question-literal",
+    "body_file": "bodies/body-spc-adidxbot-metachar-question-literal.txt",
+    "body_sha256": "8c59dd7c2f1f3730832a64d3deb0ef426e1b0f3491ee0ba36929adaf3bbf649d",
+    "byte_size": 51,
+    "request_target": "/mq-path?name=other",
+    "request_target_sha256": "cae430debf6b28cec89cc61beab9e2324b36c35431ddaaa9ed2eef696e31ad11",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-metachar-question-literal-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-query-in-match"],
+    "probe_case_id": "pc-spc-adidxbot-metachar-question-literal-positive",
+    "body_ref": "body-spc-adidxbot-metachar-question-literal",
+    "body_file": "bodies/body-spc-adidxbot-metachar-question-literal.txt",
+    "body_sha256": "8c59dd7c2f1f3730832a64d3deb0ef426e1b0f3491ee0ba36929adaf3bbf649d",
+    "byte_size": 51,
+    "request_target": "/mq-path?name=value&x=1",
+    "request_target_sha256": "a80b714405f5def64f6cf0abb133f0b98b610af641777f56a3ffb268c0770977",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/mq-path?name=value",
+        "value_raw_hex": "2f6d712d706174683f6e616d653d76616c7565"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-star-wildcard-empty-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-star-wildcard"],
+    "probe_case_id": "pc-spc-adidxbot-star-wildcard-empty-positive",
+    "body_ref": "body-spc-adidxbot-star-wildcard",
+    "body_file": "bodies/body-spc-adidxbot-star-wildcard.txt",
+    "body_sha256": "80acd019ba03885e85a5322bb2c1d3ec43b0433e02bbab9668fe75c2185a61d3",
+    "byte_size": 39,
+    "request_target": "/sw-ab",
+    "request_target_sha256": "5df72e613ad5efc1c5d0ac11897b1623b3e10abe118a4e03ae246270c4f158b2",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/sw-a*b",
+        "value_raw_hex": "2f73772d612a62"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-star-wildcard-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-star-wildcard"],
+    "probe_case_id": "pc-spc-adidxbot-star-wildcard-negative",
+    "body_ref": "body-spc-adidxbot-star-wildcard",
+    "body_file": "bodies/body-spc-adidxbot-star-wildcard.txt",
+    "body_sha256": "80acd019ba03885e85a5322bb2c1d3ec43b0433e02bbab9668fe75c2185a61d3",
+    "byte_size": 39,
+    "request_target": "/sw-axxxc",
+    "request_target_sha256": "2523c4d1ecbc1365932bf02622ae248cccfabef9eee13c867a0ee27b15e583f8",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-star-wildcard-slash-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-star-wildcard"],
+    "probe_case_id": "pc-spc-adidxbot-star-wildcard-slash-positive",
+    "body_ref": "body-spc-adidxbot-star-wildcard",
+    "body_file": "bodies/body-spc-adidxbot-star-wildcard.txt",
+    "body_sha256": "80acd019ba03885e85a5322bb2c1d3ec43b0433e02bbab9668fe75c2185a61d3",
+    "byte_size": 39,
+    "request_target": "/sw-a/x/b",
+    "request_target_sha256": "67c5af61001551a3d0a5036716bf05e41fd99524f0d60998937f049e36b09204",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/sw-a*b",
+        "value_raw_hex": "2f73772d612a62"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-adidxbot-star-wildcard-span-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-v1",
+    "expectation_ids": ["exp-spc-adidxbot-star-wildcard"],
+    "probe_case_id": "pc-spc-adidxbot-star-wildcard-span-positive",
+    "body_ref": "body-spc-adidxbot-star-wildcard",
+    "body_file": "bodies/body-spc-adidxbot-star-wildcard.txt",
+    "body_sha256": "80acd019ba03885e85a5322bb2c1d3ec43b0433e02bbab9668fe75c2185a61d3",
+    "byte_size": 39,
+    "request_target": "/sw-axxxb",
+    "request_target_sha256": "c3566f92a70e9c4d1db38f8ed2f31bdf3734a2ceb14ac678b82bdc0de24ff6f8",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/sw-a*b",
+        "value_raw_hex": "2f73772d612a62"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-anchor-terminal-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-anchor-terminal"],
+    "probe_case_id": "pc-spc-bingbot-anchor-terminal-negative",
+    "body_ref": "body-spc-bingbot-anchor-terminal",
+    "body_file": "bodies/body-spc-bingbot-anchor-terminal.txt",
+    "body_sha256": "b16b3aaa415c0335c164625d844b158d73d726636c114dc49be5c4e3b9aa3b72",
+    "byte_size": 41,
+    "request_target": "/at-exact/more",
+    "request_target_sha256": "7077c6c5a3a8af582a52f1b2727ba0f2140255210fa4a10ebe6e41ed8a3b92fd",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-anchor-terminal-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-anchor-terminal"],
+    "probe_case_id": "pc-spc-bingbot-anchor-terminal-positive",
+    "body_ref": "body-spc-bingbot-anchor-terminal",
+    "body_file": "bodies/body-spc-bingbot-anchor-terminal.txt",
+    "body_sha256": "b16b3aaa415c0335c164625d844b158d73d726636c114dc49be5c4e3b9aa3b72",
+    "byte_size": 41,
+    "request_target": "/at-exact",
+    "request_target_sha256": "014e586e02c8e300cc957c824d673f6ae6405eef8b96fd9a9a412a642459e2d1",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/at-exact$",
+        "value_raw_hex": "2f61742d657861637424"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-encoded-slash-hexcase-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-percent-hexcase-upper"],
+    "probe_case_id": "pc-spc-bingbot-encoded-slash-hexcase-positive",
+    "body_ref": "body-spc-bingbot-encoded-slash",
+    "body_file": "bodies/body-spc-bingbot-encoded-slash.txt",
+    "body_sha256": "d1716758f935b22045cb039667b05078581b150246095ff8c6d3458e78321028",
+    "byte_size": 41,
+    "request_target": "/es-a%2fb",
+    "request_target_sha256": "72dcbde24a316e6c9b00ab8070cfd7ab6017773e0a1f1c2831300b50935644eb",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-encoded-slash-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-percent-hexcase-upper", "exp-spc-bingbot-percent-no-decode"],
+    "probe_case_id": "pc-spc-bingbot-encoded-slash-negative",
+    "body_ref": "body-spc-bingbot-encoded-slash",
+    "body_file": "bodies/body-spc-bingbot-encoded-slash.txt",
+    "body_sha256": "d1716758f935b22045cb039667b05078581b150246095ff8c6d3458e78321028",
+    "byte_size": 41,
+    "request_target": "/es-a/b",
+    "request_target_sha256": "9fb21fba9ea03b43322a3de81bc76d1ca134fe1a8f22635872751f937b2ec036",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-encoded-slash-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-percent-hexcase-upper"],
+    "probe_case_id": "pc-spc-bingbot-encoded-slash-positive",
+    "body_ref": "body-spc-bingbot-encoded-slash",
+    "body_file": "bodies/body-spc-bingbot-encoded-slash.txt",
+    "body_sha256": "d1716758f935b22045cb039667b05078581b150246095ff8c6d3458e78321028",
+    "byte_size": 41,
+    "request_target": "/es-a%2Fb",
+    "request_target_sha256": "9412bf7942f24b25b859ee23534e3c3d0302114ff930018ee12c3b6ab589df0e",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/es-a%2Fb$",
+        "value_raw_hex": "2f65732d612532466224"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-encoded-star-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-percent-no-decode"],
+    "probe_case_id": "pc-spc-bingbot-encoded-star-negative",
+    "body_ref": "body-spc-bingbot-encoded-star",
+    "body_file": "bodies/body-spc-bingbot-encoded-star.txt",
+    "body_sha256": "5eec29ebcfd09d08d46606e72ea300e865accd9c84dccd982658e83a7e33f11a",
+    "byte_size": 39,
+    "request_target": "/ez-anything",
+    "request_target_sha256": "1af6ae0a155085f230563ec412e363c50aabc3bbf8279458f1de7d3ce0ffc155",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-encoded-star-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-percent-no-decode"],
+    "probe_case_id": "pc-spc-bingbot-encoded-star-positive",
+    "body_ref": "body-spc-bingbot-encoded-star",
+    "body_file": "bodies/body-spc-bingbot-encoded-star.txt",
+    "body_sha256": "5eec29ebcfd09d08d46606e72ea300e865accd9c84dccd982658e83a7e33f11a",
+    "byte_size": 39,
+    "request_target": "/ez-%2A",
+    "request_target_sha256": "1d0dc21700b06720865dfd4a6d4286b08987c3e5a0a824703e239c63e1febd30",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/ez-%2A$",
+        "value_raw_hex": "2f657a2d25324124"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-encoded-unreserved-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-percent-no-decode"],
+    "probe_case_id": "pc-spc-bingbot-encoded-unreserved-negative",
+    "body_ref": "body-spc-bingbot-encoded-unreserved",
+    "body_file": "bodies/body-spc-bingbot-encoded-unreserved.txt",
+    "body_sha256": "7dd13f79a85a625bdc9c9a3f29dafbb7cb2e5e605ed814f3bb2980c4e1f6d4ac",
+    "byte_size": 39,
+    "request_target": "/eu-b",
+    "request_target_sha256": "95c54d3ca0cc08ccd3cdb62f1e71d738fdcfc9e2d5e7846e641abb22cb576a32",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-encoded-unreserved-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-percent-no-decode"],
+    "probe_case_id": "pc-spc-bingbot-encoded-unreserved-positive",
+    "body_ref": "body-spc-bingbot-encoded-unreserved",
+    "body_file": "bodies/body-spc-bingbot-encoded-unreserved.txt",
+    "body_sha256": "7dd13f79a85a625bdc9c9a3f29dafbb7cb2e5e605ed814f3bb2980c4e1f6d4ac",
+    "byte_size": 39,
+    "request_target": "/eu-%62",
+    "request_target_sha256": "d1b4598081b8a16f64e2205421fc3bd2b382334dff16e7f82bfe5eaac6abb138",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/eu-%62$",
+        "value_raw_hex": "2f65752d25363224"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-malformed-percent-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-percent-no-decode"],
+    "probe_case_id": "pc-spc-bingbot-malformed-percent-negative",
+    "body_ref": "body-spc-bingbot-malformed-percent",
+    "body_file": "bodies/body-spc-bingbot-malformed-percent.txt",
+    "body_sha256": "d2b6cc8b6a141936da1bb7d29539814a2ac27f0909b012dc665218e3e7f2325f",
+    "byte_size": 37,
+    "request_target": "/mp-%25",
+    "request_target_sha256": "cf6c577791b8013933f2d08b01aeef4b14f1b030c63a4c5b0033c9edc35b2461",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-malformed-percent-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-percent-no-decode"],
+    "probe_case_id": "pc-spc-bingbot-malformed-percent-positive",
+    "body_ref": "body-spc-bingbot-malformed-percent",
+    "body_file": "bodies/body-spc-bingbot-malformed-percent.txt",
+    "body_sha256": "d2b6cc8b6a141936da1bb7d29539814a2ac27f0909b012dc665218e3e7f2325f",
+    "byte_size": 37,
+    "request_target": "/mp-%",
+    "request_target_sha256": "1492220cfdd9c0a3eac0f243b93022f37456c29340c844443b489d53d33e1189",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/mp-%$",
+        "value_raw_hex": "2f6d702d2524"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-metachar-nonterminal-dollar-anchor-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-nonterminal-dollar"],
+    "probe_case_id": "pc-spc-bingbot-metachar-nonterminal-dollar-anchor-negative",
+    "body_ref": "body-spc-bingbot-metachar-nonterminal-dollar",
+    "body_file": "bodies/body-spc-bingbot-metachar-nonterminal-dollar.txt",
+    "body_sha256": "73a8199f212be9f18c2d30cdd5d9841709d66e40c294f7bd4bce7d9eced30327",
+    "byte_size": 43,
+    "request_target": "/an-cost",
+    "request_target_sha256": "cd329b12aa475bd0d08faece1048bbdd029f356f0a1869f23bf7f4cb507e4ed3",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-metachar-nonterminal-dollar-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-nonterminal-dollar"],
+    "probe_case_id": "pc-spc-bingbot-metachar-nonterminal-dollar-negative",
+    "body_ref": "body-spc-bingbot-metachar-nonterminal-dollar",
+    "body_file": "bodies/body-spc-bingbot-metachar-nonterminal-dollar.txt",
+    "body_sha256": "73a8199f212be9f18c2d30cdd5d9841709d66e40c294f7bd4bce7d9eced30327",
+    "byte_size": 43,
+    "request_target": "/an-costXusd",
+    "request_target_sha256": "ffb06605b24bc4b5aef9ed51e691a6df0a71117e28e12b8f742fd4b60d66d4a0",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-metachar-nonterminal-dollar-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-nonterminal-dollar"],
+    "probe_case_id": "pc-spc-bingbot-metachar-nonterminal-dollar-positive",
+    "body_ref": "body-spc-bingbot-metachar-nonterminal-dollar",
+    "body_file": "bodies/body-spc-bingbot-metachar-nonterminal-dollar.txt",
+    "body_sha256": "73a8199f212be9f18c2d30cdd5d9841709d66e40c294f7bd4bce7d9eced30327",
+    "byte_size": 43,
+    "request_target": "/an-cost$usd/more",
+    "request_target_sha256": "5e85b3864a403e7e74a96a47a8cc90dadc5a5baf2c9f58f0e64d3e58676556cc",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/an-cost$usd",
+        "value_raw_hex": "2f616e2d636f737424757364"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-metachar-question-literal-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-query-in-match"],
+    "probe_case_id": "pc-spc-bingbot-metachar-question-literal-negative",
+    "body_ref": "body-spc-bingbot-metachar-question-literal",
+    "body_file": "bodies/body-spc-bingbot-metachar-question-literal.txt",
+    "body_sha256": "04cdd665ba0c72d0103b760c3e2f7e004fa9b767efeaa402300c80a6b0ff631f",
+    "byte_size": 50,
+    "request_target": "/mq-path?name=other",
+    "request_target_sha256": "cae430debf6b28cec89cc61beab9e2324b36c35431ddaaa9ed2eef696e31ad11",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-metachar-question-literal-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-query-in-match"],
+    "probe_case_id": "pc-spc-bingbot-metachar-question-literal-positive",
+    "body_ref": "body-spc-bingbot-metachar-question-literal",
+    "body_file": "bodies/body-spc-bingbot-metachar-question-literal.txt",
+    "body_sha256": "04cdd665ba0c72d0103b760c3e2f7e004fa9b767efeaa402300c80a6b0ff631f",
+    "byte_size": 50,
+    "request_target": "/mq-path?name=value&x=1",
+    "request_target_sha256": "a80b714405f5def64f6cf0abb133f0b98b610af641777f56a3ffb268c0770977",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/mq-path?name=value",
+        "value_raw_hex": "2f6d712d706174683f6e616d653d76616c7565"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-star-wildcard-empty-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-star-wildcard"],
+    "probe_case_id": "pc-spc-bingbot-star-wildcard-empty-positive",
+    "body_ref": "body-spc-bingbot-star-wildcard",
+    "body_file": "bodies/body-spc-bingbot-star-wildcard.txt",
+    "body_sha256": "a5d5333692dbf8bcfaae2e45bdf7be3ef19bd3ca28dbaf222ad9502d631d2a96",
+    "byte_size": 38,
+    "request_target": "/sw-ab",
+    "request_target_sha256": "5df72e613ad5efc1c5d0ac11897b1623b3e10abe118a4e03ae246270c4f158b2",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/sw-a*b",
+        "value_raw_hex": "2f73772d612a62"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-star-wildcard-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-star-wildcard"],
+    "probe_case_id": "pc-spc-bingbot-star-wildcard-negative",
+    "body_ref": "body-spc-bingbot-star-wildcard",
+    "body_file": "bodies/body-spc-bingbot-star-wildcard.txt",
+    "body_sha256": "a5d5333692dbf8bcfaae2e45bdf7be3ef19bd3ca28dbaf222ad9502d631d2a96",
+    "byte_size": 38,
+    "request_target": "/sw-axxxc",
+    "request_target_sha256": "2523c4d1ecbc1365932bf02622ae248cccfabef9eee13c867a0ee27b15e583f8",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-star-wildcard-slash-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-star-wildcard"],
+    "probe_case_id": "pc-spc-bingbot-star-wildcard-slash-positive",
+    "body_ref": "body-spc-bingbot-star-wildcard",
+    "body_file": "bodies/body-spc-bingbot-star-wildcard.txt",
+    "body_sha256": "a5d5333692dbf8bcfaae2e45bdf7be3ef19bd3ca28dbaf222ad9502d631d2a96",
+    "byte_size": 38,
+    "request_target": "/sw-a/x/b",
+    "request_target_sha256": "67c5af61001551a3d0a5036716bf05e41fd99524f0d60998937f049e36b09204",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/sw-a*b",
+        "value_raw_hex": "2f73772d612a62"
+      }
+    }
+  },
+  {
+    "case_id": "obs-spc-bingbot-star-wildcard-span-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-special-v1",
+    "expectation_ids": ["exp-spc-bingbot-star-wildcard"],
+    "probe_case_id": "pc-spc-bingbot-star-wildcard-span-positive",
+    "body_ref": "body-spc-bingbot-star-wildcard",
+    "body_file": "bodies/body-spc-bingbot-star-wildcard.txt",
+    "body_sha256": "a5d5333692dbf8bcfaae2e45bdf7be3ef19bd3ca28dbaf222ad9502d631d2a96",
+    "byte_size": 38,
+    "request_target": "/sw-axxxb",
+    "request_target_sha256": "c3566f92a70e9c4d1db38f8ed2f31bdf3734a2ceb14ac678b82bdc0de24ff6f8",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/sw-a*b",
+        "value_raw_hex": "2f73772d612a62"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sr2-adidxbot-fragment-bare-hash-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-adidxbot-fragment-comment"],
+    "probe_case_id": "pc-sr2-adidxbot-fragment-bare-hash-negative",
+    "body_ref": "body-sr2-adidxbot-fragment-bare-hash",
+    "body_file": "bodies/body-sr2-adidxbot-fragment-bare-hash.txt",
+    "body_sha256": "78a6b3d05c8c9721af930219c562df312209b356a5aeca146e792370b1fcd94a",
+    "byte_size": 41,
+    "request_target": "/f3-other",
+    "request_target_sha256": "54b2df1f13c52958f55fd42e4204a1e8bffd8aa5e34fcb02e2ab741aa901fa3a",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sr2-adidxbot-fragment-bare-hash-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-adidxbot-fragment-comment"],
+    "probe_case_id": "pc-sr2-adidxbot-fragment-bare-hash-positive",
+    "body_ref": "body-sr2-adidxbot-fragment-bare-hash",
+    "body_file": "bodies/body-sr2-adidxbot-fragment-bare-hash.txt",
+    "body_sha256": "78a6b3d05c8c9721af930219c562df312209b356a5aeca146e792370b1fcd94a",
+    "byte_size": 41,
+    "request_target": "/f3-page/x",
+    "request_target_sha256": "713f0b0ed3628bed47c5f3aea397cbbbee9367fab96873570b5370508c47a294",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/f3-page",
+        "value_raw_hex": "2f66332d70616765"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sr2-adidxbot-fragment-in-target-only-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-adidxbot-fragment-comment"],
+    "probe_case_id": "pc-sr2-adidxbot-fragment-in-target-only-negative",
+    "body_ref": "body-sr2-adidxbot-fragment-in-target-only",
+    "body_file": "bodies/body-sr2-adidxbot-fragment-in-target-only.txt",
+    "body_sha256": "c8313219f089318e44a1eb8cb25e53e70e2e11a31f71305d45c4bfaa4cd674d1",
+    "byte_size": 40,
+    "request_target": "/f4-other#frag",
+    "request_target_sha256": "53fc896a17a80ee1fe4715a5aec9ec248cd84926efa348aec9b6003bf206bdb4",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sr2-adidxbot-fragment-in-target-only-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-adidxbot-fragment-comment"],
+    "probe_case_id": "pc-sr2-adidxbot-fragment-in-target-only-positive",
+    "body_ref": "body-sr2-adidxbot-fragment-in-target-only",
+    "body_file": "bodies/body-sr2-adidxbot-fragment-in-target-only.txt",
+    "body_sha256": "c8313219f089318e44a1eb8cb25e53e70e2e11a31f71305d45c4bfaa4cd674d1",
+    "byte_size": 40,
+    "request_target": "/f4-page#frag",
+    "request_target_sha256": "533e4678f4be02088868bb2876248c061738858a0df373a19f3e67017bd69037",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/f4-page",
+        "value_raw_hex": "2f66342d70616765"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sr2-adidxbot-fragment-prefix-discriminator-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-adidxbot-fragment-comment"],
+    "probe_case_id": "pc-sr2-adidxbot-fragment-prefix-discriminator-negative",
+    "body_ref": "body-sr2-adidxbot-fragment-prefix-discriminator",
+    "body_file": "bodies/body-sr2-adidxbot-fragment-prefix-discriminator.txt",
+    "body_sha256": "70c6f1f34f910d62a6d2fda44297db0d844c3f1ff0ad4ab11d026b2401bbd2b2",
+    "byte_size": 45,
+    "request_target": "/f1-pag",
+    "request_target_sha256": "e8ff9d5f5af9d862c80bafc5750653b2078d389d62e6e8afcaeffefc76fcd283",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sr2-adidxbot-fragment-prefix-discriminator-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-adidxbot-fragment-comment"],
+    "probe_case_id": "pc-sr2-adidxbot-fragment-prefix-discriminator-positive",
+    "body_ref": "body-sr2-adidxbot-fragment-prefix-discriminator",
+    "body_file": "bodies/body-sr2-adidxbot-fragment-prefix-discriminator.txt",
+    "body_sha256": "70c6f1f34f910d62a6d2fda44297db0d844c3f1ff0ad4ab11d026b2401bbd2b2",
+    "byte_size": 45,
+    "request_target": "/f1-page-extra",
+    "request_target_sha256": "93eee71e0fc5c65c954632e3033ac74931b0ab55e0e97e14d18116ad5e561628",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/f1-page",
+        "value_raw_hex": "2f66312d70616765"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sr2-adidxbot-hexcase-nonslash-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-adidxbot-percent-hexcase-indifferent"],
+    "probe_case_id": "pc-sr2-adidxbot-hexcase-nonslash-negative",
+    "body_ref": "body-sr2-adidxbot-hexcase-nonslash",
+    "body_file": "bodies/body-sr2-adidxbot-hexcase-nonslash.txt",
+    "body_sha256": "d19d833af0c6a18c11e3e37881a3f35c85324220b6258632439af4d685dc2cd8",
+    "byte_size": 42,
+    "request_target": "/hn-a%3fb",
+    "request_target_sha256": "e50f01c1084845bcf7202afd9a4e58e7dc4f90bc9e25b5197e745111b1c3c81c",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sr2-adidxbot-hexcase-nonslash-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-adidxbot-percent-hexcase-indifferent"],
+    "probe_case_id": "pc-sr2-adidxbot-hexcase-nonslash-positive",
+    "body_ref": "body-sr2-adidxbot-hexcase-nonslash",
+    "body_file": "bodies/body-sr2-adidxbot-hexcase-nonslash.txt",
+    "body_sha256": "d19d833af0c6a18c11e3e37881a3f35c85324220b6258632439af4d685dc2cd8",
+    "byte_size": 42,
+    "request_target": "/hn-a%3Fb",
+    "request_target_sha256": "e2292919c0f12fff8e9a934b286ab7df8ef1aedf6143d453ec8be1710ab1eed5",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/hn-a%3Fb$",
+        "value_raw_hex": "2f686e2d612533466224"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sr2-adidxbot-hexcase-pattern-lower-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-adidxbot-percent-hexcase-indifferent"],
+    "probe_case_id": "pc-sr2-adidxbot-hexcase-pattern-lower-negative",
+    "body_ref": "body-sr2-adidxbot-hexcase-pattern-lower",
+    "body_file": "bodies/body-sr2-adidxbot-hexcase-pattern-lower.txt",
+    "body_sha256": "a37f42328784a893b39346a3472019ff4bfa74b772e6303383eae0b8b1531ee7",
+    "byte_size": 42,
+    "request_target": "/hl-a%2Fb",
+    "request_target_sha256": "e2b4a65eb3e4974606d7a74eeeb39f7fed708ae6df403b1c56ad6f57cc85520f",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/hl-a%2fb$",
+        "value_raw_hex": "2f686c2d612532666224"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sr2-adidxbot-hexcase-pattern-lower-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-adidxbot-percent-hexcase-indifferent"],
+    "probe_case_id": "pc-sr2-adidxbot-hexcase-pattern-lower-positive",
+    "body_ref": "body-sr2-adidxbot-hexcase-pattern-lower",
+    "body_file": "bodies/body-sr2-adidxbot-hexcase-pattern-lower.txt",
+    "body_sha256": "a37f42328784a893b39346a3472019ff4bfa74b772e6303383eae0b8b1531ee7",
+    "byte_size": 42,
+    "request_target": "/hl-a%2fb",
+    "request_target_sha256": "dcf4fd0d43775e64410f66281d283e1c080bc057ec2587c35fc28363a8e2d6ee",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sr2-adidxbot-hexcase-unanchored-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-adidxbot-percent-hexcase-indifferent"],
+    "probe_case_id": "pc-sr2-adidxbot-hexcase-unanchored-negative",
+    "body_ref": "body-sr2-adidxbot-hexcase-unanchored",
+    "body_file": "bodies/body-sr2-adidxbot-hexcase-unanchored.txt",
+    "body_sha256": "7bf0e9cbfadb1f4fa391258deef668127819781fea27a43cce258782c7c8ed83",
+    "byte_size": 41,
+    "request_target": "/hu-a%2fb/x",
+    "request_target_sha256": "d60cb3bdf3548c3a1c4f491f5a466605441f258c3bae5f4a8f0a93d92f1aaf50",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sr2-adidxbot-hexcase-unanchored-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-adidxbot-percent-hexcase-indifferent"],
+    "probe_case_id": "pc-sr2-adidxbot-hexcase-unanchored-positive",
+    "body_ref": "body-sr2-adidxbot-hexcase-unanchored",
+    "body_file": "bodies/body-sr2-adidxbot-hexcase-unanchored.txt",
+    "body_sha256": "7bf0e9cbfadb1f4fa391258deef668127819781fea27a43cce258782c7c8ed83",
+    "byte_size": 41,
+    "request_target": "/hu-a%2Fb/x",
+    "request_target_sha256": "ad81e895ea06a06b42859e0dd688ac358769e0ba048e672ba8dad5a4f8da4137",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/hu-a%2Fb",
+        "value_raw_hex": "2f68752d6125324662"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sr2-bingbot-fragment-bare-hash-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-bingbot-fragment-comment"],
+    "probe_case_id": "pc-sr2-bingbot-fragment-bare-hash-negative",
+    "body_ref": "body-sr2-bingbot-fragment-bare-hash",
+    "body_file": "bodies/body-sr2-bingbot-fragment-bare-hash.txt",
+    "body_sha256": "4d2022d02c836eac1bd94aff319473fc116a64fdaaa8928c97f8f86cca593070",
+    "byte_size": 40,
+    "request_target": "/f3-other",
+    "request_target_sha256": "54b2df1f13c52958f55fd42e4204a1e8bffd8aa5e34fcb02e2ab741aa901fa3a",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sr2-bingbot-fragment-bare-hash-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-bingbot-fragment-comment"],
+    "probe_case_id": "pc-sr2-bingbot-fragment-bare-hash-positive",
+    "body_ref": "body-sr2-bingbot-fragment-bare-hash",
+    "body_file": "bodies/body-sr2-bingbot-fragment-bare-hash.txt",
+    "body_sha256": "4d2022d02c836eac1bd94aff319473fc116a64fdaaa8928c97f8f86cca593070",
+    "byte_size": 40,
+    "request_target": "/f3-page/x",
+    "request_target_sha256": "713f0b0ed3628bed47c5f3aea397cbbbee9367fab96873570b5370508c47a294",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/f3-page",
+        "value_raw_hex": "2f66332d70616765"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sr2-bingbot-fragment-in-target-only-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-bingbot-fragment-comment"],
+    "probe_case_id": "pc-sr2-bingbot-fragment-in-target-only-negative",
+    "body_ref": "body-sr2-bingbot-fragment-in-target-only",
+    "body_file": "bodies/body-sr2-bingbot-fragment-in-target-only.txt",
+    "body_sha256": "a9d0f7df84261302a3f2e08dcec334d7800050877713295d974be49405a03e98",
+    "byte_size": 39,
+    "request_target": "/f4-other#frag",
+    "request_target_sha256": "53fc896a17a80ee1fe4715a5aec9ec248cd84926efa348aec9b6003bf206bdb4",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sr2-bingbot-fragment-in-target-only-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-bingbot-fragment-comment"],
+    "probe_case_id": "pc-sr2-bingbot-fragment-in-target-only-positive",
+    "body_ref": "body-sr2-bingbot-fragment-in-target-only",
+    "body_file": "bodies/body-sr2-bingbot-fragment-in-target-only.txt",
+    "body_sha256": "a9d0f7df84261302a3f2e08dcec334d7800050877713295d974be49405a03e98",
+    "byte_size": 39,
+    "request_target": "/f4-page#frag",
+    "request_target_sha256": "533e4678f4be02088868bb2876248c061738858a0df373a19f3e67017bd69037",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/f4-page",
+        "value_raw_hex": "2f66342d70616765"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sr2-bingbot-fragment-prefix-discriminator-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-bingbot-fragment-comment"],
+    "probe_case_id": "pc-sr2-bingbot-fragment-prefix-discriminator-negative",
+    "body_ref": "body-sr2-bingbot-fragment-prefix-discriminator",
+    "body_file": "bodies/body-sr2-bingbot-fragment-prefix-discriminator.txt",
+    "body_sha256": "db98826e933710d774d40420bdb0e059b0014c69d2cf8be25e2c56404100205c",
+    "byte_size": 44,
+    "request_target": "/f1-pag",
+    "request_target_sha256": "e8ff9d5f5af9d862c80bafc5750653b2078d389d62e6e8afcaeffefc76fcd283",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sr2-bingbot-fragment-prefix-discriminator-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-bingbot-fragment-comment"],
+    "probe_case_id": "pc-sr2-bingbot-fragment-prefix-discriminator-positive",
+    "body_ref": "body-sr2-bingbot-fragment-prefix-discriminator",
+    "body_file": "bodies/body-sr2-bingbot-fragment-prefix-discriminator.txt",
+    "body_sha256": "db98826e933710d774d40420bdb0e059b0014c69d2cf8be25e2c56404100205c",
+    "byte_size": 44,
+    "request_target": "/f1-page-extra",
+    "request_target_sha256": "93eee71e0fc5c65c954632e3033ac74931b0ab55e0e97e14d18116ad5e561628",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/f1-page",
+        "value_raw_hex": "2f66312d70616765"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sr2-bingbot-hexcase-nonslash-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-bingbot-percent-hexcase-indifferent"],
+    "probe_case_id": "pc-sr2-bingbot-hexcase-nonslash-negative",
+    "body_ref": "body-sr2-bingbot-hexcase-nonslash",
+    "body_file": "bodies/body-sr2-bingbot-hexcase-nonslash.txt",
+    "body_sha256": "7427485ed98a868655171170bc07accece22194246f7dec6797e1712cf12f870",
+    "byte_size": 41,
+    "request_target": "/hn-a%3fb",
+    "request_target_sha256": "e50f01c1084845bcf7202afd9a4e58e7dc4f90bc9e25b5197e745111b1c3c81c",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sr2-bingbot-hexcase-nonslash-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-bingbot-percent-hexcase-indifferent"],
+    "probe_case_id": "pc-sr2-bingbot-hexcase-nonslash-positive",
+    "body_ref": "body-sr2-bingbot-hexcase-nonslash",
+    "body_file": "bodies/body-sr2-bingbot-hexcase-nonslash.txt",
+    "body_sha256": "7427485ed98a868655171170bc07accece22194246f7dec6797e1712cf12f870",
+    "byte_size": 41,
+    "request_target": "/hn-a%3Fb",
+    "request_target_sha256": "e2292919c0f12fff8e9a934b286ab7df8ef1aedf6143d453ec8be1710ab1eed5",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/hn-a%3Fb$",
+        "value_raw_hex": "2f686e2d612533466224"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sr2-bingbot-hexcase-pattern-lower-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-bingbot-percent-hexcase-indifferent"],
+    "probe_case_id": "pc-sr2-bingbot-hexcase-pattern-lower-negative",
+    "body_ref": "body-sr2-bingbot-hexcase-pattern-lower",
+    "body_file": "bodies/body-sr2-bingbot-hexcase-pattern-lower.txt",
+    "body_sha256": "adbc8165f5859b2a3ce673eead7a1a48a1db6413d39934db160bc6ce30b1ef6c",
+    "byte_size": 41,
+    "request_target": "/hl-a%2Fb",
+    "request_target_sha256": "e2b4a65eb3e4974606d7a74eeeb39f7fed708ae6df403b1c56ad6f57cc85520f",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/hl-a%2fb$",
+        "value_raw_hex": "2f686c2d612532666224"
+      }
+    }
+  },
+  {
+    "case_id": "obs-sr2-bingbot-hexcase-pattern-lower-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-bingbot-percent-hexcase-indifferent"],
+    "probe_case_id": "pc-sr2-bingbot-hexcase-pattern-lower-positive",
+    "body_ref": "body-sr2-bingbot-hexcase-pattern-lower",
+    "body_file": "bodies/body-sr2-bingbot-hexcase-pattern-lower.txt",
+    "body_sha256": "adbc8165f5859b2a3ce673eead7a1a48a1db6413d39934db160bc6ce30b1ef6c",
+    "byte_size": 41,
+    "request_target": "/hl-a%2fb",
+    "request_target_sha256": "dcf4fd0d43775e64410f66281d283e1c080bc057ec2587c35fc28363a8e2d6ee",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sr2-bingbot-hexcase-unanchored-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-bingbot-percent-hexcase-indifferent"],
+    "probe_case_id": "pc-sr2-bingbot-hexcase-unanchored-negative",
+    "body_ref": "body-sr2-bingbot-hexcase-unanchored",
+    "body_file": "bodies/body-sr2-bingbot-hexcase-unanchored.txt",
+    "body_sha256": "17d217413ebc90f7a672f69aefa88256070d8e95070ac9d2532378ad3d41e84e",
+    "byte_size": 40,
+    "request_target": "/hu-a%2fb/x",
+    "request_target_sha256": "d60cb3bdf3548c3a1c4f491f5a466605441f258c3bae5f4a8f0a93d92f1aaf50",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-sr2-bingbot-hexcase-unanchored-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-special-r2-v1",
+    "expectation_ids": ["exp-sr2-bingbot-percent-hexcase-indifferent"],
+    "probe_case_id": "pc-sr2-bingbot-hexcase-unanchored-positive",
+    "body_ref": "body-sr2-bingbot-hexcase-unanchored",
+    "body_file": "bodies/body-sr2-bingbot-hexcase-unanchored.txt",
+    "body_sha256": "17d217413ebc90f7a672f69aefa88256070d8e95070ac9d2532378ad3d41e84e",
+    "byte_size": 40,
+    "request_target": "/hu-a%2Fb/x",
+    "request_target_sha256": "ad81e895ea06a06b42859e0dd688ac358769e0ba048e672ba8dad5a4f8da4137",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/hu-a%2Fb",
+        "value_raw_hex": "2f68752d6125324662"
+      }
+    }
+  },
+  {
+    "case_id": "obs-win-adidxbot-chain-longest-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-winner-v1",
+    "expectation_ids": ["exp-win-adidxbot-specificity"],
+    "probe_case_id": "pc-win-adidxbot-chain-longest-negative",
+    "body_ref": "body-win-adidxbot-chain-longest",
+    "body_file": "bodies/body-win-adidxbot-chain-longest.txt",
+    "body_sha256": "342932abca26332b03193e742491e27498696aceed79b4881c49865abf838867",
+    "byte_size": 63,
+    "request_target": "/z/item?probe=chain-longest-negative",
+    "request_target_sha256": "3181ed9e9db6db3ec9055c5cf1a40f7dd4b1325a1d2358732490b9d918a98f92",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-win-adidxbot-chain-longest-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-winner-v1",
+    "expectation_ids": ["exp-win-adidxbot-specificity"],
+    "probe_case_id": "pc-win-adidxbot-chain-longest-positive",
+    "body_ref": "body-win-adidxbot-chain-longest",
+    "body_file": "bodies/body-win-adidxbot-chain-longest.txt",
+    "body_sha256": "342932abca26332b03193e742491e27498696aceed79b4881c49865abf838867",
+    "byte_size": 63,
+    "request_target": "/w/a/b/item?probe=chain-longest-positive",
+    "request_target_sha256": "7e9d30ff3acd9a224c461060d093d07d1aecc0afc9c26762e628b8db53d2ba97",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 4,
+        "type": "disallow",
+        "value": "/w/a/b",
+        "value_raw_hex": "2f772f612f62"
+      }
+    }
+  },
+  {
+    "case_id": "obs-win-adidxbot-dup-disallow-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-winner-v1",
+    "expectation_ids": ["exp-win-adidxbot-duplicate-inert"],
+    "probe_case_id": "pc-win-adidxbot-dup-disallow-negative",
+    "body_ref": "body-win-adidxbot-dup-disallow",
+    "body_file": "bodies/body-win-adidxbot-dup-disallow.txt",
+    "body_sha256": "5cd9a5b88661b8eb7d85fcd7416dc21f21ffeaab2332e8cefa1a126fa2d80a87",
+    "byte_size": 47,
+    "request_target": "/z/item?probe=dup-disallow-negative",
+    "request_target_sha256": "c314c54ea5448acbe52bf641ccb955cdb884dedd91896b278440a9121d47b774",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-win-adidxbot-dup-disallow-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-winner-v1",
+    "expectation_ids": ["exp-win-adidxbot-duplicate-inert"],
+    "probe_case_id": "pc-win-adidxbot-dup-disallow-positive",
+    "body_ref": "body-win-adidxbot-dup-disallow",
+    "body_file": "bodies/body-win-adidxbot-dup-disallow.txt",
+    "body_sha256": "5cd9a5b88661b8eb7d85fcd7416dc21f21ffeaab2332e8cefa1a126fa2d80a87",
+    "byte_size": 47,
+    "request_target": "/w/item?probe=dup-disallow-positive",
+    "request_target_sha256": "40502adbf2f2538cda8b9b6751da7745a93e6749d7de8faf25b5bc5fcb93d66b",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/w",
+        "value_raw_hex": "2f77"
+      }
+    }
+  },
+  {
+    "case_id": "obs-win-adidxbot-dup-longer-allow-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-winner-v1",
+    "expectation_ids": ["exp-win-adidxbot-duplicate-inert"],
+    "probe_case_id": "pc-win-adidxbot-dup-longer-allow-negative",
+    "body_ref": "body-win-adidxbot-dup-longer-allow",
+    "body_file": "bodies/body-win-adidxbot-dup-longer-allow.txt",
+    "body_sha256": "bd3d6536971a64a8b6ba87a0e05f9d229ecfe63afa4b6810f613860f1bb7f82a",
+    "byte_size": 64,
+    "request_target": "/z/item?probe=dup-longer-allow-negative",
+    "request_target_sha256": "184a243d3e6f81c075d0e0ab241bb8804d84b304811aeab0d05ccb7c9851bed1",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-win-adidxbot-dup-longer-allow-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-winner-v1",
+    "expectation_ids": ["exp-win-adidxbot-duplicate-inert"],
+    "probe_case_id": "pc-win-adidxbot-dup-longer-allow-positive",
+    "body_ref": "body-win-adidxbot-dup-longer-allow",
+    "body_file": "bodies/body-win-adidxbot-dup-longer-allow.txt",
+    "body_sha256": "bd3d6536971a64a8b6ba87a0e05f9d229ecfe63afa4b6810f613860f1bb7f82a",
+    "byte_size": 64,
+    "request_target": "/w/deep/item?probe=dup-longer-allow-positive",
+    "request_target_sha256": "55e49952c4a8e0e07507949dd8fa8ae1426ed9d020ba3209a8fb1a444735753a",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "rule_allow",
+      "matched_rule": {
+        "line": 3,
+        "type": "allow",
+        "value": "/w/deep",
+        "value_raw_hex": "2f772f64656570"
+      }
+    }
+  },
+  {
+    "case_id": "obs-win-adidxbot-longer-allow-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-winner-v1",
+    "expectation_ids": ["exp-win-adidxbot-specificity"],
+    "probe_case_id": "pc-win-adidxbot-longer-allow-negative",
+    "body_ref": "body-win-adidxbot-longer-allow",
+    "body_file": "bodies/body-win-adidxbot-longer-allow.txt",
+    "body_sha256": "fa98b6d4b6b5a13e29721e10ba112bf851c036ad4a7a8ecdf7f658810ec5d1d5",
+    "byte_size": 49,
+    "request_target": "/z/item?probe=longer-allow-negative",
+    "request_target_sha256": "f8828ad870f632f964b223836c20c5fe9868d3f8815481daafe262e18a30a220",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-win-adidxbot-longer-allow-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-winner-v1",
+    "expectation_ids": ["exp-win-adidxbot-specificity"],
+    "probe_case_id": "pc-win-adidxbot-longer-allow-positive",
+    "body_ref": "body-win-adidxbot-longer-allow",
+    "body_file": "bodies/body-win-adidxbot-longer-allow.txt",
+    "body_sha256": "fa98b6d4b6b5a13e29721e10ba112bf851c036ad4a7a8ecdf7f658810ec5d1d5",
+    "byte_size": 49,
+    "request_target": "/w/deep/item?probe=longer-allow-positive",
+    "request_target_sha256": "6179b70bf86684725fec100b5570837391fe21078ffa520c23a56e373d336a84",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "rule_allow",
+      "matched_rule": {
+        "line": 3,
+        "type": "allow",
+        "value": "/w/deep",
+        "value_raw_hex": "2f772f64656570"
+      }
+    }
+  },
+  {
+    "case_id": "obs-win-adidxbot-longer-disallow-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-winner-v1",
+    "expectation_ids": ["exp-win-adidxbot-specificity"],
+    "probe_case_id": "pc-win-adidxbot-longer-disallow-negative",
+    "body_ref": "body-win-adidxbot-longer-disallow",
+    "body_file": "bodies/body-win-adidxbot-longer-disallow.txt",
+    "body_sha256": "534895b34f95998390fc1c75befbcd1076ef6db25f1154e5d12400c01483b36b",
+    "byte_size": 49,
+    "request_target": "/z/item?probe=longer-disallow-negative",
+    "request_target_sha256": "830bdd6bea0f13098819f71278938e0070fde49392931f67459eb2c49fccbc52",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-win-adidxbot-longer-disallow-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-winner-v1",
+    "expectation_ids": ["exp-win-adidxbot-specificity"],
+    "probe_case_id": "pc-win-adidxbot-longer-disallow-positive",
+    "body_ref": "body-win-adidxbot-longer-disallow",
+    "body_file": "bodies/body-win-adidxbot-longer-disallow.txt",
+    "body_sha256": "534895b34f95998390fc1c75befbcd1076ef6db25f1154e5d12400c01483b36b",
+    "byte_size": 49,
+    "request_target": "/w/deep/item?probe=longer-disallow-positive",
+    "request_target_sha256": "836f6dd14a7f1d286975b844318967bae5103970938d93d46999ef166de5036b",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": "/w/deep",
+        "value_raw_hex": "2f772f64656570"
+      }
+    }
+  },
+  {
+    "case_id": "obs-win-adidxbot-tie-allow-first-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-winner-v1",
+    "expectation_ids": ["exp-win-adidxbot-tie-allow-wins"],
+    "probe_case_id": "pc-win-adidxbot-tie-allow-first-negative",
+    "body_ref": "body-win-adidxbot-tie-allow-first",
+    "body_file": "bodies/body-win-adidxbot-tie-allow-first.txt",
+    "body_sha256": "7df9d78113690cc1f940f13900ea873e4a81a08e4f83dbac3705328a179cb4cd",
+    "byte_size": 44,
+    "request_target": "/z/item?probe=tie-allow-first-negative",
+    "request_target_sha256": "0110cc90edfad679089515f9f1e86c16320bf140843e3df96638afbf3b55a3b5",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-win-adidxbot-tie-allow-first-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-winner-v1",
+    "expectation_ids": ["exp-win-adidxbot-tie-allow-wins"],
+    "probe_case_id": "pc-win-adidxbot-tie-allow-first-positive",
+    "body_ref": "body-win-adidxbot-tie-allow-first",
+    "body_file": "bodies/body-win-adidxbot-tie-allow-first.txt",
+    "body_sha256": "7df9d78113690cc1f940f13900ea873e4a81a08e4f83dbac3705328a179cb4cd",
+    "byte_size": 44,
+    "request_target": "/w/item?probe=tie-allow-first-positive",
+    "request_target_sha256": "65dc897fc18f2f0530ef59b83c2ef454463fcc6982edb2cf4278569697a4bbf2",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "rule_allow",
+      "matched_rule": {
+        "line": 2,
+        "type": "allow",
+        "value": "/w",
+        "value_raw_hex": "2f77"
+      }
+    }
+  },
+  {
+    "case_id": "obs-win-adidxbot-tie-disallow-first-negative",
+    "profile": "adidxbot",
+    "unit": "adidxbot-winner-v1",
+    "expectation_ids": ["exp-win-adidxbot-tie-allow-wins"],
+    "probe_case_id": "pc-win-adidxbot-tie-disallow-first-negative",
+    "body_ref": "body-win-adidxbot-tie-disallow-first",
+    "body_file": "bodies/body-win-adidxbot-tie-disallow-first.txt",
+    "body_sha256": "9807ec571a099bea96f819b5d1b5514fd4a58025eb6e89cfb48b8d910a71312c",
+    "byte_size": 44,
+    "request_target": "/z/item?probe=tie-disallow-first-negative",
+    "request_target_sha256": "e8b9e4b78c7299a1e2efc1dbbe5c9fbb997601ac5982c018378e76af5b9520c1",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-win-adidxbot-tie-disallow-first-positive",
+    "profile": "adidxbot",
+    "unit": "adidxbot-winner-v1",
+    "expectation_ids": ["exp-win-adidxbot-tie-allow-wins"],
+    "probe_case_id": "pc-win-adidxbot-tie-disallow-first-positive",
+    "body_ref": "body-win-adidxbot-tie-disallow-first",
+    "body_file": "bodies/body-win-adidxbot-tie-disallow-first.txt",
+    "body_sha256": "9807ec571a099bea96f819b5d1b5514fd4a58025eb6e89cfb48b8d910a71312c",
+    "byte_size": 44,
+    "request_target": "/w/item?probe=tie-disallow-first-positive",
+    "request_target_sha256": "1d74c60415d29f53c11a74b1fdf6f74507d3d30fb2cd33eeed6a620862dc4359",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "rule_allow",
+      "matched_rule": {
+        "line": 3,
+        "type": "allow",
+        "value": "/w",
+        "value_raw_hex": "2f77"
+      }
+    }
+  },
+  {
+    "case_id": "obs-win-bingbot-chain-longest-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-winner-v1",
+    "expectation_ids": ["exp-win-bingbot-specificity"],
+    "probe_case_id": "pc-win-bingbot-chain-longest-negative",
+    "body_ref": "body-win-bingbot-chain-longest",
+    "body_file": "bodies/body-win-bingbot-chain-longest.txt",
+    "body_sha256": "5d998a41ca64c807132225528da4ea2abb362572a33847a3ec854e5df03e79c2",
+    "byte_size": 62,
+    "request_target": "/z/item?probe=chain-longest-negative",
+    "request_target_sha256": "3181ed9e9db6db3ec9055c5cf1a40f7dd4b1325a1d2358732490b9d918a98f92",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-win-bingbot-chain-longest-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-winner-v1",
+    "expectation_ids": ["exp-win-bingbot-specificity"],
+    "probe_case_id": "pc-win-bingbot-chain-longest-positive",
+    "body_ref": "body-win-bingbot-chain-longest",
+    "body_file": "bodies/body-win-bingbot-chain-longest.txt",
+    "body_sha256": "5d998a41ca64c807132225528da4ea2abb362572a33847a3ec854e5df03e79c2",
+    "byte_size": 62,
+    "request_target": "/w/a/b/item?probe=chain-longest-positive",
+    "request_target_sha256": "7e9d30ff3acd9a224c461060d093d07d1aecc0afc9c26762e628b8db53d2ba97",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 4,
+        "type": "disallow",
+        "value": "/w/a/b",
+        "value_raw_hex": "2f772f612f62"
+      }
+    }
+  },
+  {
+    "case_id": "obs-win-bingbot-dup-disallow-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-winner-v1",
+    "expectation_ids": ["exp-win-bingbot-duplicate-inert"],
+    "probe_case_id": "pc-win-bingbot-dup-disallow-negative",
+    "body_ref": "body-win-bingbot-dup-disallow",
+    "body_file": "bodies/body-win-bingbot-dup-disallow.txt",
+    "body_sha256": "152f0eafe9607c47ff8efe6f71c3333cfca4e9584c12fc0948f587555278e3e3",
+    "byte_size": 46,
+    "request_target": "/z/item?probe=dup-disallow-negative",
+    "request_target_sha256": "c314c54ea5448acbe52bf641ccb955cdb884dedd91896b278440a9121d47b774",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-win-bingbot-dup-disallow-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-winner-v1",
+    "expectation_ids": ["exp-win-bingbot-duplicate-inert"],
+    "probe_case_id": "pc-win-bingbot-dup-disallow-positive",
+    "body_ref": "body-win-bingbot-dup-disallow",
+    "body_file": "bodies/body-win-bingbot-dup-disallow.txt",
+    "body_sha256": "152f0eafe9607c47ff8efe6f71c3333cfca4e9584c12fc0948f587555278e3e3",
+    "byte_size": 46,
+    "request_target": "/w/item?probe=dup-disallow-positive",
+    "request_target_sha256": "40502adbf2f2538cda8b9b6751da7745a93e6749d7de8faf25b5bc5fcb93d66b",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 2,
+        "type": "disallow",
+        "value": "/w",
+        "value_raw_hex": "2f77"
+      }
+    }
+  },
+  {
+    "case_id": "obs-win-bingbot-dup-longer-allow-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-winner-v1",
+    "expectation_ids": ["exp-win-bingbot-duplicate-inert"],
+    "probe_case_id": "pc-win-bingbot-dup-longer-allow-negative",
+    "body_ref": "body-win-bingbot-dup-longer-allow",
+    "body_file": "bodies/body-win-bingbot-dup-longer-allow.txt",
+    "body_sha256": "599572173503685723b3a24a173b4274265377d972edf4d5b18669acfea7f74e",
+    "byte_size": 63,
+    "request_target": "/z/item?probe=dup-longer-allow-negative",
+    "request_target_sha256": "184a243d3e6f81c075d0e0ab241bb8804d84b304811aeab0d05ccb7c9851bed1",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-win-bingbot-dup-longer-allow-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-winner-v1",
+    "expectation_ids": ["exp-win-bingbot-duplicate-inert"],
+    "probe_case_id": "pc-win-bingbot-dup-longer-allow-positive",
+    "body_ref": "body-win-bingbot-dup-longer-allow",
+    "body_file": "bodies/body-win-bingbot-dup-longer-allow.txt",
+    "body_sha256": "599572173503685723b3a24a173b4274265377d972edf4d5b18669acfea7f74e",
+    "byte_size": 63,
+    "request_target": "/w/deep/item?probe=dup-longer-allow-positive",
+    "request_target_sha256": "55e49952c4a8e0e07507949dd8fa8ae1426ed9d020ba3209a8fb1a444735753a",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "rule_allow",
+      "matched_rule": {
+        "line": 3,
+        "type": "allow",
+        "value": "/w/deep",
+        "value_raw_hex": "2f772f64656570"
+      }
+    }
+  },
+  {
+    "case_id": "obs-win-bingbot-longer-allow-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-winner-v1",
+    "expectation_ids": ["exp-win-bingbot-specificity"],
+    "probe_case_id": "pc-win-bingbot-longer-allow-negative",
+    "body_ref": "body-win-bingbot-longer-allow",
+    "body_file": "bodies/body-win-bingbot-longer-allow.txt",
+    "body_sha256": "f86af393551495f3f895ba7dabc55924f25b1b6f1cf6d3e1a2cc85449edb7504",
+    "byte_size": 48,
+    "request_target": "/z/item?probe=longer-allow-negative",
+    "request_target_sha256": "f8828ad870f632f964b223836c20c5fe9868d3f8815481daafe262e18a30a220",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-win-bingbot-longer-allow-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-winner-v1",
+    "expectation_ids": ["exp-win-bingbot-specificity"],
+    "probe_case_id": "pc-win-bingbot-longer-allow-positive",
+    "body_ref": "body-win-bingbot-longer-allow",
+    "body_file": "bodies/body-win-bingbot-longer-allow.txt",
+    "body_sha256": "f86af393551495f3f895ba7dabc55924f25b1b6f1cf6d3e1a2cc85449edb7504",
+    "byte_size": 48,
+    "request_target": "/w/deep/item?probe=longer-allow-positive",
+    "request_target_sha256": "6179b70bf86684725fec100b5570837391fe21078ffa520c23a56e373d336a84",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "rule_allow",
+      "matched_rule": {
+        "line": 3,
+        "type": "allow",
+        "value": "/w/deep",
+        "value_raw_hex": "2f772f64656570"
+      }
+    }
+  },
+  {
+    "case_id": "obs-win-bingbot-longer-disallow-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-winner-v1",
+    "expectation_ids": ["exp-win-bingbot-specificity"],
+    "probe_case_id": "pc-win-bingbot-longer-disallow-negative",
+    "body_ref": "body-win-bingbot-longer-disallow",
+    "body_file": "bodies/body-win-bingbot-longer-disallow.txt",
+    "body_sha256": "0d98854c38777c2732da854b1c09ca921a6a8c5812960dc47b9df321d447525d",
+    "byte_size": 48,
+    "request_target": "/z/item?probe=longer-disallow-negative",
+    "request_target_sha256": "830bdd6bea0f13098819f71278938e0070fde49392931f67459eb2c49fccbc52",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-win-bingbot-longer-disallow-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-winner-v1",
+    "expectation_ids": ["exp-win-bingbot-specificity"],
+    "probe_case_id": "pc-win-bingbot-longer-disallow-positive",
+    "body_ref": "body-win-bingbot-longer-disallow",
+    "body_file": "bodies/body-win-bingbot-longer-disallow.txt",
+    "body_sha256": "0d98854c38777c2732da854b1c09ca921a6a8c5812960dc47b9df321d447525d",
+    "byte_size": 48,
+    "request_target": "/w/deep/item?probe=longer-disallow-positive",
+    "request_target_sha256": "836f6dd14a7f1d286975b844318967bae5103970938d93d46999ef166de5036b",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "disallow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "disallow",
+      "reason": "rule_disallow",
+      "matched_rule": {
+        "line": 3,
+        "type": "disallow",
+        "value": "/w/deep",
+        "value_raw_hex": "2f772f64656570"
+      }
+    }
+  },
+  {
+    "case_id": "obs-win-bingbot-tie-allow-first-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-winner-v1",
+    "expectation_ids": ["exp-win-bingbot-tie-allow-wins"],
+    "probe_case_id": "pc-win-bingbot-tie-allow-first-negative",
+    "body_ref": "body-win-bingbot-tie-allow-first",
+    "body_file": "bodies/body-win-bingbot-tie-allow-first.txt",
+    "body_sha256": "1f4e213927c97a8b7ed72fd999fdcbba88510615c4b9beba81139b6d3a301045",
+    "byte_size": 43,
+    "request_target": "/z/item?probe=tie-allow-first-negative",
+    "request_target_sha256": "0110cc90edfad679089515f9f1e86c16320bf140843e3df96638afbf3b55a3b5",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-win-bingbot-tie-allow-first-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-winner-v1",
+    "expectation_ids": ["exp-win-bingbot-tie-allow-wins"],
+    "probe_case_id": "pc-win-bingbot-tie-allow-first-positive",
+    "body_ref": "body-win-bingbot-tie-allow-first",
+    "body_file": "bodies/body-win-bingbot-tie-allow-first.txt",
+    "body_sha256": "1f4e213927c97a8b7ed72fd999fdcbba88510615c4b9beba81139b6d3a301045",
+    "byte_size": 43,
+    "request_target": "/w/item?probe=tie-allow-first-positive",
+    "request_target_sha256": "65dc897fc18f2f0530ef59b83c2ef454463fcc6982edb2cf4278569697a4bbf2",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "rule_allow",
+      "matched_rule": {
+        "line": 2,
+        "type": "allow",
+        "value": "/w",
+        "value_raw_hex": "2f77"
+      }
+    }
+  },
+  {
+    "case_id": "obs-win-bingbot-tie-disallow-first-negative",
+    "profile": "bingbot",
+    "unit": "bingbot-winner-v1",
+    "expectation_ids": ["exp-win-bingbot-tie-allow-wins"],
+    "probe_case_id": "pc-win-bingbot-tie-disallow-first-negative",
+    "body_ref": "body-win-bingbot-tie-disallow-first",
+    "body_file": "bodies/body-win-bingbot-tie-disallow-first.txt",
+    "body_sha256": "3c159922bb990d4a7a3673bb5b9c62dd3f34b4534af6c14ca28c6fd96fc55835",
+    "byte_size": 43,
+    "request_target": "/z/item?probe=tie-disallow-first-negative",
+    "request_target_sha256": "e8b9e4b78c7299a1e2efc1dbbe5c9fbb997601ac5982c018378e76af5b9520c1",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "default_allow",
+      "matched_rule": null
+    }
+  },
+  {
+    "case_id": "obs-win-bingbot-tie-disallow-first-positive",
+    "profile": "bingbot",
+    "unit": "bingbot-winner-v1",
+    "expectation_ids": ["exp-win-bingbot-tie-allow-wins"],
+    "probe_case_id": "pc-win-bingbot-tie-disallow-first-positive",
+    "body_ref": "body-win-bingbot-tie-disallow-first",
+    "body_file": "bodies/body-win-bingbot-tie-disallow-first.txt",
+    "body_sha256": "3c159922bb990d4a7a3673bb5b9c62dd3f34b4534af6c14ca28c6fd96fc55835",
+    "byte_size": 43,
+    "request_target": "/w/item?probe=tie-disallow-first-positive",
+    "request_target_sha256": "1d74c60415d29f53c11a74b1fdf6f74507d3d30fb2cd33eeed6a620862dc4359",
+    "tester_observed": {
+      "terminal_outcome": "evaluated",
+      "decision": "allow"
+    },
+    "matcher_expected": {
+      "matcher_status": "evaluated",
+      "url_decision": "allow",
+      "reason": "rule_allow",
+      "matched_rule": {
+        "line": 3,
+        "type": "allow",
+        "value": "/w",
+        "value_raw_hex": "2f77"
+      }
+    }
+  }
+]
